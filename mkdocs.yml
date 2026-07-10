@@ -1,0 +1,49 @@
+site_name: Odoo User Manual
+site_url: https://map-odoo-user-manual.com
+
+theme:
+  name: material
+  palette:
+    # Konfigurasi warna (kita pakai Indigo khas Odoo Enterprise)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Mode Gelap
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Mode Terang
+  features:
+    - navigation.tabs          # Menu utama di bagian atas
+    - navigation.sections      # Sub-menu rapi di samping
+    - search.suggest           # Rekomendasi pencarian otomatis
+    - search.highlight         # Efek stabilo pada teks yang dicari
+
+# Mengaktifkan fitur kotak informasi berwarna (Admonitions)
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+# Struktur Navigasi Menu Web Anda
+nav:
+  - Home: index.md
+  - Sales Department :
+    - Modules :
+      - Negotiation Sheet : negotiation_sheet/negotiation_sheet.md
+      - Sales : sales/sales_quotation.md
+  
+  - Purchase Department :
+    - Modules :
+      - Purchase : purchase/purchase_order.md
+      - Request for Quotation : purchase/request_for_quotation.md
+
+plugins:
+  - search
+  - glightbox
