@@ -31,6 +31,15 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - glightbox
 
 # Struktur Navigasi Menu Web Anda
 nav:
@@ -46,6 +55,9 @@ nav:
       - Purchase : purchase/purchase_order.md
       - Request for Quotation : purchase/request_for_quotation.md
 
-plugins:
-  - search
-  - glightbox
+  - Inventory Department :
+    - Modules :
+      - Inventory : inventory/inventory.md
+      - Delivery Order : inventory/delivery_order.md
+      - Internal Transfer : inventory/internal_transfer.md
+      - Scrap : inventory/scrap.md
