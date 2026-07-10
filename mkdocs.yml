@@ -1,5 +1,5 @@
 site_name: Odoo User Manual
-site_url: https://map-odoo-user-manual.com
+site_url: https://mapitds.github.io/odoo-user-manual/
 
 theme:
   name: material
@@ -20,8 +20,9 @@ theme:
         icon: material/brightness-4
         name: Mode Terang
   features:
-    - navigation.tabs          # Menu utama di bagian atas
+    # - navigation.tabs          # Menu utama di bagian atas
     - navigation.sections      # Sub-menu rapi di samping
+    - navigation.expand        # Sub-menu bisa diperluas
     - search.suggest           # Rekomendasi pencarian otomatis
     - search.highlight         # Efek stabilo pada teks yang dicari
 
@@ -34,7 +35,8 @@ markdown_extensions:
 # Struktur Navigasi Menu Web Anda
 nav:
   - Home: index.md
-  - Sales Department :
+
+  - Sales Department : 
     - Modules :
       - Negotiation Sheet : negotiation_sheet/negotiation_sheet.md
       - Sales : sales/sales_quotation.md
