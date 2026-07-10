@@ -20,7 +20,8 @@ Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan
 3. Masukkan jumlah produk pada kolom **Quantity**.
 4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** jika terdapat kesepakatan khusus.
 
-![Contoh Pengisian Order Lines](images/ns_header.png)
+![Contoh Pengisian Order Lines](../images/ns_header.png)
+
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
 
 !!! note "Tips Pengisian Cepat"

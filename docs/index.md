@@ -16,7 +16,7 @@ Pilih modul di bawah ini untuk langsung masuk ke panduan langkah demi langkah:
     
     Panduan pembuatan penawaran harga (*Quotation*), manajemen *Pricelist*, hingga konfirmasi menjadi *Sales Order*.
     
-    [Buka Panduan Sales :octicons-arrow-right-16:](sales/quotation.md)
+    [Buka Panduan Sales :octicons-arrow-right-16:](sales/sales_quotation.md)
 
 -   :material-package-variant-closed: **Modul Inventory**
     
