@@ -1,28 +1,41 @@
 name: publish-docs
 on:
   push:
+    authors:
+      - github-actions[bangjc]
     branches:
-      - main # atau master, sesuai branch utama Anda
+      - main # atau master, sesuaikan dengan nama branch utama Anda
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # Mengambil seluruh file proyek + riwayat log Git (wajib untuk plugin git-revision)
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Configure Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.x
+
       - run: echo "cache_id=$(date +%Y%m%d)" >> $GITHUB_ENV
       - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-glightbox
-      - run: pip install mkdocs-git-revision-date-localized-plugin
-      # - run: pip install pymdown-extensions
-      # - run: pip install mkdocs-material-extensions
-      # - run: pip install mkdocs-material-emoji
-      - run: mkdocs gh-deploy --force
+
+      # Menginstal tema utama dan seluruh plugin yang Anda pakai di mkdocs.yml
+      - name: Install Dependencies
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-glightbox
+          pip install mkdocs-git-revision-date-localized-plugin
+
+      # Jalankan deploy otomatis ke GitHub Pages
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
