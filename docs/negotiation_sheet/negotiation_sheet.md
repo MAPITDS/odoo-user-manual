@@ -1,4 +1,4 @@
-# Alur Pembuatan Negotiation Sheet
+# <img src="../../icon_modul/ns.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Negotiation Sheet
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation* (Penawaran Harga) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
 
@@ -70,5 +70,36 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 ![Contoh Pengisian pilihan convert](../images/ns_convert.png)
 *Gambar 4.1: Tampilan confirm Convert To SO.*
 
-!!! warning "Peringatan Penting Sebelum Konfirmasi"
-    Pastikan Anda telah memeriksa ulang nilai pada Tabel **Calculation** dan **Warna** yang tertera. Dokumen yang sudah berstatus *Converted* maka sudah bisa lanjut pada modul **Sales**.
+<!-- !!! warning "Peringatan Penting Sebelum Konfirmasi"
+    Pastikan Anda telah memeriksa ulang nilai pada Tabel **Calculation** dan **Warna** yang tertera. Dokumen yang sudah berstatus *Converted* maka sudah bisa lanjut pada modul **Sales**. -->
+
+## 📝 Referensi Tambahan
+
+### SOP Harian (Checklist)
+* <input type="checkbox"> **Pastikan Nama Customer (Bill To - Ship To - Partner - Customer Universal)** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
+* <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
+
+### Fitur Berdasarkan Hak Akses
+=== "Admin SAS"
+    - Dapat membuat *NS* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action *Submit* jika penawaran sudah sesuai 
+    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
+
+=== "Direktur"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Orange*).
+    Memiliki tampilan Tab perhitungan 
+
+=== "General Sales Manager"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
+
+=== "Regional Sales Manager"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
+
+=== "Area Sales Manager"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar *Hanya dapat melihat area masing-masing*.
+
+
+??? info "What Next?"
+    Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales* selanjutnya dokumen akan masuk ke Modul *Sales*.
+    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../sales/sales_quotation.md)
