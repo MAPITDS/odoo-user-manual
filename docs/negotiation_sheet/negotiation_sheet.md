@@ -11,25 +11,25 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation
 5. Isi **Note** jika diperlukan.
 
 ![Contoh Pengisian Form NS](../images/ns_header.png)
-*Gambar 1.1: Tampilan pengisian form pada Negotiation Sheet.*
+*Gambar 1 : Tampilan pengisian form pada Negotiation Sheet.*
 
 ---
 
-## 2. Memasukkan Produk dan Harga
+## 2. Pengisian Produk dan Harga
 
 Pada tab **Product Detail**, masukkan produk yang ingin ditawarkan kepada pelanggan:
 
 1. Klik **Add a line**.
 2. Pilih produk dari daftar *dropdown*.
 3. Masukkan jumlah produk pada kolom **Qty**.
-4. Sistem akan otomatis menarik harga standar, ongkos kirim, dan diskom. Anda dapat mengubah harga satuan secara manual pada kolom **Quote Price**, mengubah ongkir pada kolom **FINS**, dan mengubah diskon pada kolom **Disc** jika terdapat kesepakatan khusus.
+4. Sistem akan otomatis menarik harga standar, ongkos kirim, dan diskon. Anda dapat mengubah harga satuan secara manual pada kolom **Quote Price**, mengubah ongkos kirim pada kolom **FINS**, dan mengubah diskon pada kolom **Disc** jika terdapat kesepakatan khusus.
 5. Isi **Note** jika diperlukan.
 
 ![Contoh Pengisian Order Lines](../images/ns_product.png)
-*Gambar 2.1: Tampilan pengisian produk pada tab Product Detail.*
+*Gambar 2 : Tampilan pengisian produk pada tab Product Detail.*
 
-!!! note "Tips Pengisian Cepat"
-    Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*.
+<!-- !!! note "Tips Pengisian Cepat"
+    Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*. -->
 
 ---
 
@@ -43,7 +43,7 @@ Pada tab **Cost of Sales**, masukkan biaya yang ingin ditawarkan kepada pelangga
 4. Isi **Note** jika diperlukan.
 
 ![Contoh Pengisian COS Item](../images/ns_cos.png)
-*Gambar 3.1: Tampilan cos item pada tabel Cost of Sales.*
+*Gambar 3 : Tampilan cos item pada tabel Cost of Sales.*
 
 ---
 
@@ -52,10 +52,10 @@ Pada tab **Cost of Sales**, masukkan biaya yang ingin ditawarkan kepada pelangga
 Pada state **Waiting Approval**, ada beberapa kondisi berdasarkan warna pada Negotiation Sheet yang dibuat :
 
 1. Warna "Hijau" berarti tidak perlu meminta Approval, bisa skip pada langkah ini.
-2. Warna "Biru" meminta Aproval "RSM".
-3. Warna "Kuning" meminta Aproval "RSM" kemudian "GSM".
-4. Warna "Oren" meminta Aproval "RSM" kemudian "GSM" dan "DIR".
-5. Warna "Merah" meminta Aproval "RSM" kemudian "GSM" dan "DIR".
+2. Warna "Biru" meminta Approval "RSM".
+3. Warna "Kuning" meminta Approval "GSM".
+4. Warna "Oren" meminta Approval "RSM" kemudian "GSM" dan "DIR".
+5. Warna "Merah" meminta Approval "RSM" kemudian "GSM" dan "DIR".
 
 ---
 
@@ -68,7 +68,7 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 * Status dokumen di pojok kanan atas akan otomatis berubah dari **Approved** menjadi **Converted** atau **Partially Converted**.
 
 ![Contoh Pengisian pilihan convert](../images/ns_convert.png)
-*Gambar 4.1: Tampilan confirm Convert To SO.*
+*Gambar 4 : Tampilan confirm Convert To SO.*
 
 <!-- !!! warning "Peringatan Penting Sebelum Konfirmasi"
     Pastikan Anda telah memeriksa ulang nilai pada Tabel **Calculation** dan **Warna** yang tertera. Dokumen yang sudah berstatus *Converted* maka sudah bisa lanjut pada modul **Sales**. -->
@@ -86,19 +86,18 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
     - Dapat melakukan action *Submit* jika penawaran sudah sesuai 
     - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
 
-=== "Direktur"
+=== "DIR"
     Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Orange*).
     Memiliki tampilan Tab perhitungan 
 
-=== "General Sales Manager"
+=== "GSM"
     Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
 
-=== "Regional Sales Manager"
+=== "RSM"
     Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
 
-=== "Area Sales Manager"
+=== "ASM"
     Memiliki tombol untuk menyetujui diskon di luar batas standar *Hanya dapat melihat area masing-masing*.
-
 
 ??? info "What Next?"
     Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales* selanjutnya dokumen akan masuk ke Modul *Sales*.
