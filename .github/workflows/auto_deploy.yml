@@ -21,4 +21,8 @@ jobs:
           path: .cache
       - run: pip install mkdocs-material
       - run: pip install mkdocs-glightbox
+      - run: pip install mkdocs-git-revision-date-localized-plugin
+      # - run: pip install pymdown-extensions
+      # - run: pip install mkdocs-material-extensions
+      # - run: pip install mkdocs-material-emoji
       - run: mkdocs gh-deploy --force
