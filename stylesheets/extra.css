@@ -1,17 +1,19 @@
-/* Merapikan Footer: Membuat Copyright dan Generator (Made with...) sejajar dalam satu baris */
+/* Mengubah container luar menjadi flexbox satu baris */
 .md-footer-meta__inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
 }
 
-/* Memastikan teks tidak terlalu mepet di layar kecil */
-@media screen and (max-width: 45em) {
-    .md-footer-meta__inner {
-        flex-direction: column;
-        text-align: center;
-    }
+/* Memaksa teks copyright dan teks generator tidak membuat baris baru */
+.md-copyright, 
+.md-social {
+    display: inline-block !important;
+    margin-bottom: 0 !important;
+}
+
+/* Menghilangkan margin bawah bawaan dari pembungkus generator */
+.md-footer-meta {
+    padding-bottom: 15px !important;
 }
