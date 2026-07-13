@@ -57,6 +57,9 @@ extra:
   assets:
     - icon_modul
 
+copyright: |
+  Copyright &copy; 2026 CareSys &mdash; Powered by <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+
 # Struktur Navigasi Menu Web Anda
 nav:
   - Home : index.md
