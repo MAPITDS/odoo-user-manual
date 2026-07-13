@@ -1,0 +1,44 @@
+/* 1. SETUP RUANG IKON (Tanpa Merusak Flex/Block Bawaan Tema) */
+.md-nav__link::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;  /* Lebar ikon */
+    height: 18px; /* Tinggi ikon */
+    margin-right: 8px; /* Jarak ikon ke teks */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 2. BERSIHKAN INDUK MENU (Folder Department & Modules agar Tidak Berikon) */
+.md-nav__link[href=""]::before,
+.md-nav__item--nested > .md-nav__link::before,
+.md-nav__link:not([href])::before {
+    display: none !important;
+}
+
+/* 3. TEMPELKAN IKON SESUAI FILE TUJUAN (.md) */
+
+.md-nav__link[href*="/index"]::before {
+    background-image: url('../../icon_modul/home.png'); /* Sesuaikan nama file gambar Anda */
+}
+/* Ikon untuk Negotiation Sheet */
+.md-nav__link[href*="negotiation_sheet"]::before {
+    background-image: url('../icon_modul/ns.png'); /* Sesuaikan nama file gambar Anda */
+}
+
+/* Ikon untuk Sales Quotation */
+.md-nav__link[href*="sales_quotation"]::before {
+    background-image: url('../icon_modul/sales.png');
+}
+
+/* Ikon untuk Purchase Order */
+.md-nav__link[href*="purchase_order"]::before {
+    background-image: url('../icon_modul/purchase.png');
+}
+
+/* Ikon untuk Request for Quotation */
+.md-nav__link[href*="request_for_quotation"]::before {
+    background-image: url('../icon_modul/rfq.png');
+}

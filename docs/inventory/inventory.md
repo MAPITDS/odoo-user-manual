@@ -1,4 +1,4 @@
-# <img src="../../icon_modul/ns.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Negotiation Sheet
+# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Negotiation Sheet
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation* (Penawaran Harga) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
 
@@ -20,7 +20,7 @@ Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan
 3. Masukkan jumlah produk pada kolom **Quantity**.
 4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** jika terdapat kesepakatan khusus.
 
-![Contoh Pengisian Order Lines](../negotiation_sheet/images/ns_header.png)
+![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
 
 !!! note "Tips Pengisian Cepat"
@@ -40,32 +40,29 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 
 ---
 
-## 📝 Evaluasi & Referensi Tambahan
+## 🔄 Gambaran Umum Alur Barang
 
-### SOP Harian (Checklist)
-* <input type="checkbox"> **Pastikan Nama Customer (Bill To - Ship To - Partner - Customer Universal)** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
-* <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
+Proses pergerakan stok di Odoo dibagi menjadi dua jalur utama berdasarkan tipe dokumennya:
 
-### Fitur Berdasarkan Hak Akses
-=== "Admin SAS"
-    - Dapat membuat *NS* baru dan dapat melihat keseluruhan data pada modul.
-    - Dapat melakukan action *Submit* jika penawaran sudah sesuai 
-    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
+=== "Alur Barang Masuk (Inbound)"
+    1. Tim Purchasing menerbitkan *Purchase Order* (PO).
+    2. Sistem Odoo secara otomatis membuat dokumen **Receipts (WH/IN)** di modul Inventory.
+    3. Tim Gudang melakukan pemeriksaan fisik, mencocokkan jumlah, lalu melakukan *Validate* untuk menambah stok.
 
-=== "Direktur"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Orange*).
-    Memiliki tampilan Tab perhitungan 
+=== "Alur Barang Keluar (Outbound)"
+    1. Tim Sales mengonfirmasi *Sales Order* (SO).
+    2. Sistem Odoo secara otomatis menerbitkan dokumen **Delivery Orders (WH/OUT)**.
+    3. Tim Gudang melakukan *picking*, *packing*, dan memvalidasi pengiriman agar stok berkurang secara *real-time*.
 
-=== "General Sales Manager"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
+---
 
-=== "Regional Sales Manager"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
+## 📝 Protokol Wajib Tim Gudang (SOP)
 
-=== "Area Sales Manager"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *Hanya dapat melihat area masing-masing*.
+Sebelum melakukan validasi dokumen pergerakan barang, pastikan langkah-langkah berikut telah terpenuhi:
 
-??? info "What Next?"
-    Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales* selanjutnya dokumen akan masuk ke Modul *Sales*.
-    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../sales/sales_quotation.md)
+-   [ ] Memeriksa fisik barang (tidak cacat/rusak).
+-   [ ] Memastikan kuantitas fisik sama persis dengan kolom **Done** di Odoo.
+-   [ ] Mengisi nomor seri (*Lot/Serial Number*) jika produk yang diterima wajib *tracking*.
+
+!!! warning "Penting untuk Diperhatikan"
+    Jangan pernah menekan tombol **Validate** jika jumlah barang fisik belum sesuai dengan yang tertera di sistem. Jika terjadi selisih, gunakan fitur *Backorder* yang disediakan oleh Odoo.

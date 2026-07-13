@@ -1,4 +1,4 @@
-# Pusat Panduan Pengguna Odoo (User Manual)
+# <img src="icon_modul/home.png" width="32" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Pusat Panduan Pengguna Odoo (User Manual)
 
 Selamat datang di portal dokumentasi resmi sistem ERP Odoo PT Mitra Asa Pratama. Portal ini dirancang untuk membantu Anda memahami seluruh alur kerja operasional perusahaan, mulai dari proses penjualan hingga laporan keuangan.
 
@@ -10,7 +10,7 @@ Pilih modul di bawah ini untuk langsung masuk ke panduan langkah demi langkah:
 
 <div class="grid cards" markdown>
 
--   :material-cart-outline: **Modul Sales**
+-   <img src="icon_modul/sales.png" width="28" style="vertical-align: middle; margin-right: 8px;"> **Modul Sales**
     
     ---
     
@@ -18,15 +18,15 @@ Pilih modul di bawah ini untuk langsung masuk ke panduan langkah demi langkah:
     
     [Buka Panduan Sales :octicons-arrow-right-16:](sales/sales_quotation.md)
 
--   :material-package-variant-closed: **Modul Inventory**
+-   <img src="icon_modul/.png" width="28" style="vertical-align: middle; margin-right: 8px;"> **Modul Inventory**
     
     ---
     
     Alur pengelolaan stok, proses penerimaan barang (*Receipts*), hingga pengiriman ke pelanggan (*Delivery*).
     
-    [Buka Panduan Inventory :octicons-arrow-right-16:](#)
+    [Buka Panduan Inventory :octicons-arrow-right-16:](inventory/inventory.md)
 
--   :material-calculator: **Modul Accounting**
+-   <img src="icon_modul/.png" width="28" style="vertical-align: middle; margin-right: 8px;"> **Modul Accounting**
     
     ---
     

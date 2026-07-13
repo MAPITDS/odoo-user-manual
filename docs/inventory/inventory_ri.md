@@ -1,4 +1,4 @@
-# <img src="../../icon_modul/ns.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Negotiation Sheet
+# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Negotiation Sheet
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation* (Penawaran Harga) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
 
@@ -20,7 +20,7 @@ Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan
 3. Masukkan jumlah produk pada kolom **Quantity**.
 4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** jika terdapat kesepakatan khusus.
 
-![Contoh Pengisian Order Lines](../negotiation_sheet/images/ns_header.png)
+![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
 
 !!! note "Tips Pengisian Cepat"
@@ -43,29 +43,16 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 ## 📝 Evaluasi & Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Pastikan Nama Customer (Bill To - Ship To - Partner - Customer Universal)** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
-* <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
+- [x] Input data Customer dan verifikasi masa berlaku penawaran.
+- [x] Pastikan nominal pajak (VAT 11%) sudah sesuai.
+- [ ] Lakukan konfirmasi menjadi Sales Order setelah mendapat approval klien.
 
 ### Fitur Berdasarkan Hak Akses
-=== "Admin SAS"
-    - Dapat membuat *NS* baru dan dapat melihat keseluruhan data pada modul.
-    - Dapat melakukan action *Submit* jika penawaran sudah sesuai 
-    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
+=== "Tampilan Staff Sales"
+    Hanya dapat membuat *Quotation* dan melihat status ketersediaan stok produk secara real-time.
 
-=== "Direktur"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Orange*).
-    Memiliki tampilan Tab perhitungan 
+=== "Tampilan Supervisor / Manajer"
+    Memiliki tombol tambahan untuk menyetujui diskon di luar batas standar dan mengubah *Pricelist* khusus.
 
-=== "General Sales Manager"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
-
-=== "Regional Sales Manager"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
-
-=== "Area Sales Manager"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *Hanya dapat melihat area masing-masing*.
-
-??? info "What Next?"
-    Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales* selanjutnya dokumen akan masuk ke Modul *Sales*.
-    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../sales/sales_quotation.md)
+??? info "Detail Akuntansi Teknis (Klik untuk Membuka)"
+    Saat dokumen bertransisi dari *Quotation* menjadi *Sales Order*, sistem Odoo belum membentuk jurnal finansial. Jurnal baru akan terbentuk saat produk dikirim (*Inventory Move*) atau faktur dibuat (*Invoice Created*).

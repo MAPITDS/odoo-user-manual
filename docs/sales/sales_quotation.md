@@ -1,4 +1,4 @@
-# Alur Pembuatan Sales Order (Quotation)
+# <img src="../../icon_modul/sales.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Sales Order (Quotation)
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation* (Penawaran Harga) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
 
@@ -20,7 +20,7 @@ Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan
 3. Masukkan jumlah produk pada kolom **Quantity**.
 4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** jika terdapat kesepakatan khusus.
 
-![Contoh Pengisian Order Lines](images/sales_order_line.png)
+![Contoh Pengisian Order Lines](../sales/images/sales_order_line.png)
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
 
 !!! note "Tips Pengisian Cepat"
