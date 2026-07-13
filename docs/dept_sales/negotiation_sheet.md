@@ -10,7 +10,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation
 4. Tentukan termin pembayaran penawaran pada kolom **Payment Term**.
 5. Isi **Note** jika diperlukan.
 
-![Contoh Pengisian Form NS](../images/ns_header.png)
+![Contoh Pengisian Form NS](../dept_sales/images/ns_header.png)
 *Gambar 1 : Tampilan pengisian form pada Negotiation Sheet.*
 
 ---
@@ -25,7 +25,7 @@ Pada tab **Product Detail**, masukkan produk yang ingin ditawarkan kepada pelang
 4. Sistem akan otomatis menarik harga standar, ongkos kirim, dan diskon. Anda dapat mengubah harga satuan secara manual pada kolom **Quote Price**, mengubah ongkos kirim pada kolom **FINS**, dan mengubah diskon pada kolom **Disc** jika terdapat kesepakatan khusus.
 5. Isi **Note** jika diperlukan.
 
-![Contoh Pengisian Order Lines](../images/ns_product.png)
+![Contoh Pengisian Order Lines](../dept_sales/images/ns_product.png)
 *Gambar 2 : Tampilan pengisian produk pada tab Product Detail.*
 
 <!-- !!! note "Tips Pengisian Cepat"
@@ -42,7 +42,7 @@ Pada tab **Cost of Sales**, masukkan biaya yang ingin ditawarkan kepada pelangga
 3. Sistem akan otomatis menarik baya nya berdasarkan cost item yang dipilih. Ada beberapa cos item yang bisa dirubah biaya nya, maka masukkan biaya pada kolom **Amount** atau presentase nya pada kolom **%**.
 4. Isi **Note** jika diperlukan.
 
-![Contoh Pengisian COS Item](../images/ns_cos.png)
+![Contoh Pengisian COS Item](../dept_sales/images/ns_cos.png)
 *Gambar 3 : Tampilan cos item pada tabel Cost of Sales.*
 
 ---
@@ -67,7 +67,7 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 * Pilih tipe convert **Full** atau **Partial**
 * Status dokumen di pojok kanan atas akan otomatis berubah dari **Approved** menjadi **Converted** atau **Partially Converted**.
 
-![Contoh Pengisian pilihan convert](../images/ns_convert.png)
+![Contoh Pengisian pilihan convert](../dept_sales/images/ns_convert.png)
 *Gambar 4 : Tampilan confirm Convert To SO.*
 
 <!-- !!! warning "Peringatan Penting Sebelum Konfirmasi"
@@ -101,4 +101,4 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 
 ??? info "What Next?"
     Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales* selanjutnya dokumen akan masuk ke Modul *Sales*.
-    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../sales/sales_quotation.md)
+    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_sales/sales_quotation.md)
