@@ -21,9 +21,9 @@ theme:
         icon: material/brightness-4
         name: Mode Terang
   features:
-    # - navigation.tabs          # Menu utama di bagian atas
+    # - navigation.tabs        # Menu utama di bagian atas
     - navigation.sections      # Sub-menu rapi di samping
-    - navigation.expand        # Sub-menu bisa diperluas
+    - navigation               # Sub-menu bisa diperluas
     - navigation.indexes
     - search.suggest           # Rekomendasi pencarian otomatis
     - search.highlight         # Efek stabilo pada teks yang dicari
@@ -40,7 +40,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      # emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_index: !!python/name:pymdownx.emoji.gemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
@@ -52,31 +53,43 @@ plugins:
       timezone: Asia/Jakarta
       fallback_to_build_date: true
 
-extra_css:
-  - stylesheets/extra.css
-
 extra:
   assets:
     - icon_modul
 
 # Struktur Navigasi Menu Web Anda
 nav:
-  - Home: index.md
+  - Home : index.md
 
   - Sales Department : 
-    - Modules :
+    - "🛃 Modules":
       - Negotiation Sheet : negotiation_sheet/negotiation_sheet.md
       - Sales : sales/sales_quotation.md
+      - Sales Target : target/sales_target.md
   
   - Purchase Department :
-    - Modules :
-      - Purchase Request : purchase/purchase_order.md
-      - Purchase Order : purchase/request_for_quotation.md
+    - "🛃 Modules":
+      - Purchase Request : purchase/purchase_request.md
+      - Purchase Order : purchase/purchase_order.md
 
-  - Inventory Department :
-    - Modules :
+  - Warehouse Department :
+    - "🛃 Modules":
       - Inventory : inventory/inventory.md
       - Receipts Order : inventory/inventory_ri.md
       - Delivery Order : inventory/inventory_do.md
       - Internal Transfer : inventory/internal_transfer.md
-      - Scrap : inventory/scrap.md
+  
+  - Additional Modules :
+    - Productivity :
+      - Timesheet : additional_modules/timesheet.md
+      - Project : additional_modules/project.md
+      - Helpdesk : additional_modules/helpdesk.md
+      - Knowledge : additional_modules/knowledge.md
+      - Calendar : additional_modules/calendar.md
+      - Notes : additional_modules/notes.md
+      - Discuss : additional_modules/discuss.md
+      - Survey : additional_modules/survey.md
+      - Events : additional_modules/events.md
+  - Reporting : 
+    - Accounting : additional_modules/accounting.md
+    - Inventory : inventory/inventory.md
