@@ -1,19 +1,23 @@
-/* Mengubah container luar menjadi flexbox satu baris */
-.md-footer-meta__inner {
+/* Memaksa kontainer utama copyright menjadi flexbox kiri-kanan */
+.md-copyright {
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
     align-items: center !important;
+    width: 100% !important;
 }
 
-/* Memaksa teks copyright dan teks generator tidak membuat baris baru */
-.md-copyright, 
-.md-social {
-    display: inline-block !important;
-    margin-bottom: 0 !important;
+/* Menghilangkan jeda baris pada teks "Made with..." */
+.md-copyright__generator {
+    display: block !important;
+    margin-top: 0 !important; /* Menghapus paksaan turun ke bawah */
 }
 
-/* Menghilangkan margin bawah bawaan dari pembungkus generator */
-.md-footer-meta {
-    padding-bottom: 15px !important;
+/* Responsif: Jika dibuka di HP, biarkan kembali menumpuk agar tidak kekecilan */
+@media screen and (max-width: 45em) {
+    .md-copyright {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 8px !important;
+    }
 }
