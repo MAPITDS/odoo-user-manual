@@ -99,7 +99,6 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 === "ASM"
     Memiliki tombol untuk menyetujui diskon di luar batas standar *Hanya dapat melihat area masing-masing*.
 
-
 ??? info "What Next?"
     Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales* selanjutnya dokumen akan masuk ke Modul *Sales*.
     [Lanjut ke Modul Sales:octicons-arrow-right-16:](../sales/sales_quotation.md)
