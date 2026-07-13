@@ -458,10 +458,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-memasukkan-produk-dan-harga" class="md-nav__link">
+  <a href="#2-pengisian-produk-dan-harga" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Memasukkan Produk dan Harga
+        2. Pengisian Produk dan Harga
       
     </span>
   </a>
@@ -1092,10 +1092,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-memasukkan-produk-dan-harga" class="md-nav__link">
+  <a href="#2-pengisian-produk-dan-harga" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Memasukkan Produk dan Harga
+        2. Pengisian Produk dan Harga
       
     </span>
   </a>
@@ -1202,23 +1202,22 @@
 <li>Isi <strong>Note</strong> jika diperlukan.</li>
 </ol>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/ns_header.png" data-desc-position="bottom"><img alt="Contoh Pengisian Form NS" src="../images/ns_header.png"></a>
-<em>Gambar 1.1: Tampilan pengisian form pada Negotiation Sheet.</em></p>
+<em>Gambar 1 : Tampilan pengisian form pada Negotiation Sheet.</em></p>
 <hr>
-<h2 id="2-memasukkan-produk-dan-harga">2. Memasukkan Produk dan Harga</h2>
+<h2 id="2-pengisian-produk-dan-harga">2. Pengisian Produk dan Harga</h2>
 <p>Pada tab <strong>Product Detail</strong>, masukkan produk yang ingin ditawarkan kepada pelanggan:</p>
 <ol>
 <li>Klik <strong>Add a line</strong>.</li>
 <li>Pilih produk dari daftar <em>dropdown</em>.</li>
 <li>Masukkan jumlah produk pada kolom <strong>Qty</strong>.</li>
-<li>Sistem akan otomatis menarik harga standar, ongkos kirim, dan diskom. Anda dapat mengubah harga satuan secara manual pada kolom <strong>Quote Price</strong>, mengubah ongkir pada kolom <strong>FINS</strong>, dan mengubah diskon pada kolom <strong>Disc</strong> jika terdapat kesepakatan khusus.</li>
+<li>Sistem akan otomatis menarik harga standar, ongkos kirim, dan diskon. Anda dapat mengubah harga satuan secara manual pada kolom <strong>Quote Price</strong>, mengubah ongkos kirim pada kolom <strong>FINS</strong>, dan mengubah diskon pada kolom <strong>Disc</strong> jika terdapat kesepakatan khusus.</li>
 <li>Isi <strong>Note</strong> jika diperlukan.</li>
 </ol>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/ns_product.png" data-desc-position="bottom"><img alt="Contoh Pengisian Order Lines" src="../images/ns_product.png"></a>
-<em>Gambar 2.1: Tampilan pengisian produk pada tab Product Detail.</em></p>
-<div class="admonition note">
-<p class="admonition-title">Tips Pengisian Cepat</p>
-<p>Anda bisa menekan tombol <code>Tab</code> pada <em>keyboard</em> untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik <em>mouse</em>.</p>
-</div>
+<em>Gambar 2 : Tampilan pengisian produk pada tab Product Detail.</em></p>
+<!-- !!! note "Tips Pengisian Cepat"
+    Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*. -->
+
 <hr>
 <h2 id="3-memasukkan-cost-of-sales">3. Memasukkan Cost of Sales</h2>
 <p>Pada tab <strong>Cost of Sales</strong>, masukkan biaya yang ingin ditawarkan kepada pelanggan:</p>
@@ -1229,16 +1228,16 @@
 <li>Isi <strong>Note</strong> jika diperlukan.</li>
 </ol>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/ns_cos.png" data-desc-position="bottom"><img alt="Contoh Pengisian COS Item" src="../images/ns_cos.png"></a>
-<em>Gambar 3.1: Tampilan cos item pada tabel Cost of Sales.</em></p>
+<em>Gambar 3 : Tampilan cos item pada tabel Cost of Sales.</em></p>
 <hr>
 <h2 id="4-menunggu-approval">4. Menunggu Approval</h2>
 <p>Pada state <strong>Waiting Approval</strong>, ada beberapa kondisi berdasarkan warna pada Negotiation Sheet yang dibuat :</p>
 <ol>
 <li>Warna "Hijau" berarti tidak perlu meminta Approval, bisa skip pada langkah ini.</li>
-<li>Warna "Biru" meminta Aproval "RSM".</li>
-<li>Warna "Kuning" meminta Aproval "RSM" kemudian "GSM".</li>
-<li>Warna "Oren" meminta Aproval "RSM" kemudian "GSM" dan "DIR".</li>
-<li>Warna "Merah" meminta Aproval "RSM" kemudian "GSM" dan "DIR".</li>
+<li>Warna "Biru" meminta Approval "RSM".</li>
+<li>Warna "Kuning" meminta Approval "GSM".</li>
+<li>Warna "Oren" meminta Approval "RSM" kemudian "GSM" dan "DIR".</li>
+<li>Warna "Merah" meminta Approval "RSM" kemudian "GSM" dan "DIR".</li>
 </ol>
 <hr>
 <h2 id="5-melakukan-konfirmasi-menjadi-converted">5. Melakukan Konfirmasi menjadi Converted</h2>
@@ -1249,7 +1248,7 @@
 <li>Status dokumen di pojok kanan atas akan otomatis berubah dari <strong>Approved</strong> menjadi <strong>Converted</strong> atau <strong>Partially Converted</strong>.</li>
 </ul>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/ns_convert.png" data-desc-position="bottom"><img alt="Contoh Pengisian pilihan convert" src="../images/ns_convert.png"></a>
-<em>Gambar 4.1: Tampilan confirm Convert To SO.</em></p>
+<em>Gambar 4 : Tampilan confirm Convert To SO.</em></p>
 <!-- !!! warning "Peringatan Penting Sebelum Konfirmasi"
     Pastikan Anda telah memeriksa ulang nilai pada Tabel **Calculation** dan **Warna** yang tertera. Dokumen yang sudah berstatus *Converted* maka sudah bisa lanjut pada modul **Sales**. -->
 
@@ -1261,7 +1260,7 @@
 <li><input type="checkbox"> <strong>Pastikan Bagian COS (Cost of Sales)</strong> sudah sesuai dengan kesepakatan.</li>
 </ul>
 <h3 id="fitur-berdasarkan-hak-akses">Fitur Berdasarkan Hak Akses</h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><input id="__tabbed_1_5" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Admin SAS</label><label for="__tabbed_1_2">Direktur</label><label for="__tabbed_1_3">General Sales Manager</label><label for="__tabbed_1_4">Regional Sales Manager</label><label for="__tabbed_1_5">Area Sales Manager</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><input id="__tabbed_1_5" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Admin SAS</label><label for="__tabbed_1_2">DIR</label><label for="__tabbed_1_3">GSM</label><label for="__tabbed_1_4">RSM</label><label for="__tabbed_1_5">ASM</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
@@ -1310,7 +1309,7 @@ Memiliki tampilan Tab perhitungan </p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="13 Juli 2026 13:56:02 WIB">13 Juli 2026 13:56:02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="13 Juli 2026 14:32:27 WIB">13 Juli 2026 14:32:27</span>
   </span>
 
     
