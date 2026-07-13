@@ -46,9 +46,9 @@ Untuk mempermudah pencarian data dalam jumlah besar (seperti di modul Sales atau
 1. Buka menu atau list view yang ingin Anda lihat (contoh: **Sales Orders**).
 2. Klik kolom pencarian di pojok kanan atas, lalu pilih **Group By**.
 3. Pilih kriteria utama yang diinginkan, misalnya berdasarkan:
-   * **Customer / Vendor** (Untuk melihat total transaksi per customer / vendor).
-   * **Status / Stage** (Untuk melihat dokumen yang masih *Draft* vs *Confirmed*).
-   * **Order Date > Month** (Untuk melihat tren penjualan bulanan).
+   - **Customer / Vendor** (Untuk melihat total transaksi per customer / vendor).
+   - **Status / Stage** (Untuk melihat dokumen yang masih *Draft* vs *Confirmed*).
+   - **Order Date > Month** (Untuk melihat tren penjualan bulanan).
 
 ### 2. Menyimpan Kombinasi Filter sebagai Favorit
 Agar Anda tidak perlu mengatur ulang filter dan grouping yang sama setiap hari, Anda bisa menyimpannya:
