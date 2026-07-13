@@ -5,7 +5,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation
 ## 1. Membuat Negotiation Baru
 
 1. Masuk ke modul **Negotiation Sheet** > **Orders** > **Approval** > **Convert SO**.
-2. Klik tombol **New** di pojok kiri atas halaman.
+2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Isi data pelanggan pada kolom **Bill To**, **Ship To** dan **Partner**. Jika pelanggan belum terdaftar, Anda bisa mengisi pada kolom **Customer Universal**.
 4. Tentukan termin pembayaran penawaran pada kolom **Payment Term**.
 5. Isi **Note** jika diperlukan.
@@ -88,7 +88,7 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 
 === "DIR"
     Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Orange*).
-    Memiliki tampilan Tab perhitungan 
+    Memiliki tampilan Tab perhitungan (Dir View)
 
 === "GSM"
     Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
