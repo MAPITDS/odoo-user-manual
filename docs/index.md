@@ -38,13 +38,27 @@ Pilih modul di bawah ini untuk langsung masuk ke panduan langkah demi langkah:
 
 ---
 
-## 💡 Tips Menggunakan Portal Ini
+## 💡 Tips & Triks: Filter & Group By Khusus
 
-Untuk efisiensi kerja Anda dalam mencari informasi, manfaatkan fitur-fitur berikut:
+Untuk mempermudah pencarian data dalam jumlah besar (seperti di modul Sales atau Purchase), Anda dapat memanfaatkan fitur kombinasi **Filter** dan **Group By**.
 
-* **Pencarian Cepat (Ctrl + F):** Gunakan kolom pencarian di bagian atas halaman untuk langsung menemukan istilah tertentu (misal: ketik *"Pricelist"* atau *"Tax"*).
-* **Mode Gelap/Terang:** Klik ikon matahari/bulan di pojok kanan atas untuk kenyamanan mata Anda saat membaca dokumen.
-* **Zoom Gambar:** Semua gambar *screenshot* alur Odoo di dalam panduan ini dapat diklik untuk memperbesar tampilan teks detail.
+### 1. Cara Mengelompokkan Data (Grouping)
+1. Buka menu atau list view yang ingin Anda lihat (contoh: **Sales Orders**).
+2. Klik kolom pencarian di pojok kanan atas, lalu pilih **Group By**.
+3. Pilih kriteria utama yang diinginkan, misalnya berdasarkan:
+   * **Customer / Vendor** (Untuk melihat total transaksi per customer / vendor).
+   * **Status / Stage** (Untuk melihat dokumen yang masih *Draft* vs *Confirmed*).
+   * **Order Date > Month** (Untuk melihat tren penjualan bulanan).
+
+### 2. Menyimpan Kombinasi Filter sebagai Favorit
+Agar Anda tidak perlu mengatur ulang filter dan grouping yang sama setiap hari, Anda bisa menyimpannya:
+1. Setelah filter dan group by aktif, klik menu **Favorites** di bawah kolom pencarian.
+2. Klik **Save current search**.
+3. Beri nama yang mudah dipahami (contoh: *"Penjualan Bulan Ini per Salesperson"*).
+4. Centang **Use by default** jika ingin filter ini langsung aktif setiap kali Anda membuka menu tersebut.
+5. Klik **Save**.
+
+> 📌 **Tips:** Anda juga bisa mencentang **Share with all users** agar filter favorit yang Anda buat bisa digunakan oleh seluruh anggota tim lainnya.
 
 !!! note "Butuh Bantuan Tambahan?"
-    Jika Anda menemukan alur sistem yang disesuaikan (*customized*) namun belum tercantum di portal ini, silakan hubungi tim **ITDS Department** untuk pembaruan dokumentasi lebih lanjut.
+    Jika Anda menemukan alur sistem yang disesuaikan (*customized*) namun belum tercantum di portal ini, silakan hubungi tim **ITDS Department** untuk pembaruan dokumentasi lebih lanjut atau bisa langsung buat ticket.
