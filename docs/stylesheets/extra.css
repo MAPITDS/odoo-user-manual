@@ -1,4 +1,4 @@
-/* Memaksa kontainer utama copyright menjadi flexbox kiri-kanan */
+/* Mengatur wadah utama agar membagi area kiri dan kanan secara pas */
 .md-copyright {
     display: flex !important;
     flex-direction: row !important;
@@ -7,17 +7,23 @@
     width: 100% !important;
 }
 
-/* Menghilangkan jeda baris pada teks "Made with..." */
+/* Mengunci teks generator agar semua elemen di dalamnya (termasuk link) tetap menyatu di kanan */
 .md-copyright__generator {
-    display: block !important;
-    margin-top: 0 !important; /* Menghapus paksaan turun ke bawah */
+    display: inline-block !important;
+    margin-top: 0 !important;
+    text-align: right !important;
+    white-space: nowrap !important; /* Mencegah teks patah atau terpisah kolom */
 }
 
-/* Responsif: Jika dibuka di HP, biarkan kembali menumpuk agar tidak kekecilan */
+/* Responsif untuk tampilan HP/layar kecil */
 @media screen and (max-width: 45em) {
     .md-copyright {
         flex-direction: column !important;
         text-align: center !important;
         gap: 8px !important;
+    }
+    .md-copyright__generator {
+        text-align: center !important;
+        white-space: normal !important;
     }
 }
