@@ -63,9 +63,9 @@ nav:
 
   - Sales Department : 
     - "🛃 Modules":
-      - Negotiation Sheet : negotiation_sheet/negotiation_sheet.md
-      - Sales : sales/sales_quotation.md
-      - Sales Target : target/sales_target.md
+      - Negotiation Sheet : dept_sales/negotiation_sheet.md
+      - Sales : dept_sales/sales_quotation.md
+      - Sales Target : dept_sales/sales_target.md
   
   - Purchase Department :
     - "🛃 Modules":
@@ -74,10 +74,10 @@ nav:
 
   - Warehouse Department :
     - "🛃 Modules":
-      - Inventory : inventory/inventory.md
-      - Receipts Order : inventory/inventory_ri.md
-      - Delivery Order : inventory/inventory_do.md
-      - Internal Transfer : inventory/internal_transfer.md
+      - Inventory : dept_who/inventory.md
+      - Receipts Order : dept_who/inventory_ri.md
+      - Delivery Order : dept_who/inventory_do.md
+      - Internal Transfer : dept_who/internal_transfer.md
   
   - Additional Modules :
     - "🛃 Productivity":
@@ -92,4 +92,4 @@ nav:
       - Events : additional_modules/events.md
   - Reporting : 
     - Accounting : additional_modules/accounting.md
-    - Inventory : inventory/inventory.md
+    - Inventory : dept_who/inventory.md
