@@ -1,8 +1,6 @@
 name: publish-docs
 on:
   push:
-    authors:
-      - github-actions[bangjc]
     branches:
       - main # atau master, sesuaikan dengan nama branch utama Anda
 
