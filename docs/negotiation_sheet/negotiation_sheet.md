@@ -4,7 +4,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation
 
 ## 1. Membuat Negotiation Baru
 
-1. Masuk ke modul **Sales** > **Orders** > **Quotations**.
+1. Masuk ke modul **ns** > **Orders** > **Quotations**.
 2. Klik tombol **New** di pojok kiri atas halaman.
 3. Isi data pelanggan pada kolom **Customer**. Jika pelanggan belum terdaftar, Anda bisa membuatnya langsung dari kolom ini.
 4. Tentukan masa berlaku penawaran pada kolom **Expiration**.
