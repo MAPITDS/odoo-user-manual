@@ -57,11 +57,14 @@ extra:
   assets:
     - icon_modul
 
-extra:
-  generator: false
+extra_css:
+  - stylesheets/extra.css
+
+# extra:
+#   generator: false
 
 copyright: |
-  Copyright &copy; 2026 <a href="https://github.com" target="_blank" rel="noopener">CareSys</a> &mdash; Powered by <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+  Copyright &copy; 2026 <a href="https://github.com/bangjc" target="_blank" rel="noopener">CareSys</a> &mdash; Powered by <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
 
 # Struktur Navigasi Menu Web Anda
 nav:

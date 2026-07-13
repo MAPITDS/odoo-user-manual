@@ -1,0 +1,17 @@
+/* Merapikan Footer: Membuat Copyright dan Generator (Made with...) sejajar dalam satu baris */
+.md-footer-meta__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Memastikan teks tidak terlalu mepet di layar kecil */
+@media screen and (max-width: 45em) {
+    .md-footer-meta__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
