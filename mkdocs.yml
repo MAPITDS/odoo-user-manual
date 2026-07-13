@@ -80,7 +80,7 @@ nav:
       - Internal Transfer : inventory/internal_transfer.md
   
   - Additional Modules :
-    - Productivity :
+    - "🛃 Productivity":
       - Timesheet : additional_modules/timesheet.md
       - Project : additional_modules/project.md
       - Helpdesk : additional_modules/helpdesk.md
