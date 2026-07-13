@@ -1,21 +1,32 @@
-/* Mengatur wadah utama agar membagi area kiri dan kanan secara pas */
+/* Mengatur kontainer utama agar membagi area menjadi dua sisi (kiri & kanan) */
 .md-copyright {
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
     align-items: center !important;
     width: 100% !important;
+    flex-wrap: wrap !important;
 }
 
-/* Mengunci teks generator agar semua elemen di dalamnya (termasuk link) tetap menyatu di kanan */
+/* Trik Khusus: Memaksa teks generator dan link di dalamnya menjadi satu kesatuan di kanan */
+.md-copyright:not(:empty) {
+    text-align: left;
+}
+
+/* Menggabungkan elemen "Made with" dan link-nya agar tidak terbelah ke tengah */
+.md-copyright__generator,
+.md-copyright a[href*="squidfunk"] {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Memposisikan kontainer teks pembuatnya agar rapat ke kanan */
 .md-copyright__generator {
-    display: inline-block !important;
-    margin-top: 0 !important;
-    text-align: right !important;
-    white-space: nowrap !important; /* Mencegah teks patah atau terpisah kolom */
+    float: right !important;
 }
 
-/* Responsif untuk tampilan HP/layar kecil */
+/* Responsif untuk tampilan HP/Layar kecil */
 @media screen and (max-width: 45em) {
     .md-copyright {
         flex-direction: column !important;
@@ -23,7 +34,6 @@
         gap: 8px !important;
     }
     .md-copyright__generator {
-        text-align: center !important;
-        white-space: normal !important;
+        float: none !important;
     }
 }
