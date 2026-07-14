@@ -9,15 +9,15 @@ theme:
     # Konfigurasi warna (kita pakai Indigo khas Odoo Enterprise)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: teal
+      primary: blue-grey
+      accent: blue-grey
       toggle:
         icon: material/brightness-7
         name: Mode Gelap
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: teal
+      primary: blue-grey
+      accent: blue-grey
       toggle:
         icon: material/brightness-4
         name: Mode Terang
