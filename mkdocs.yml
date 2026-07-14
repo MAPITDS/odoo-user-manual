@@ -80,17 +80,11 @@ plugins:
 # --- Pastikan bagian extra diatur seperti ini ---
 extra:
   generator: false
-  # alternate:
-  #   - name: Indonesian
-  #     link: /id/
-  #     lang: id
-  #   - name: English
-  #     link: /en/
-  #     lang: en
-
-extra:
   assets:
     - icon_modul
+
+extra_javascript:
+  - javascripts/scroll.js
 
 extra_css:
   - stylesheets/extra.css
