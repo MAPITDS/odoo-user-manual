@@ -33,6 +33,9 @@ jobs:
           pip install mkdocs-material
           pip install mkdocs-glightbox
           pip install mkdocs-git-revision-date-localized-plugin
+          pip install mkdocs-git-committers-plugin-2
+          pip install mkdocs-git-authors-plugin
+          pip install mkdocs-static-i18n
 
       # Jalankan deploy otomatis ke GitHub Pages
       - name: Deploy to GitHub Pages
