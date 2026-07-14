@@ -33,7 +33,7 @@ Pada tab **Product Detail**, masukkan produk yang ingin ditawarkan kepada pelang
 
 ---
 
-## 3. Memasukkan Cost of Sales
+## 3. Pengisian Cost of Sales
 
 Pada tab **Cost of Sales**, masukkan biaya yang ingin ditawarkan kepada pelanggan:
 
