@@ -113,8 +113,8 @@ nav:
   
   - Purchase Department :
     - "🛃 Modules":
-      - Purchase Request : purchase/purchase_request.md
-      - Purchase Order : purchase/purchase_order.md
+      - Purchase Request : dept_prd/purchase_request.md
+      - Purchase Order : dept_prd/purchase_order.md
 
   - Warehouse Department :
     - "🛃 Modules":
@@ -122,6 +122,16 @@ nav:
       - Receipts Order : dept_who/inventory_ri.md
       - Delivery Order : dept_who/inventory_do.md
       - Internal Transfer : dept_who/internal_transfer.md
+    
+  - Finance & Accounting Department :
+    - "🛃 Modules":
+      - Invoices : dept_fa_acc/invoices.md
+      - Vendor Bills : dept_fa_acc/vendor_bill.md
+      - Bank Statement : dept_fa_acc/bank_statement.md
+      - Cash & Bank : dept_fa_acc/expenses.md
+      - Komisi : dept_fa_acc/komisi.md
+      - Journal : dept_fa_acc/journal.md
+      - E-Faktur : dept_fa_acc/efaktur.md
   
   - Additional Modules :
     - "🛃 Productivity":
@@ -136,5 +146,5 @@ nav:
       - Events : additional_modules/events.md
 
   - Reporting : 
-    - Accounting : additional_modules/accounting.md
+    - Accounting : dept_fa_acc/accounting.md
     - Inventory : dept_who/inventory.md
