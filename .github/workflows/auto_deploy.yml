@@ -9,8 +9,8 @@ permissions:
 
 jobs:
   deploy:
-    if: github.actor == 'bangjc'
     runs-on: ubuntu-latest
+    if: github.actor == 'bangjc'
     steps:
       # Mengambil seluruh file proyek + riwayat log Git (wajib untuk plugin git-revision)
       - uses: actions/checkout@v4
