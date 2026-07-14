@@ -146,5 +146,6 @@ nav:
       - Events : additional_modules/events.md
 
   - Reporting : 
-    - Accounting : dept_fa_acc/accounting.md
+    - Sales : 
+      - KPI : dept_sales/kpi_.md
     - Inventory : dept_who/inventory.md
