@@ -3,6 +3,7 @@ site_url: https://mapitds.github.io/odoo-user-manual/
 
 theme:
   name: material
+  # language: id
   custom_dir: override
   palette:
     # Konfigurasi warna (kita pakai Indigo khas Odoo Enterprise)
@@ -25,6 +26,7 @@ theme:
     - navigation.sections      # Sub-menu rapi di samping
     - navigation               # Sub-menu bisa diperluas
     - navigation.indexes
+    - navigation.instant
     - search.suggest           # Rekomendasi pencarian otomatis
     - search.highlight         # Efek stabilo pada teks yang dicari
 
@@ -35,6 +37,8 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
+  - pymdownx.snippets:
+      check_paths: true
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -46,11 +50,43 @@ markdown_extensions:
 plugins:
   - search
   - glightbox
+  # - git-authors
+  - git-committers:
+      repository: mapitds/odoo-user-manual
+      branch: main
+  - git-committers:
+      repository: mapitds/odoo-user-manual
+      branch: sa-main
+  # - i18n:
+  #     default_language: id
+  #     languages:
+  #       - link: /id/
+  #         locale: id
+  #         name: Indonesian
+  #         default: true
+  #         build: true
+  #       - link: /en/
+  #         locale: en
+  #         name: English
+  #         default: false
+  #         build: true
   - git-revision-date-localized:
+      enable_creation_date: true
       type: datetime
       locale: id
       timezone: Asia/Jakarta
       fallback_to_build_date: true
+
+# --- Pastikan bagian extra diatur seperti ini ---
+extra:
+  generator: false
+  # alternate:
+  #   - name: Indonesian
+  #     link: /id/
+  #     lang: id
+  #   - name: English
+  #     link: /en/
+  #     lang: en
 
 extra:
   assets:
@@ -58,9 +94,6 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
-
-extra:
-  generator: false
 
 copyright: |
   <div class="custom-footer">
