@@ -41,7 +41,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      # emoji_index: !!python/name:pymdownx.emoji.gemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
@@ -60,11 +59,14 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
-# extra:
-#   generator: false
+extra:
+  generator: false
 
 copyright: |
-  Copyright &copy; 2026 <a href="https://github.com/bangjc" target="_blank" rel="noopener">CareSys</a> &mdash; Powered by <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+  <div class="custom-footer">
+    <span>Copyright &copy; 2026 <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">CareSys</a> &mdash; Powered by <a href="https://github.com" target="_blank" rel="noopener">GitHub</a></span>
+    <span>Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a></span>
+  </div>
 
 # Struktur Navigasi Menu Web Anda
 nav:
@@ -99,6 +101,7 @@ nav:
       - Discuss : additional_modules/discuss.md
       - Survey : additional_modules/survey.md
       - Events : additional_modules/events.md
+
   - Reporting : 
     - Accounting : additional_modules/accounting.md
     - Inventory : dept_who/inventory.md
