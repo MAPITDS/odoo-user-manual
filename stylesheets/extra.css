@@ -1,39 +1,25 @@
-/* Mengatur kontainer utama agar membagi area menjadi dua sisi (kiri & kanan) */
+/* Menghapus batasan teks tengah bawaan dari tema MkDocs */
 .md-copyright {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: center !important;
+    text-align: initial !important;
     width: 100% !important;
-    flex-wrap: wrap !important;
-}
-
-/* Trik Khusus: Memaksa teks generator dan link di dalamnya menjadi satu kesatuan di kanan */
-.md-copyright:not(:empty) {
-    text-align: left;
-}
-
-/* Menggabungkan elemen "Made with" dan link-nya agar tidak terbelah ke tengah */
-.md-copyright__generator,
-.md-copyright a[href*="squidfunk"] {
-    display: inline !important;
-    margin: 0 !important;
+    max-width: 100% !important;
     padding: 0 !important;
 }
 
-/* Memposisikan kontainer teks pembuatnya agar rapat ke kanan */
-.md-copyright__generator {
-    float: right !important;
+/* Memaksa konten kustom kita membelah ke pojok kiri dan kanan */
+.custom-footer {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    width: -webkit-fill-available !important;
 }
 
-/* Responsif untuk tampilan HP/Layar kecil */
+/* Tampilan untuk Handphone (HP) agar kembali rapi menumpuk di tengah */
 @media screen and (max-width: 45em) {
-    .md-copyright {
+    .custom-footer {
         flex-direction: column !important;
         text-align: center !important;
         gap: 8px !important;
-    }
-    .md-copyright__generator {
-        float: none !important;
     }
 }
