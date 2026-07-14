@@ -4,21 +4,21 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation
 
 ## 1. Membuat Quotation Baru
 
-1. Masuk ke modul **Sales** > **Orders** > **Quotations**.
-2. Klik tombol **New** di pojok kiri atas halaman.
-3. Isi data pelanggan pada kolom **Customer**. Jika pelanggan belum terdaftar, Anda bisa membuatnya langsung dari kolom ini.
-4. Tentukan masa berlaku penawaran pada kolom **Expiration**.
+1. Masuk ke modul **Sales** > **Orders** > **Quotations** > **Waiting Approve Credit** > **Locked**.
+2. Klik tombol **Create** di pojok kiri atas halaman.
+3. Isi data pelanggan pada kolom **Customer**, **Billing Address**, dan **Shipping Address**. Jika pelanggan belum terdaftar, Anda bisa mengajukan Form New Customer ke Team EDP.
+4. Tentukan termin pembayaran penawaran pada kolom **Payment Terms**.
 
 ---
 
-## 2. Memasukkan Produk dan Harga
+## 2. Pengisian Produk dan Harga
 
 Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan:
 
 1. Klik **Add a product**.
 2. Pilih produk dari daftar *dropdown*.
-3. Masukkan jumlah produk pada kolom **Quantity**.
-4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** jika terdapat kesepakatan khusus.
+3. Masukkan jumlah produk pada kolom **Ordered Qty**.
+4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** dan mengubah diskon pada kolom **Discount xx+xx(%)** jika terdapat kesepakatan khusus.
 
 ![Contoh Pengisian Order Lines](../sales/images/sales_order_line.png)
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*

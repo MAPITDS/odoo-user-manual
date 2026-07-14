@@ -39,8 +39,10 @@ Pada tab **Cost of Sales**, masukkan biaya yang ingin ditawarkan kepada pelangga
 
 1. Klik **Add a line**.
 2. Pilih biaya dari daftar *dropdown*.
-3. Sistem akan otomatis menarik baya nya berdasarkan cost item yang dipilih. Ada beberapa cos item yang bisa dirubah biaya nya, maka masukkan biaya pada kolom **Amount** atau presentase nya pada kolom **%**.
+3. Sistem akan otomatis menarik biaya nya berdasarkan cost item yang dipilih. Ada beberapa cos item yang bisa dirubah biaya nya, maka masukkan biaya pada kolom **Amount** atau presentase nya pada kolom **%**.
 4. Isi **Note** jika diperlukan.
+5. Lalu klik **Save** dan *state* akan berada di **Draft** dan masih bisa di edit.
+6. Jika sudah sesuai semua dan tidak ada revisi, kemudian klik **Submit** maka akan ke langkah selanjutnya.
 
 ![Contoh Pengisian COS Item](../dept_sales/images/ns_cos.png)
 *Gambar 3 : Tampilan cos item pada tabel Cost of Sales.*
@@ -51,7 +53,7 @@ Pada tab **Cost of Sales**, masukkan biaya yang ingin ditawarkan kepada pelangga
 
 Pada state **Waiting Approval**, ada beberapa kondisi berdasarkan warna pada Negotiation Sheet yang dibuat :
 
-1. Warna "Hijau" berarti tidak perlu meminta Approval, bisa skip pada langkah ini.
+1. Warna "Hijau" berarti tidak perlu meminta Approval, bisa dilewati pada langkah ini.
 2. Warna "Biru" meminta Approval "RSM".
 3. Warna "Kuning" meminta Approval "GSM".
 4. Warna "Oren" meminta Approval "RSM" kemudian "GSM" dan "DIR".
