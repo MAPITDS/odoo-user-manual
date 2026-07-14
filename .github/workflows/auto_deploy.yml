@@ -9,6 +9,7 @@ permissions:
 
 jobs:
   deploy:
+    if: github.actor == 'bangjc'
     runs-on: ubuntu-latest
     steps:
       # Mengambil seluruh file proyek + riwayat log Git (wajib untuk plugin git-revision)
