@@ -1,6 +1,9 @@
 site_name: MAP Odoo User Manual
 site_url: https://mapitds.github.io/odoo-user-manual/
 
+extra_javascript:
+  - javascripts/scroll.js
+
 theme:
   name: material
   # language: id
@@ -82,9 +85,6 @@ extra:
   generator: false
   assets:
     - icon_modul
-
-extra_javascript:
-  - javascripts/scroll.js
 
 extra_css:
   - stylesheets/extra.css
