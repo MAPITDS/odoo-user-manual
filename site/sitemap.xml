@@ -2,30 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mapitds.github.io/odoo-user-manual/</loc>
-         <lastmod>2026-07-13</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://mapitds.github.io/odoo-user-manual/inventory/internal_transfer/</loc>
-         <lastmod>2026-07-13</lastmod>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_fa_acc/bank_statement/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://mapitds.github.io/odoo-user-manual/inventory/inventory/</loc>
-         <lastmod>2026-07-13</lastmod>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_fa_acc/efaktur/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://mapitds.github.io/odoo-user-manual/inventory/inventory_do/</loc>
-         <lastmod>2026-07-13</lastmod>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_fa_acc/expenses/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://mapitds.github.io/odoo-user-manual/inventory/inventory_ri/</loc>
-         <lastmod>2026-07-13</lastmod>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_fa_acc/invoices/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://mapitds.github.io/odoo-user-manual/negotiation_sheet/negotiation_sheet/</loc>
-         <lastmod>2026-07-13</lastmod>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_fa_acc/journal/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://mapitds.github.io/odoo-user-manual/sales/sales_quotation/</loc>
-         <lastmod>2026-07-13</lastmod>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_fa_acc/komisi/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_fa_acc/vendor_bill/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_hr/asset_ga/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_hr/employee/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_hr/ga_request/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_hr/web_blog/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_hr/web_slide/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_itds/asset_itds/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_prd/purchase_order/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_prd/purchase_request/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_sales/crm_lead/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_sales/negotiation_sheet/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_sales/sales_quotation/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_sales/sales_target/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_who/internal_transfer/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_who/inventory/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_who/inventory_do/</loc>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://mapitds.github.io/odoo-user-manual/dept_who/inventory_ri/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
 </urlset>

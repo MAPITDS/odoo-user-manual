@@ -85,6 +85,20 @@ extra:
   generator: false
   assets:
     - icon_modul
+  # analytics:
+  #   provider: giscus
+  #   repo: mapitds/odoo-user-manual
+  #   repo_id: R_kgDOTUBINw
+  #   category: General
+  #   category_id: DIC_kwDOTUBIN84DBOJi
+  #   mapping: pathname
+  #   strict: 0
+  #   reactions_enabled: 1
+  #   emit_metadata: 0
+  #   input_position: bottom
+  #   theme: preferred_color_scheme
+  #   lang: id
+  #   crossorigin: anonymous
 
 extra_css:
   - stylesheets/extra.css
