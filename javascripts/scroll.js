@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function() {
   btnUp.title = "Scroll ke Atas";
   btnUp.style.cssText = `
     width: 40px; height: 40px; border-radius: 50%; border: none;
-    background-color: var(--md-primary-color); color: var(--md-primary-bg-color);
-    cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 16px;
-    display: none; transition: opacity 0.3s;
+    background-color: #3f51b5; color: #ffffff;
+    cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); font-size: 16px;
+    display: none; transition: opacity 0.3s, background-color 0.2s;
   `;
 
   // Tombol ke Bawah
@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
   btnDown.title = "Scroll ke Bawah";
   btnDown.style.cssText = `
     width: 40px; height: 40px; border-radius: 50%; border: none;
-    background-color: var(--md-primary-color); color: var(--md-primary-bg-color);
-    cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 16px;
-    transition: opacity 0.3s;
+    background-color: #3f51b5; color: #ffffff;
+    cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); font-size: 16px;
+    transition: opacity 0.3s, background-color 0.2s;
   `;
 
   // Gabungkan ke kontainer
