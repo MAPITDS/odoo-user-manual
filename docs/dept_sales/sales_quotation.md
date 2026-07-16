@@ -24,7 +24,7 @@ Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan
 4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** dan mengubah diskon pada kolom **Discount xx+xx(%)** jika terdapat kesepakatan khusus.
 
 ![Contoh Pengisian Form NS](../dept_sales/images/so_product.png)
-*Gambar 1 : Tampilan pengisian product pada Sales Order.*
+*Gambar 2 : Tampilan pengisian product pada Sales Order.*
 
 <!-- !!! note "Tips Pengisian Cepat"
     Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*. -->
@@ -41,7 +41,7 @@ Pada tab **Other Information**, masukkan informasi sales yang menangani penawara
 4. Lalu klik **Save** dan *state* akan berada di **Quotation** dan masih bisa di edit.
 
 ![Contoh Pengisian Form NS](../dept_sales/images/so_information.png)
-*Gambar 1 : Tampilan pengisian informasi pada Negotiation Sheet.*
+*Gambar 3 : Tampilan pengisian informasi pada Negotiation Sheet.*
 
 ---
 
@@ -65,3 +65,33 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 
 !!! warning "Peringatan Penting Sebelum Konfirmasi"
     Pastikan Anda telah memeriksa ulang **Taxes** (Pajak) dan **Pricelist** yang digunakan. Dokumen yang sudah berstatus *Sales Order* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* atau membuat *credit note*) jika ingin diubah kembali.
+
+## 📝 Referensi Tambahan
+
+### SOP Harian (Checklist)
+* <input type="checkbox"> **Pastikan Nama Customer (Bill To - Ship To - Partner - Customer Universal)** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
+* <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
+
+### Fitur Berdasarkan Hak Akses
+=== "Admin SAS"
+    - Dapat membuat *NS* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action *Submit* jika penawaran sudah sesuai 
+    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
+
+=== "DIR"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Orange*).
+    Memiliki tampilan Tab perhitungan (Dir View)
+
+=== "GSM"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
+
+=== "RSM"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
+
+=== "ASM"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar *Hanya dapat melihat area masing-masing*.
+
+??? info "What Next?"
+    Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales* selanjutnya dokumen akan masuk ke Modul *Sales*.
+    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_sales/sales_quotation.md)
