@@ -64,34 +64,28 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 * Status dokumen di pojok kanan atas akan otomatis berubah dari **Quotation** menjadi **Locked**. Apabila sudah di invoice kan maka status berubah dari **Locked** menjadi **Sales Order**
 
 !!! warning "Peringatan Penting Sebelum Konfirmasi"
-    Pastikan Anda telah memeriksa ulang **Taxes** (Pajak) dan **Pricelist** yang digunakan. Dokumen yang sudah berstatus *Sales Order* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* atau membuat *credit note*) jika ingin diubah kembali.
+    Pastikan Anda telah memeriksa ulang **Taxes** (Pajak) dan **Pricelist** yang digunakan. Dokumen yang sudah berstatus *Locked* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* atau membuat *credit note*) jika ingin diubah kembali.
 
 ## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Pastikan Nama Customer (Bill To - Ship To - Partner - Customer Universal)** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan Nama Customer (Customer - Billing Address - Shipping Address - Payment Terms)** sudah sesuai dan benar.
 * <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
 * <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
 
 ### Fitur Berdasarkan Hak Akses
 === "Admin SAS"
-    - Dapat membuat *NS* baru dan dapat melihat keseluruhan data pada modul.
-    - Dapat melakukan action *Submit* jika penawaran sudah sesuai 
+    - Dapat membuat *SO* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action *Confirm* jika penawaran sudah sesuai 
     - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
 
-=== "DIR"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Orange*).
-    Memiliki tampilan Tab perhitungan (Dir View)
+=== "SPV SAS"
+    Memiliki tombol untuk melakukan *Confirm* jika penawaran sudah sesuai.
 
-=== "GSM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
+=== "SPV ITDS"
+    Memiliki tombol untuk mengeksekusi credit limit di luar batas ketentuan dan mengubah status SO* yang masuk ke dalam **Waiting Approve Credit** menjadi **Locked** yang telah disetujui oleh **FAM** dan **DIR** melalui email.
 
-=== "RSM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
-
-=== "ASM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *Hanya dapat melihat area masing-masing*.
 
 ??? info "What Next?"
-    Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales* selanjutnya dokumen akan masuk ke Modul *Sales*.
+    Setelah *SO* sudah berstatus *Locked* selanjutnya dokumen akan masuk ke Modul *Inventoty*.
     [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_sales/sales_quotation.md)
