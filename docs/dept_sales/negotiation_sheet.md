@@ -11,7 +11,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation
 5. Isi **Note** jika diperlukan.
 
 ![Contoh Pengisian Form NS](../dept_sales/images/ns_header.png)
-*Gambar 1 : Tampilan pengisian form pada Negotiation Sheet.*
+<center>*Gambar 1 : Tampilan pengisian form pada Negotiation Sheet.*</center>
 
 ---
 
@@ -26,7 +26,7 @@ Pada tab **Product Detail**, masukkan produk yang ingin ditawarkan kepada pelang
 5. Isi **Note** jika diperlukan.
 
 ![Contoh Pengisian Order Lines](../dept_sales/images/ns_product.png)
-*Gambar 2 : Tampilan pengisian produk pada tab Product Detail.*
+<center>*Gambar 2 : Tampilan pengisian produk pada tab Product Detail.*</center>
 
 <!-- !!! note "Tips Pengisian Cepat"
     Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*. -->
@@ -45,7 +45,7 @@ Pada tab **Cost of Sales**, masukkan biaya yang ingin ditawarkan kepada pelangga
 6. Jika sudah sesuai semua dan tidak ada revisi, kemudian klik **Submit** maka akan ke langkah selanjutnya.
 
 ![Contoh Pengisian COS Item](../dept_sales/images/ns_cos.png)
-*Gambar 3 : Tampilan cos item pada tabel Cost of Sales.*
+<center>*Gambar 3 : Tampilan cos item pada tabel Cost of Sales.*</center>
 
 ---
 
@@ -70,7 +70,7 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 * Status dokumen di pojok kanan atas akan otomatis berubah dari **Approved** menjadi **Converted** atau **Partially Converted**.
 
 ![Contoh Pengisian pilihan convert](../dept_sales/images/ns_convert.png)
-*Gambar 4 : Tampilan confirm Convert To SO.*
+<center>*Gambar 4 : Tampilan confirm Convert To SO.*</center>
 
 <!-- !!! warning "Peringatan Penting Sebelum Konfirmasi"
     Pastikan Anda telah memeriksa ulang nilai pada Tabel **Calculation** dan **Warna** yang tertera. Dokumen yang sudah berstatus *Converted* maka sudah bisa lanjut pada modul **Sales**. -->
