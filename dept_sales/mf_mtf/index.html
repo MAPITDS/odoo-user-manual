@@ -5,13 +5,9 @@
       
       
       
-        <link rel="canonical" href="https://mapitds.github.io/odoo-user-manual/dept_sales/sales_target/">
+        <link rel="canonical" href="https://mapitds.github.io/odoo-user-manual/dept_sales/mf_mtf/">
       
       
-        <link rel="prev" href="../sales_quotation/">
-      
-      
-        <link rel="next" href="../../dept_prd/purchase_request/">
       
       
         
@@ -22,7 +18,7 @@
     
     
       
-        <title>Sales Target - MAP Odoo User Manual</title>
+        <title>Alur Pembuatan Request Payment (Request MF/MTF) - MAP Odoo User Manual</title>
       
     
     
@@ -85,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#alur-pembuatan-sales-order-quotation" class="md-skip">
+        <a href="#alur-pembuatan-request-payment-request-mfmtf" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sales Target
+              Alur Pembuatan Request Payment (Request MF/MTF)
             
           </span>
         </div>
@@ -269,10 +265,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -287,11 +281,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -312,7 +306,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -327,10 +321,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -346,11 +338,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked="">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1">
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -371,7 +363,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -442,19 +434,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../sales_target/" class="md-nav__link">
         
   
   
@@ -470,7 +453,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1841,6 +1823,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1-membuat-request-baru" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Membuat Request Baru
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-pengisian-harga-dan-ongkos-kirim-untuk-tipe-mf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Pengisian Harga dan Ongkos Kirim (untuk tipe MF)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pengisian-harga-dan-ongkos-kirim-untuk-tipe-mtf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Pengisian Harga dan Ongkos Kirim (untuk tipe MTF)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1856,7 +1879,48 @@
 
 
 
-<h1 id="alur-pembuatan-sales-order-quotation"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../icon_modul/sales_target.png" data-desc-position="bottom"><img src="../../icon_modul/sales_target.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"></a> Alur Pembuatan Sales Order (Quotation)</h1>
+<h1 id="alur-pembuatan-request-payment-request-mfmtf"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../icon_modul/mf_mtf.png" data-desc-position="bottom"><img src="../../icon_modul/mf_mtf.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"></a> Alur Pembuatan Request Payment (Request MF/MTF)</h1>
+<p>Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen <em>Request</em> (Permintaan Pembayaran MF/MTF) yang siap diproses oleh tim FA.</p>
+<h2 id="1-membuat-request-baru">1. Membuat Request Baru</h2>
+<ol>
+<li>Masuk ke modul <strong>Request Payment</strong> &gt; <strong>Request MF / MTF</strong> &gt; <strong>Review</strong> &gt; <strong>Approval</strong> &gt; <strong>MF/MTF</strong>.</li>
+<li>Klik tombol <strong>Create</strong> di pojok kiri atas halaman.</li>
+<li>Pilih tipe permintaan pembayaran pada kolom <strong>Type</strong>.</li>
+<li>Masukkan nomor SO pada kolom <strong>Number SO</strong>.</li>
+<li>Sistem akan otomatis menarik nama Distributor, Dinkes, Number SPH/Invoice/PO, dan Date Invoice.</li>
+<li>Jika tipe yang dipilih adalah <em>MF</em> maka isi penanggung jawab pada kolom <strong>Responsible Person</strong> dan nomor telephone  pada kolom <strong>Mobile Numer</strong>.</li>
+<li>Jika tipe yang dipilih adalah <em>MTF</em> maka isi nomor rek penerima pada kolom <strong>Serial Number</strong>, isi kode bank pada kolom <strong>Number SN</strong> dan isi nama penerima pada kolom <strong>PIC Name</strong></li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mf_header.png" data-desc-position="bottom"><img alt="Contoh Pengisian Form MF" src="../images/mf_header.png"></a></p>
+<center>*Gambar 1.1 : Tampilan pengisian form MF.*</center>
+
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mtf_header.png" data-desc-position="bottom"><img alt="Contoh Pengisian Form MTF" src="../images/mtf_header.png"></a></p>
+<center>*Gambar 1.2 : Tampilan pengisian form MTF.*</center>
+
+<hr>
+<h2 id="2-pengisian-harga-dan-ongkos-kirim-untuk-tipe-mf">2. Pengisian Harga dan Ongkos Kirim (untuk tipe <strong>MF</strong>)</h2>
+<p>Pada tab <strong>MF Details</strong>, masukkan produk yang telah dijual :</p>
+<ol>
+<li>Klik <strong>Add a line</strong>.</li>
+<li>Pilih PPN nya.</li>
+<li>Masukkan Harga dan ongkos kirim ecat pada kolom <strong>Price Ecat</strong> dan <strong>Shipping Cost Ecat</strong>.</li>
+<li>Masukkan presentase nilai MF dan ekstra MF pada kolom <strong>Value MF (%)</strong> dan <strong>Value Extra MF(%)</strong>.</li>
+<li>Sistem akan otomatis menghitung <em>MF</em>, <em>Shipping Cost</em>, dan <em>Extra MF</em></li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/mf_detail.png" data-desc-position="bottom"><img alt="Contoh Pengisian Detail MF" src="../images/mf_detail.png"></a></p>
+<center>*Gambar 2 : Tampilan pengisian product pada Sales Order.*</center>
+
+<hr>
+<h2 id="3-pengisian-harga-dan-ongkos-kirim-untuk-tipe-mtf">3. Pengisian Harga dan Ongkos Kirim (untuk tipe <strong>MTF</strong>)</h2>
+<p>Pada tab <strong>MTF Details</strong>, masukkan produk yang ingin ditawarkan kepada pelanggan:</p>
+<ol>
+<li>Klik <strong>Add a product</strong>.</li>
+<li>Pilih produk dari daftar <em>dropdown</em>.</li>
+<li>Masukkan jumlah produk pada kolom <strong>Ordered Qty</strong>.</li>
+<li>Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom <strong>Unit Price</strong> dan mengubah diskon pada kolom <strong>Discount xx+xx(%)</strong> jika terdapat kesepakatan khusus.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../images/so_product.png" data-desc-position="bottom"><img alt="Contoh Pengisian OrderLines" src="../images/so_product.png"></a></p>
+<center>*Gambar 2 : Tampilan pengisian product pada Sales Order.*</center>
 
 
 
@@ -1879,7 +1943,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="21 Juli 2026 17:03:30 WIB">21 Juli 2026 17:03:30</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="22 Juli 2026 16:57:44 WIB">22 Juli 2026 16:57:44</span>
   </span>
 
     
@@ -1889,7 +1953,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="14 Juli 2026 08:36:26 WIB">14 Juli 2026 08:36:26</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="21 Juli 2026 17:03:30 WIB">21 Juli 2026 17:03:30</span>
   </span>
 
     
@@ -1910,11 +1974,6 @@
         <a href="https://github.com/nurulunuy" class="md-author" title="@nurulunuy">
           
           <img src="https://avatars.githubusercontent.com/u/302037934?v=4&amp;size=72" alt="nurulunuy">
-        </a>
-      
-        <a href="https://github.com/bangjc" class="md-author" title="@bangjc">
-          
-          <img src="https://avatars.githubusercontent.com/u/59061345?v=4&amp;size=72" alt="bangjc">
         </a>
       
       
