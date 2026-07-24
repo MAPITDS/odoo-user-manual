@@ -28,7 +28,8 @@ Pada tab **MF Details**, masukkan produk yang telah dijual :
 2. Pilih PPN nya.
 3. Masukkan Harga dan ongkos kirim ecat pada kolom **Price Ecat** dan **Shipping Cost Ecat**.
 4. Masukkan presentase nilai MF dan ekstra MF pada kolom **Value MF (%)** dan **Value Extra MF(%)**.
-4. Sistem akan otomatis menghitung *MF*, *Shipping Cost*, dan *Extra MF*
+5. Sistem akan otomatis menghitung *MF*, *Shipping Cost*, dan *Extra MF*
+6. Apabila nilai nya sudah sesuai maka klik **Save**
 
 ![Contoh Pengisian Detail MF](../dept_sales/images/mf_detail.png)
 <center>*Gambar 2 : Tampilan pengisian product pada Sales Order.*</center>
@@ -39,10 +40,32 @@ Pada tab **MF Details**, masukkan produk yang telah dijual :
 
 Pada tab **MTF Details**, masukkan produk yang ingin ditawarkan kepada pelanggan:
 
-1. Klik **Add a product**.
-2. Pilih produk dari daftar *dropdown*.
-3. Masukkan jumlah produk pada kolom **Ordered Qty**.
-4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** dan mengubah diskon pada kolom **Discount xx+xx(%)** jika terdapat kesepakatan khusus.
+1. Klik **Add a line**.
+2. Pilih PPN nya.
+3. Masukkan Harga dan ongkos kirim ecat pada kolom **Value Ecat** dan **Ship Cost Ecat**.
+4. Masukkan presentase nilai MTF dan nilai ongkos kirim yang sesuangguhnya pada kolom **%** dan **Value Ship Cost**.
+5. Sistem akan otomatis menghitung *Value Product*, *Value (Ex PPN)*, dan *Fee Maintenance*
+6. Jika ada pengajuan untuk pembayaran maka masukkan nilai pada kolom **Advance/DP**
+7. Jika ada potongan biaya ARS PPH maka masukkan nilai pada kolom **ARS PPH Cut**
+8. Apabila nilai nya sudah sesuai maka klik **Save**
 
-![Contoh Pengisian OrderLines](../dept_sales/images/so_product.png)
+![Contoh Pengisian OrderLines](../dept_sales/images/mtf_detail.png)
 <center>*Gambar 2 : Tampilan pengisian product pada Sales Order.*</center>
+
+---
+
+## 4. Menunggu Review 1 dan Approval GSM 
+
+Pada state **Review 1** dan **Approve GSM**
+
+
+---
+
+## 5. Menunggu Review 2 dan Approval FAM 
+
+Pada state **Review 1** dan **Approve GSM**, ada beberapa kondisi ketika masuk ke state ini:
+
+1. Credit Limit yang bermasalah karena sudah melebihi batas dari **Credit Limit** yang sudah ditentukan.
+2. Kabupaten / Kota yang perlu di waspadai berdasarkan **Kota/Kab** pelanggan
+3. Jika kondisi **Credit limit** dan **Kota/Kab** tidak bermasalah maka bisa lewati langkah ini.
+4. Pengajuan pembukaan **Credit Limit** melalui Form yang sudah disetujui oleh FA dan DIR, dan akan di proses oleh ITDS untuk Approve.
