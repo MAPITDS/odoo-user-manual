@@ -1,10 +1,10 @@
-# <img src="../../icon_modul/activity.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Activity
+# <img src="../../icon_modul/advance.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Advance
 
-Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Aktivitas* (Penawaran Harga) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
+Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Advance* (Pengajuan UC) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
 
-## 1. Membuat Aktivitas Baru
+## 1. Membuat Pengajuan Baru
 
-1. Masuk ke modul **Activity** > **Waiting Approval** > **Post Journal**
+1. Masuk ke modul **Advance** > **Waiting Approval** > **Settlement** > **Waiting Approval Settelment** > **Post Journal**
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Isi bulan yang berjalan pada kolom **Month Periode**
 4. Sistem akan otomatis menarik nama pembuat sesuai akun yang digunakan pada kolom **Name**.
@@ -96,8 +96,3 @@ Pada state **Approver Finance**, Team FA akan memerikasa keseluruhan dan kesamaa
 
 === "Post Jurnal"
     Memiliki tombol untuk mengeksekusi jurnal yang masuk ke dalam akun-akun biaya yang dipilih pada aktivity tersebut yang masuk ke dalam **Post Journal** yang sudah di setujui oleh atasan dan fa manager.        
-
-
-
-
-
