@@ -118,6 +118,7 @@ nav:
       - Negotiation Sheet : dept_sales/negotiation_sheet.md
       - Sales : dept_sales/sales_quotation.md
       - Sales Target : dept_sales/sales_target.md
+      - CRM : dept_sales/crm_lead.md
   
   - Purchase Department :
     - "🛃 Modules":
@@ -143,15 +144,15 @@ nav:
   
   - Additional Modules :
     - "🛃 Productivity":
-      - Timesheet : additional_modules/timesheet.md
-      - Project : additional_modules/project.md
-      - Helpdesk : additional_modules/helpdesk.md
-      - Knowledge : additional_modules/knowledge.md
-      - Calendar : additional_modules/calendar.md
-      - Notes : additional_modules/notes.md
-      - Discuss : additional_modules/discuss.md
-      - Survey : additional_modules/survey.md
-      - Events : additional_modules/events.md
+      - Advance : dept_all/advance.md
+      - Activity : dept_all/activity.md
+      - Helpdesk : dept_all/helpdesk.md
+      - Knowledge : dept_all/knowledge.md
+      - Calendar : dept_all/calendar.md
+      - Notes : dept_all/notes.md
+      - Discuss : dept_all/discuss.md
+      - Survey : dept_all/survey.md
+      - Events : dept_all/events.md
 
   - Reporting : 
     - Sales : 
