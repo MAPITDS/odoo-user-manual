@@ -57,13 +57,13 @@ Pada tab **MTF Details**, masukkan produk yang ingin ditawarkan kepada pelanggan
 ## 4. Menunggu Review 1 dan Approval GSM 
 
 Pada state **Review 1** dan **Approve GSM**
-
+Review 1 yaitu *SPV SAS* dengan mengecek kebenaran data nya dan jika sudah sesuai maka akan di Approve oleh  *GSM*
 
 ---
 
 ## 5. Menunggu Review 2 dan Approval FAM 
 
-Pada state **Review 1** dan **Approve GSM**, ada beberapa kondisi ketika masuk ke state ini:
+Pada state **Review 2** dan **Approve FAM**, ada beberapa kondisi ketika masuk ke state ini:
 
 1. Credit Limit yang bermasalah karena sudah melebihi batas dari **Credit Limit** yang sudah ditentukan.
 2. Kabupaten / Kota yang perlu di waspadai berdasarkan **Kota/Kab** pelanggan
