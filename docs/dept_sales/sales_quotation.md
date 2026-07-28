@@ -9,8 +9,8 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation
 3. Isi data pelanggan pada kolom **Customer**, **Billing Address**, dan **Shipping Address**. Jika pelanggan belum terdaftar, Anda bisa mengajukan Form New Customer ke Team EDP.
 4. Tentukan termin pembayaran penawaran pada kolom **Payment Terms**.
 
-![Contoh Pengisian Form NS](../dept_sales/images/so_header.png)
-*Gambar 1 : Tampilan pengisian form pada Sales Order.*
+![Contoh Pengisian Form SO](../dept_sales/images/so_header.png)
+<center><em>Gambar 1 : Tampilan pengisian form pada Sales Order.</em></center>
 
 ---
 
@@ -23,8 +23,8 @@ Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan
 3. Masukkan jumlah produk pada kolom **Ordered Qty**.
 4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** dan mengubah diskon pada kolom **Discount xx+xx(%)** jika terdapat kesepakatan khusus.
 
-![Contoh Pengisian Form NS](../dept_sales/images/so_product.png)
-*Gambar 2 : Tampilan pengisian product pada Sales Order.*
+![Contoh Pengisian OrderLines](../dept_sales/images/so_product.png)
+<center><em>Gambar 2 : Tampilan pengisian product pada Sales Order.</em></center>
 
 <!-- !!! note "Tips Pengisian Cepat"
     Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*. -->
@@ -36,23 +36,23 @@ Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan
 Pada tab **Other Information**, masukkan informasi sales yang menangani penawaran tersebut:
 
 1. Pilih nama sales yang menanangi penjualan tersebut pada kolom **Salesperson**.
-2. Sistem akan otomatis menarik Department, Level Komisi, Region, Area, District, dan Regency/City
+2. Sistem akan otomatis menarik Department, Level Komisi, Region, Area, District, dan Regency/City.
 3. Pilih tags departement nya pada kolom **Tags**.
-4. Lalu klik **Save** dan *state* akan berada di **Quotation** dan masih bisa di edit.
+4. Lalu klik **Save** dan *state* akan berada di **Quotation** masih bisa di edit.
 
-![Contoh Pengisian Form NS](../dept_sales/images/so_information.png)
-*Gambar 3 : Tampilan pengisian informasi pada Negotiation Sheet.*
+![Contoh Pengisian Other Information](../dept_sales/images/so_information.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pada Sales Order.</em></center>
 
 ---
 
 ## 4. Menunggu Approval
 
-Pada state **Waiting Approve Credit**, ada beberapa kondisi ketika masuk ke state ini:
+Pada state **Waiting Approve Credit**, ada beberapa kondisi ketika masuk ke dalam state ini:
 
 1. Credit Limit yang bermasalah karena sudah melebihi batas dari **Credit Limit** yang sudah ditentukan.
-2. Kabupaten / Kota yang perlu di waspadai berdasarkan **Kota/Kab** pelanggan
-3. Jika kondisi **Credit limit** dan **Kota/Kab** tidak bermasalah maka bisa lewati langkah ini.
-4. Pengajuan pembukaan **Credit Limit** melalui Form yang sudah disetujui oleh FA dan DIR, dan akan di proses oleh ITDS untuk Approve.
+2. Kabupaten / Kota yang perlu di waspadai berdasarkan **Kota/Kab** pelanggan.
+3. Jika kondisi **Credit limit** dan **Kota/Kab** tidak bermasalah maka bisa melewati langkah ini.
+4. Pengajuan pembukaan **Credit Limit** melalui Form yang sudah disetujui oleh FA dan DIR, dan akan di proses oleh ITDS untuk dijalankan perpindahan *state* dari **Waiting Approval Credit** menjadi **Locked**.
 
 ---
 
@@ -61,10 +61,12 @@ Pada state **Waiting Approve Credit**, ada beberapa kondisi ketika masuk ke stat
 Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusnya menjadi *Locked* agar modul *Inventory* dapat mendeteksi adanya kebutuhan pengiriman barang.
 
 * Klik tombol **Confirm** yang berada di barisan tombol aksi kiri atas.
-* Status dokumen di pojok kanan atas akan otomatis berubah dari **Quotation** menjadi **Locked**. Apabila sudah di invoice kan maka status berubah dari **Locked** menjadi **Sales Order**
+* Status dokumen di pojok kanan atas akan otomatis berubah dari **Quotation** menjadi **Locked**. Apabila sudah di bayarkan dan sudah terbit invoice maka status berubah dari **Locked** menjadi **Sales Order**
+
 
 !!! warning "Peringatan Penting Sebelum Konfirmasi"
     Pastikan Anda telah memeriksa ulang **Taxes** (Pajak) dan **Pricelist** yang digunakan. Dokumen yang sudah berstatus *Locked* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* atau membuat *credit note*) jika ingin diubah kembali.
+
 
 ## 📝 Referensi Tambahan
 
@@ -73,19 +75,20 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 * <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
 * <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
 
+
 ### Fitur Berdasarkan Hak Akses
 === "Admin SAS"
     - Dapat membuat *SO* baru dan dapat melihat keseluruhan data pada modul.
-    - Dapat melakukan action *Confirm* jika penawaran sudah sesuai 
-    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
+    - Dapat melakukan action *Confirm* jika penawaran sudah sesuai.
+    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval.
 
 === "SPV SAS"
     Memiliki tombol untuk melakukan *Confirm* jika penawaran sudah sesuai.
 
 === "SPV ITDS"
-    Memiliki tombol untuk mengeksekusi credit limit di luar batas ketentuan dan mengubah status SO* yang masuk ke dalam **Waiting Approve Credit** menjadi **Locked** yang telah disetujui oleh **FAM** dan **DIR** melalui email.
+    Memiliki tombol untuk mengeksekusi credit limit di luar batas ketentuan dan mengubah status *SO* yang masuk ke dalam **Waiting Approve Credit** menjadi **Locked** yang telah disetujui oleh *FAM* dan DIR* melalui email.
 
 
 ??? info "What Next?"
-    Setelah *SO* sudah berstatus *Locked* selanjutnya dokumen akan masuk ke Modul *Inventoty*.
+    Setelah *SO* sudah berstatus *Locked* selanjutnya dokumen akan masuk ke Modul *Inventory*.
     [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_sales/sales_quotation.md)
