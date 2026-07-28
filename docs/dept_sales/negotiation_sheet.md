@@ -56,7 +56,7 @@ Pada state **Waiting Approval**, ada beberapa kondisi berdasarkan warna pada Neg
 1. Warna "Hijau" berarti tidak perlu meminta Approval, bisa dilewati pada langkah ini.
 2. Warna "Biru" meminta Approval "RSM".
 3. Warna "Kuning" meminta Approval "GSM".
-4. Warna "Oren" meminta Approval "RSM" kemudian "GSM" dan "DIR".
+4. Warna "Oranye" meminta Approval "RSM" kemudian "GSM" dan "DIR".
 5. Warna "Merah" meminta Approval "RSM" kemudian "GSM" dan "DIR".
 
 ---
@@ -89,7 +89,7 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
     - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
 
 === "DIR"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Orange*).
+    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Oranye*).
     Memiliki tampilan Tab perhitungan (Dir View)
 
 === "GSM"
