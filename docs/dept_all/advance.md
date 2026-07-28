@@ -9,7 +9,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Advance* 
 3. Isi bulan yang berjalan pada kolom **Month Periode**
 4. Sistem akan otomatis menarik nama pembuat sesuai akun yang digunakan pada kolom **Name**.
 
-![Contoh Pengisian Form Activity](../dept_sales/images/activity_header.png)
+![Contoh Pengisian Form Activity](../all_dept/images/activity_header.png)
 <center>*Gambar 1 : Tampilan pengisian form activity.*</center>
 
 ---
@@ -24,7 +24,7 @@ Pada tab **Activities**, masukkan kegiatan pekerjaan yang dilakukan selama perio
 4. Kemudian isi rencana yang akan dilakukan pada tanggal itu.
 5. Setelah itu klik tombol **Submit**.
 
-![Contoh Pengisian OrderLines](../dept_sales/images/activity_detail.png)
+![Contoh Pengisian OrderLines](../all_dept/images/activity_detail.png)
 <center>*Gambar 2 : Tampilan pengisian activity.*</center>
 
 ---
@@ -50,7 +50,7 @@ Pada tab **Costs**, masukkan semua biaya terkait aktivitas/kunjungan yang dilaku
 6. Kemudian isi nominal biaya yang telah dikeluarkan sesuai bon yang tertera pada kolom **Nominal**
 7. Lalu klik **Save**. Dan jika sudah terisi 1 bulan penuh pada bulan yang dipilih maka klik **Submit**
 
-![Contoh Pengisian OrderLines](../dept_sales/images/activity_costs.png)
+![Contoh Pengisian OrderLines](../all_dept/images/activity_costs.png)
 <center>*Gambar 3 : Tampilan pengisian biaya.*</center>
 
 ---
