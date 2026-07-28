@@ -157,4 +157,5 @@ nav:
   - Reporting : 
     - Sales : 
       - KPI : dept_sales/kpi_.md
-    - Inventory : dept_who/inventory.md
+    - Inventory : 
+      - Overview : dept_who/inventory.md
