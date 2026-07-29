@@ -1,10 +1,10 @@
 # <img src="../../icon_modul/advance.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Advance
 
-Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Advance* (Pengajuan UC) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
+Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Advance* pengajuan perjalnana dinas (UC).
 
 ## 1. Membuat Pengajuan Baru
 
-1. Masuk ke modul **Advance** > **Waiting Approval** > **Settlement** > **Waiting Approval Settelment** > **Post Journal**
+1. Masuk ke modul **Advance** > **Waiting Approval** > **Settlement** > **Waiting Approval Settelment** > **Post Journal**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Isi bulan yang berjalan pada kolom **Month Periode**
 4. Sistem akan otomatis menarik nama pembuat sesuai akun yang digunakan pada kolom **Name**.
