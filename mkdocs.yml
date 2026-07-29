@@ -97,7 +97,7 @@ copyright: |
 
 # Struktur Navigasi Menu Web Anda
 nav:
-  - Home : index.md
+  - "🖥️ Home" : index.md
 
   - Sales Department : 
     - "🛃 Modules":
@@ -127,6 +127,15 @@ nav:
       - Komisi : dept_fa_acc/komisi.md
       - Journal : dept_fa_acc/journal.md
       - E-Faktur : dept_fa_acc/efaktur.md
+  
+  - Human Resource Department :
+    - "🛃 Modules":
+      - Employee : dept_hr/employee.md
+      - Recruitment : dept_hr/recruitment.md
+      - Attendance : dept_hr/attendance.md
+      - Payroll : dept_hr/payroll.md
+      - Appraisal : dept_hr/appraisal.md
+      - Time Off : dept_hr/time_off.md
   
   - Additional Modules :
     - "🛃 Productivity":
