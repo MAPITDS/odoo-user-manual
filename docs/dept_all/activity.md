@@ -24,7 +24,7 @@ Pada tab **Activities**, masukkan kegiatan pekerjaan yang dilakukan selama perio
 4. Kemudian isi rencana yang akan dilakukan pada tanggal tersebut pada kolom **Plan**.
 5. Setelah itu klik tombol **Submit**.
 
-![Contoh Pengisian OrderLines](../all_dept/images/activity_detail.png)
+![Contoh Pengisian Activity](../all_dept/images/activity_detail.png)
 <center><em>Gambar 2 : Tampilan pengisian activity.</em></center>
 
 ---
@@ -51,8 +51,8 @@ Pada tab **Costs**, masukkan semua biaya terkait kegiatan/kunjungan yang dilakuk
 6. Kemudian isi nominal biaya yang telah dikeluarkan sesuai bon/kwitansi yang tertera pada kolom **Nominal**.
 7. Lalu klik **Save**. Dan jika sudah terisi 1 bulan penuh pada bulan yang dipilih maka klik **Submit**.
 
-![Contoh Pengisian OrderLines](../all_dept/images/activity_costs.png)
-<center><em>Gambar 3 : Tampilan pengisian biaya.</em></center>
+![Contoh Pengisian biaya aktivitas](../all_dept/images/activity_costs.png)
+<center><em>Gambar 3 : Tampilan pengisian biaya aktivitas.</em></center>
 
 ---
 
