@@ -114,26 +114,26 @@ nav:
   - "🖥️ Home" : index.md
 
   - Sales Department : 
-    - "🛃 Modules":
+    - "▶️ Modules":
       - Negotiation Sheet : dept_sales/negotiation_sheet.md
       - Sales : dept_sales/sales_quotation.md
       - Sales Target : dept_sales/sales_target.md
       - CRM : dept_sales/crm_lead.md
   
-  - Purchase Department :
-    - "🛃 Modules":
+  - Product Department :
+    - "▶️ Modules":
       - Purchase Request : dept_prd/purchase_request.md
       - Purchase Order : dept_prd/purchase_order.md
 
   - Warehouse Department :
-    - "🛃 Modules":
+    - "▶️ Modules":
       - Inventory : dept_who/inventory.md
       - Receipts Order : dept_who/inventory_ri.md
       - Delivery Order : dept_who/inventory_do.md
       - Internal Transfer : dept_who/internal_transfer.md
     
   - Finance & Accounting Department :
-    - "🛃 Modules":
+    - "▶️ Modules":
       - Invoices : dept_fa_acc/invoices.md
       - Vendor Bills : dept_fa_acc/vendor_bill.md
       - Bank Statement : dept_fa_acc/bank_statement.md
@@ -143,7 +143,7 @@ nav:
       - E-Faktur : dept_fa_acc/efaktur.md
   
   - Human Resource Department :
-    - "🛃 Modules":
+    - "▶️ Modules":
       - Employee : dept_hr/employee.md
       - Recruitment : dept_hr/recruitment.md
       - Attendance : dept_hr/attendance.md
@@ -152,7 +152,7 @@ nav:
       - Time Off : dept_hr/time_off.md
   
   - Additional Modules :
-    - "🛃 Productivity":
+    - "▶️ Productivity":
       - Advance : dept_all/advance.md
       - Activity : dept_all/activity.md
       - Helpdesk : dept_all/helpdesk.md
