@@ -1,4 +1,4 @@
-# <img src="../../icon_modul/ns.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan CRM
+# <img src="../../icon_modul/crm.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan CRM
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *CRM* dimana untuk melihat potensi perencanaan penjualan dan laporan hasil kunjungan pada area masing-masing sales.
 
@@ -40,14 +40,41 @@ Pada tab **Detail Product** di bagian **SAS**, masukkan produk yang ingin ditawa
 2. Pilih produk dari daftar *dropdown*.
 3. Masukkan jumlah produk pada kolom **Qty**.
 4. Sistem akan otomatis menarik **Program**, **Faskes**, dan **Harga Produk**. Jika ada kesepakan lain untuk harga bisa dirubah pada kolom **Product Price** sesuai kesepakatan.
-5. Kemudian klok **Save**
+5. Kemudian klik **Save**
 
 ![Contoh Pengisian Product CRM](../dept_sales/images/crm_product.png)
-<center><em>Gambar 2 : Tampilan pengisian produk pada tab Detail Product.</em></center>
+<center><em>Gambar 3 : Tampilan pengisian produk pada tab Detail Product.</em></center>
 
 
 ---
 
 ## 4. Merubah Progres
 
-Pada state  **
+Pada state yang bukan **New** merupakan progres untuk crm tersebut, yaitu :
+
+1. **Confirmed** : Informasi adanya Kebutuhan yang sudah TERKONFIRMASI atau informasi rencana belanja tahun ini / tahun depan.
+2. **Quotation** : Sudah mengirimkan SPH.
+3. **Presentation** : Sudah dilakukan presentasi, demo unit, trial atau kegiatan support lainnya yang terkait (khusus) untuk proyek tersebut.
+4. **Preparing** : Sudah sepakat jumlah pasti (Qty) produk – produk yang akan di pesan.
+5. **Negotiation** : Sudah klik (Ekatalog) sedang proses negosiasi harga, ongkir, dan lain-lain.
+6. **Deal** : Sudah sepakat Ekatalog sedang proses / menunggu PO / SP / Kontrak.
+7. **Lost** : Gagal
+8. **Won** : Sudah menerima PO / SP/ Kontrak.
+9. **CBS** : Batal otomatis pada Sistem karena sudah melebihi batas tanggal yang sudah ditentukan pada kolom *Expected Closing*.
+
+![Contoh Tampilan Stage CRM](../dept_sales/images/crm_stage.png)
+<center><em>Gambar 4 : Tampilan stage pada crm.</em></center>
+
+---
+
+## 5. Pengisian jika statusnya **WON**
+
+Pada state **WON** merupakan keberhasilan untuk penawaran penjualan yang sudah ada kontrak nya.
+
+1. Isi penjelasan untuk penjualan yang sudah sepakat pada kolom **WON Description**.
+2. Lampirkan file PO kesepakatan tersebut pada kolom **PO Attachment**.
+3. Kemudian klik **Save**.
+
+![Contoh Pengisian CRM Status Won](../dept_sales/images/crm_won.png)
+<center><em>Gambar 5 : Tampilan pengisian crm yang status nya won.</em></center>
+
