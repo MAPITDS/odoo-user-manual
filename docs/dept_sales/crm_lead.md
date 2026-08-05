@@ -78,3 +78,33 @@ Pada state **WON** merupakan keberhasilan untuk penawaran penjualan yang sudah a
 ![Contoh Pengisian CRM Status Won](../dept_sales/images/crm_won.png)
 <center><em>Gambar 5 : Tampilan pengisian crm yang status nya won.</em></center>
 
+
+## 📝 Referensi Tambahan
+
+### SOP Harian (Checklist)
+* <input type="checkbox"> **Pastikan Nama Customer (Customer Universal atau Contact Name)** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
+* <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
+
+### Fitur Berdasarkan Hak Akses
+=== "DS"
+    - Dapat membuat *NS* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action *Submit* jika penawaran sudah sesuai 
+    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
+
+=== "BUM"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Oranye*).
+    Memiliki tampilan Tab perhitungan (Dir View)
+
+=== "SM"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
+
+=== "DM"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
+
+=== "ASM"
+    Memiliki tombol untuk menyetujui diskon di luar batas standar *Hanya dapat melihat area masing-masing*.
+
+??? info "What Next?"
+    Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales*.
+    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_sales/sales_quotation.md)
