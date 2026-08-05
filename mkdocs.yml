@@ -53,6 +53,11 @@ markdown_extensions:
 plugins:
   - search
   - glightbox
+  - encryptcontent:
+      global_password: "123"  # Password Anda
+      summary: "Dokumen ini hanya untuk internal, silakan masukkan password yang benar untuk membukanya."
+      encryption_info_message: "Hubungi tim IT / Administrator untuk mendapatkan akses."
+      placeholder: "Masukkan password..."
   # - git-authors
   - git-committers:
       repository: mapitds/odoo-user-manual
@@ -60,19 +65,6 @@ plugins:
   - git-committers:
       repository: mapitds/odoo-user-manual
       branch: sa-main
-  # - i18n:
-  #     default_language: id
-  #     languages:
-  #       - link: /id/
-  #         locale: id
-  #         name: Indonesian
-  #         default: true
-  #         build: true
-  #       - link: /en/
-  #         locale: en
-  #         name: English
-  #         default: false
-  #         build: true
   - git-revision-date-localized:
       enable_creation_date: true
       type: datetime
