@@ -87,24 +87,33 @@ Pada state **WON** merupakan keberhasilan untuk penawaran penjualan yang sudah a
 * <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
 
 ### Fitur Berdasarkan Hak Akses
+=== "SAS"
+    - Dapat membuat *CRM* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action untuk memindahkan progress *Stage* sesuai kondisi perencanaan penjualan yang terjadi.
+
 === "DS"
-    - Dapat membuat *NS* baru dan dapat melihat keseluruhan data pada modul.
-    - Dapat melakukan action *Submit* jika penawaran sudah sesuai 
-    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
-
-=== "BUM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Oranye*).
-    Memiliki tampilan Tab perhitungan (Dir View)
-
-=== "SM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
-
-=== "DM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
+    - Dapat membuat *CRM* baru dan hanya dapat melihat data masing-masing user pada modul.
+    - Dapat melakukan action untuk memindahkan progress *Stage* sesuai kondisi perencanaan penjualan yang terjadi.
 
 === "ASM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *Hanya dapat melihat area masing-masing*.
+    - Dapat membuat *CRM* baru dan dapat melihat keseluruhan data area yang dibawahi pada modul.
+    - Dapat melakukan action untuk memindahkan progress *Stage* sesuai kondisi perencanaan penjualan yang terjadi.
+
+=== "RSM"
+    - Dapat membuat *CRM* baru dan dapat melihat keseluruhan data per region yang dibawahi pada modul.
+    - Dapat melakukan action untuk memindahkan progress *Stage* sesuai kondisi perencanaan penjualan yang terjadi.
+
+=== "GSM"
+    - Dapat membuat *CRM* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action untuk memindahkan progress *Stage* sesuai kondisi perencanaan penjualan yang terjadi.
+
+=== "MKT"
+    - Hanya dapat melihat seluruh perencanaan penjualan product yang sudah dibuat oleh sales.
+
+=== "ITDS"
+    - Dapat melakukan action untuk memindahkan progress *Stage* **WON** menjadi *Stage* yang dibutuhkan sesuai kondisi perencanaan penjualan yang terjadi.
+
 
 ??? info "What Next?"
-    Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales*.
-    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_sales/sales_quotation.md)
+    Setelah *CRM* sudah dilakukan *Quotation* selanjutnya dokumen akan masuk ke Modul *Negotiation Sheet*.
+    [Lanjut ke Modul NS:octicons-arrow-right-16:](../dept_sales/negotiation_sheet.md)
