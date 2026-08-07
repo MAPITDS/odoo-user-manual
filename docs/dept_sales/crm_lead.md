@@ -83,8 +83,8 @@ Pada state **WON** merupakan keberhasilan untuk penawaran penjualan yang sudah a
 
 ### SOP Harian (Checklist)
 * <input type="checkbox"> **Pastikan Nama Customer (Customer Universal atau Contact Name)** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
-* <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
+* <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon** sudah sesuai dengan penawaran yang diberikan kepada customer/pembeli.
+* <input type="checkbox"> **Pastikan besarnya perkiraan keberhasilan penawaran** sudah sesuai dengan kesepakatan.
 
 ### Fitur Berdasarkan Hak Akses
 === "SAS"
