@@ -4,7 +4,7 @@ Halaman ini menjelaskan langkah-langkah standar pendataan untuk mengelola dan me
 
 ## 1. Membuat Data Karyawan
 
-1. Masuk ke modul **Employee**.
+1. Masuk ke modul **Employee** >> **New Employee**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Masukkan nama karyawan baru pada kolom **Name** (First Name, Middle Name, Last Name).
 4. Masukkan nomor nik karyawan pada kolom **No. NIK**.
@@ -95,16 +95,20 @@ Pada tab **Activity/Advance Setting**  merupakan pengaturan untuk atasan yang bi
 ## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Memastikan Asset yang masukkan** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan tipe dan harga yang dimasukkan** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan lokasi dan nama pengguna asset** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Nama dan NIK** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Region, Area, List Kota/Kab** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Hirarki Atasan dan Level Komisi** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Alamat Pribadi dan User Odoo** sudah sesuai dan benar.
 
 
 ### Fitur Berdasarkan Hak Akses
-=== "User"
-    - Dapat melihat data seluruh asset pada modul.
-    - Tidak dapat membuat asset baru. 
+=== "Akses Employee"
+    - Dapat membuat *Employee* baru dan dapat melihat keseluruhan data *Employee* pada modul.
+    - Dapat menonaktifkan (arsip) data employee yang sudah Resign.
 
-=== "Admin"
-    - Dapat membuat *Asset GA* baru dan dapat melihat keseluruhan data Asset pada modul.
-    - Dapat melakukan action *Confirm* untuk mengkonfirmasi bahwa data tersebut sudah sesuai.
+=== "Manager"
+    - Hanya dapat melihat menu *Employee* di dalam modul tertentu yang membutuhkan.
+    - Dapat menekan tombol *Synchronize* untuk mensinkronkan data employee pada database yang berbeda.
+
+=== "Officer"
+    - Hanya dapat melihat menu *Employee* di dalam modul tertentu yang membutuhkan.
