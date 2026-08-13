@@ -107,10 +107,10 @@ nav:
 
   - Sales Department : 
     - "▶️ Modules":
+      - CRM : dept_sales/crm_lead.md
       - Negotiation Sheet : dept_sales/negotiation_sheet.md
       - Sales : dept_sales/sales_quotation.md
       - Sales Target : dept_sales/sales_target.md
-      - CRM : dept_sales/crm_lead.md
   
   - Product Department :
     - "▶️ Modules":
