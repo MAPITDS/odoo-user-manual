@@ -4,7 +4,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk mengajukan permintaan ATK 
 
 ## 1. Membuat Permintaan Baru
 
-1. Masuk ke modul **GA Request** > **Waiting Approval** > **In Progress** > **Received**.
+1. Masuk ke modul **GA Request** > **Request** > **Waiting Approval** > **In Progress** > **Received**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Sistem akan otomatis menarik nama yang mengajukan dan department nya.
 4. Pilih nama sales yang menawarkan ke outlet tersebut pada kolom **Salesperson**.
@@ -16,7 +16,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk mengajukan permintaan ATK 
 
 ## 2. Pengisian Produk
 
-Pada tab **Item  Details**  masukkan product yang akan diajuan :
+Pada tab **Item  Details**  masukkan product yang akan diajukan :
 
 1. Klik **Add a line**.
 2. Pilih produk dari daftar *dropdown*.

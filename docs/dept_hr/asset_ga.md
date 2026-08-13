@@ -4,7 +4,7 @@ Halaman ini menjelaskan langkah-langkah standar pendataan untuk mengelola dan me
 
 ## 1. Membuat Data Asset GA
 
-1. Masuk ke modul **Asset GA** > **Confirm**.
+1. Masuk ke modul **Asset GA** > **New Asset** > **Confirm**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Masukkan nama asset pada kolom **Asset Name** dan pilih category asset tersebut pada kolom **Category**.
 4. Masukkan nomor reference pada kolom **Reference** dan catatan pada kolom **Note** jika diperlukan.
