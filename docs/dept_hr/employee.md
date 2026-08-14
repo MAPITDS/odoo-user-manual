@@ -4,126 +4,111 @@ Halaman ini menjelaskan langkah-langkah standar pendataan untuk mengelola dan me
 
 ## 1. Membuat Data Karyawan
 
-1. Masuk ke modul **Employee**.
+1. Masuk ke modul **Employee** >> **New Employee**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Masukkan nama karyawan baru pada kolom **Name** (First Name, Middle Name, Last Name).
 4. Masukkan nomor nik karyawan pada kolom **No. NIK**.
+5. Upload *Foto* karyawan jika ada.
 
-![Contoh Pengisian Form Asset GA](../dept_hr/images/ga_asset_header.png)
-<center><em>Gambar 1 : Tampilan pengisian form pada Asset GA.</em></center>
-
----
-
-## 2. Pengisian Informasi Pekerja
-
-Pada tab **Work Information**  masukkan informasi pekerja :
-
-1. Masukkan informasi kontak karyawan dari mulai *alamat kerja*, *alamat email*, dan *nomor telephone*.
-2. Masukkan informasi posisi karyawan di perusahaan dari mulai *department*, 
-3. Masukkan nomor model pada kolom **Model No** dan nomor plat kendaraan pada kolom **Vehicle License Plate**.
-4. Pilih tipe dan warna kendaraan dari daftar *dropdown* pada kolom **Vehicle Type** dan **Vehicle Color**.
-5. Pilih kota pendaftran kendaraan tersebut dari daftra *dropdown* pada kolom **Registration State**.
-
-![Contoh Pengisian Asset Kendaraan](../dept_sales/images/ga_asset_vehicle.png)
-<center><em>Gambar 2 : Tampilan pengisian asset kendaraan.</em></center>
+![Contoh Pengisian Form Karyawan](../dept_hr/images/employee_header.png)
+<center><em>Gambar 1 : Tampilan pengisian form pada Data Karyawan.</em></center>
 
 ---
 
-## 3. Pengisian Asset Elektronik
+## 2. Pengisian Informasi Karyawan
 
-Pada informasi **Electronic**  masukkan informasi elektronik yang merupakan aseet perusahaan, apabila asset tersebut bukan merupakan elektronik maka bisa lewati langkah ini :
+Pada tab **Work Information**  masukkan informasi tempat kerja karyawan :
 
-1. Masukkan nama brand elektronik tersebut pada kolom **Brand**.
-2. Pilih tipe elektronik dari daftar *dropdown* pada kolom **Type**.
-3. Masukkan nomor serial elektronik pada kolom **Serial**.
-4. Apabila merukan tipe *Leptop* atau *PC* maka masukkan informasi nomor **Motherboard**, **Processor**, **RAM**, **Disc/Memory**, dan **VGA Card**.
-5. Masukkan keterangan/catatan dari Team IT mengenai elektronik tersebut pada kolom **Note IT**.
+1. Masukkan informasi kontak karyawan dari mulai *Alamat Kerja*, *Alamat Email*, dan *Nomor Telephone*.
+2. Masukkan informasi posisi karyawan di perusahaan dari mulai *Department*, *Area/Region*, *List Kota/Kab*, *Atasan*, dan *Manager*.
+3. Masukkan level komisi untuk pemberian komisi penjualan pada kolom **Level Komisi**.
+4. Masukkan jam kerja karyawan pada kolom **Working Hours**.
 
-![Contoh Pengisian Asset Elektronik](../dept_sales/images/ga_asset_electronic.png)
-<center><em>Gambar 3 : Tampilan pengisian asset elektronic.</em></center>
-
----
-
-## 4. Pengisian Informasi Pembelian Asset
-
-Pada tab **Detail Purchase**  masukkan informasi mengenai pembelian asset :
-
-1. Pilih nama vendor pembelian asset dari daftar *dropdown* pada kolom **Partner**.
-2. Pilih tanggal pembelian asset pada kolom **Purchase Date**.
-3. Masukkan harga pembelian asset pada kolom **Gross Value**.
-4. Apabila ada garansi maka masukkan tanggal garansi asset pada kolom **Warranty**.
-
-![Contoh Pengisian Pembelian Asset](../dept_sales/images/ga_asset_purchase.png)
-<center><em>Gambar 4 : Tampilan pengisian pembelian asset pada tab Detail Purchase.</em></center>
+![Contoh Pengisian Informasi Kerja Karyawan](../dept_sales/images/employee_work.png)
+<center><em>Gambar 2 : Tampilan pengisian informasi tempat kerja karyawan pada tab Work Information.</em></center>
 
 ---
 
-## 5. Pengisian Informasi Pengguna Asset
+## 3. Pengisian Data Pribadi Karyawan
 
-Pada tab **Location dan PIC**  masukkan informasi mengenai pengguna asset :
+Pada tab **Private Information**  masukkan informasi data pribadi karyawan :
+
+1. Masukkan informasi kontak karyawan dari mulai *Alamat Rumah*, *Alamat Email Pribadi*, dan *Kontak Darurat*.
+2. Masukkan informasi status karyawan dari mulai *Agama*, *Jenis Kelamin*, dan *Status Pernikahan*.
+3. Masukkan informasi kelahiran karyawan dari mulai *Tanggal Lahir* dan *Tempat Lahir*.
+
+![Contoh Pengisian Data Pribadi Karyawan](../dept_sales/images/employee_private.png)
+<center><em>Gambar 3 : Tampilan pengisian data pribadi karyawan pada tab Private Information.</em></center>
+
+---
+
+## 4. Pengisian Informasi Kode Karyawan
+
+Pada tab **Bank-Tax** merupakan informasi mengenai kode dan sistem secara otomatis akan menarik *Kode Department*, *NIK Atasan*, *Kode Jabatan*, dan *Kode Lokasi*.
+
+![Contoh Pengisian Kode Karyawan](../dept_sales/images/employee_bank.png)
+<center><em>Gambar 4 : Tampilan pengisian kode karyawan tab Bank-Tax.</em></center>
+
+---
+
+## 5. Pengisian Informasi Produk
+
+Pada tab **Product Spesialis**  masukkan informasi mengenai daftar product yang dijual oleh sales :
 
 1. Klik **Add a line**.
-2. Pilih tanggal penyerahan asset ke pengguna pada kolom **Date**.
-3. Pilih nama pengguna asset dari daftar *dropdown* pada kolom **Employee**.
-4. Pilih lokasi penggunaan asset dari daftar *dropdown* pada kolom **Location**.
-5. Masukkan keterangan untuk serah terima asset pada kolom **Description**.
-6. Pilih status penyerahan asset ke pengguna pada kolom **Status Serah terima**.
-5. Kemudian klik **Save**
+2. Pilih produk dari daftar *dropdown* pada kolom **Product**.
+3. Pilih tipe pelanggan dari daftar *dropdown* pada kolom **Type Customer**.
+4. Pilih department dari daftar *dropdown* pada kolom **Region**.
+5. Masukkan presentase komisi yang akan didapatkan untuk penjualan produk pada kolom **%**.
 
-![Contoh Pengisian Pengguna Asset](../dept_sales/images/ga_asset_pic.png)
-<center><em>Gambar 5 : Tampilan pengisian pengguna asset pada tab Location dan PIC.</em></center>
+![Contoh Pengisian Produk ](../dept_sales/images/employee_product.png)
+<center><em>Gambar 5 : Tampilan pengisian produk tab Product Spesialis.</em></center>
 
 ---
 
-## 6. Pengisian Informasi Perbaikan Asset
+## 6. Pengisian Informasi Pengaturan HR
 
-Pada tab **Services**  masukkan informasi mengenai perbaikan asset :
+Pada tab **HR Settings**  masukkan informasi mengenai perbaikan asset :
 
-1. Klik **Add a line**.
-2. Pilih tanggal perbaikan asset pada kolom **Date**.
-3. Masukkan penjelasan kendala pada kolom **Complaint** dan solusi pada kolom **Solution** untuk perbaikan asset tersebut.
-4. Pilih nama vendor tempat perbaikan asset dari daftar *dropdown* pada kolom **Partner**.
-5. Isi tanggal penyelesaian perbaikan asset pada kolom **Completion Date** dan jika ada rencana tanggal perbaikan selanjutnya diisi ada kolom **Next Service**.
-6. Masukkan biaya perbaikan asset pada kolom **Service Cost**.
-5. Kemudian klik **Save**
+1. Pilih nama atasan dari daftar *dropdown* pada kolom **Timesheet Responsible**.
+2. Pilih nama pengguna yang sudah didaftarkan ke Team ITDS dari daftar *dropdown* pada kolom **Related User**.
+3. Ceklis jika menerima pendapatan pada kolom **Is Gross**.
 
-![Contoh Pengisian Perbaikan Asset](../dept_sales/images/ga_asset_services.png)
-<center><em>Gambar 6 : Tampilan pengisian perbaikan asset pada tab Services.</em></center>
+![Contoh Pengisian Pengaturan HR](../dept_sales/images/employee_hr.png)
+<center><em>Gambar 6 : Tampilan pengisian pengaturan hr pada tab HR Settings.</em></center>
 
 ---
 
-## 7. Pengisian Informasi Dokumen
+## 7. Pengisian Pengaturan Aktivity/Advance
 
-Pada tab **Document**  masukkan informasi dokumen kendaraan yang merupakan aseet perusahaan, apabila asset tersebut bukan merupakan kendaraan maka bisa lewati langkah ini :
+Pada tab **Activity/Advance Setting**  merupakan pengaturan untuk atasan yang bisa menyetujui *Activity / Advance* yang sudah dibuat oleh bawahannya. Jika karyawan tersebut bukan atasan maka lewati langkah ini. 
 
-1. Klik **Add a line**.
-2. Masukkan penjelasan solusi pada kolom **Solution** untuk perbaikan / perpanjangan pajak asset tersebut.
-3. Isi rencana tanggal perbaikan selanjutnya diisi ada kolom **Next Service**.
-4. Kemudian klik **Save**
+1. Ceklis pada kolom **Approved**.
+2. Kemudian klik **Save**
 
-![Contoh Pengisian Dokumen Kendaraan](../dept_sales/images/ga_asset_document.png)
-<center><em>Gambar 6 : Tampilan pengisian dokumen kendaraan pada tab Document.</em></center>
+![Contoh Pengaturan Aktivity/Advance](../dept_sales/images/ga_asset_document.png)
+<center><em>Gambar 6 : Tampilan pengaturan Activity/Advance pada tab Activity/Advance Setting.</em></center>
 
 ---
-
-## 8. Menunggu Konfirmasi
-
-Pada state **Confirm** yang akan menyetujui pengajuan yaitu *Admin* yang mempunyai akses dengan mengecek kebenaran data nya dan jika sudah sesuai maka klik tombol **Confirm**.
 
 
 ## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Memastikan Asset yang masukkan** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan tipe dan harga yang dimasukkan** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan lokasi dan nama pengguna asset** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Nama dan NIK** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Region, Area, List Kota/Kab** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Hirarki Atasan dan Level Komisi** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Alamat Pribadi dan User Odoo** sudah sesuai dan benar.
 
 
 ### Fitur Berdasarkan Hak Akses
-=== "User"
-    - Dapat melihat data seluruh asset pada modul.
-    - Tidak dapat membuat asset baru. 
+=== "Akses Employee"
+    - Dapat membuat *Employee* baru dan dapat melihat keseluruhan data *Employee* pada modul.
+    - Dapat menonaktifkan (arsip) data employee yang sudah Resign.
 
-=== "Admin"
-    - Dapat membuat *Asset GA* baru dan dapat melihat keseluruhan data Asset pada modul.
-    - Dapat melakukan action *Confirm* untuk mengkonfirmasi bahwa data tersebut sudah sesuai.
+=== "Manager"
+    - Hanya dapat melihat menu *Employee* di dalam modul tertentu yang membutuhkan.
+    - Dapat menekan tombol *Synchronize* untuk mensinkronkan data employee pada database yang berbeda.
+
+=== "Officer"
+    - Hanya dapat melihat menu *Employee* di dalam modul tertentu yang membutuhkan.
