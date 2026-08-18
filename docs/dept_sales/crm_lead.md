@@ -4,7 +4,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *CRM* dima
 
 ## 1. Membuat CRM Baru
 
-1. Masuk ke modul **CRM** > **New CRM** > **Stage**.
+1. Masuk ke modul **CRM** > **Planning** > **Stage**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Isi nama product yang ditawarkan pada kolom **Opportunity**.
 4. Isi nama pelanggan yang ditawarkan product tersebut pada kolom **Customer Universal**, jika pelangan belum terdaftar di list maka daftarkan terlebih dahulu ke Team EDP. Sistem secara otomatis akan menarik *Regency/City*, *Type Customer*, dan *Region*.
