@@ -1,10 +1,11 @@
 # <img src="../../icon_modul/ns.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Negotiation Sheet
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation* (Penawaran Harga) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
+**Negotiation Sheet** > **Orders** > **Approval** > **Convert SO**.
 
 ## 1. Membuat Negotiation Baru
 
-1. Masuk ke modul **Negotiation Sheet** > **Orders** > **Approval** > **Convert SO**.
+1. Masuk ke modul **Negotiation Sheet**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Isi data pelanggan pada kolom **Bill To**, **Ship To** dan **Partner**. Jika pelanggan belum terdaftar, Anda bisa mengisi pada kolom **Customer Universal**.
 4. Tentukan termin pembayaran penawaran pada kolom **Payment Term**.

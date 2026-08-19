@@ -4,7 +4,7 @@ Halaman ini menjelaskan langkah-langkah standar pendataan untuk mengelola dan me
 
 ## 1. Membuat Data Karyawan
 
-1. Masuk ke modul **Employee** >> **New Employee**.
+1. Masuk ke modul **Employee**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Masukkan nama karyawan baru pada kolom **Name** (First Name, Middle Name, Last Name).
 4. Masukkan nomor nik karyawan pada kolom **No. NIK**.
