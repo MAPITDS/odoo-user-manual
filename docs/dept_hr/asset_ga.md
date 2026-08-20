@@ -1,10 +1,11 @@
 # <img src="../../icon_modul/ga_request.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Asset GA
 
 Halaman ini menjelaskan langkah-langkah standar pendataan untuk mengelola dan mengatur aset-aset statis *Asset GA*.
+**Asset GA** > **Asset** > **Confirm**
 
 ## 1. Membuat Data Asset GA
 
-1. Masuk ke modul **Asset GA** > **Asset** > **Confirm**.
+1. Masuk ke modul **Asset GA**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Masukkan nama asset pada kolom **Asset Name** dan pilih category asset tersebut pada kolom **Category**.
 4. Masukkan nomor reference pada kolom **Reference** dan catatan pada kolom **Note** jika diperlukan.

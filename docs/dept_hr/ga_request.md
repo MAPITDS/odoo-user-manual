@@ -1,10 +1,11 @@
 # <img src="../../icon_modul/ga_request.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan GA Request
 
 Halaman ini menjelaskan langkah-langkah standar untuk mengajukan permintaan ATK *GA Request* baik itu berupa permintaan untuk pengadaan barang, atau permintaan lainnya dimana bisa juga melihat ketersediaan stock yang ada.
+**GA Request** > **Request** > **Waiting Approval** > **In Progress** > **Received**
 
 ## 1. Membuat Permintaan Baru
 
-1. Masuk ke modul **GA Request** > **Request** > **Waiting Approval** > **In Progress** > **Received**.
+1. Masuk ke modul **GA Request**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Sistem akan otomatis menarik nama yang mengajukan dan department nya.
 4. Pilih nama sales yang menawarkan ke outlet tersebut pada kolom **Salesperson**.

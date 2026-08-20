@@ -1,10 +1,11 @@
 # <img src="../../icon_modul/sales.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Sales Order (Quotation)
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation* (Penawaran Harga) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
+**Sales** > **Orders** > **Quotations** > **Waiting Approve Credit** > **Locked**
 
 ## 1. Membuat Quotation Baru
 
-1. Masuk ke modul **Sales** > **Orders** > **Quotations** > **Waiting Approve Credit** > **Locked**.
+1. Masuk ke modul **Sales**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Isi data pelanggan pada kolom **Customer**, **Billing Address**, dan **Shipping Address**. Jika pelanggan belum terdaftar, Anda bisa mengajukan Form New Customer ke Team EDP.
 4. Tentukan termin pembayaran penawaran pada kolom **Payment Terms**.
