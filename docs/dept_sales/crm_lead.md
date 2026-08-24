@@ -60,7 +60,10 @@ Pada state yang bukan **New** merupakan progres untuk crm tersebut, maka *klik* 
 6. **Deal** : Sudah sepakat Ekatalog sedang proses / menunggu PO / SP / Kontrak.
 7. **Lost** : Gagal. Apabila klik progress ini maka masukkan alasan gagalnya penawaran pada kolom **Lost Reason**.
 8. **Won** : Sudah menerima PO / SP / Kontrak.
-9. **CBS** : Batal otomatis oleh Sistem karena sudah melebihi batas tanggal yang sudah ditentukan pada kolom *Expected Closing*.
+9. **CBS** : Batal otomatis oleh Sistem dikarenakan beberapa kondisi :
+   A. Sudah melebihi batas tanggal yang sudah ditentukan pada kolom *Expected Closing*. 
+   B. Apabila stage *New* tidak ada progress selama >15 hari.
+   B. Apabila tidak ada perubahan stage selama >45 hari.
 
 ![Contoh Tampilan Stage CRM](../dept_sales/images/crm_stage.png)
 <center><em>Gambar 4 : Tampilan stage pada crm.</em></center>
