@@ -12,7 +12,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *CRM* dima
 5. Pilih nama sales yang melakukan penawaran ke outlet tersebut pada kolom **Salesperson**.
 6. Tentukan perkiraan kemungkinan keberhasilan prospek nya pada kolom **Probability** dan isi tanggal berakhirnya prospek tersebut pada kolom **Expected Closing**.
 7. Isi sumber dana tersebut berasal dari mana pada kolom **Funding Source**.
-8. Jika prospek tersebut berasal dari event maka pilih nama event tersebut pada kolom **Lead by Event**.
+8. Jika prospek tersebut berasal dari event maka pilih nama event tersebut pada kolom **Event**.
 9. Ceklis pada kolom **Verified** setelah melakukan verifikasi dokumen yang diminta dan isi nya sudah sesuai dengan target yang di maksud.
 
 ![Contoh Pengisian Form CRM](../dept_sales/images/crm_header.png)
@@ -22,7 +22,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *CRM* dima
 
 ## 2. Pengisian Nama Pelanggan
 
-Pada tab **Followup** di bagian **SAS**, masukkan informasi pelanggan:
+Pada tab **Followup**, masukkan informasi pelanggan:
 
 1. Masukkan nama pelanggan pada kolom **Contact Name**.
 2. Isi jabatan pelanggan tersebut pada kolom **Job Position**.
@@ -35,7 +35,7 @@ Pada tab **Followup** di bagian **SAS**, masukkan informasi pelanggan:
 
 ## 3. Pengisian Produk
 
-Pada tab **Detail Product** di bagian **SAS**, masukkan produk yang ingin ditawarkan kepada pelanggan:
+Pada tab **Detail Product**, masukkan produk yang ingin ditawarkan kepada pelanggan:
 
 1. Klik **Add a line**.
 2. Pilih produk yang ditawarkan dari daftar *dropdown*.
