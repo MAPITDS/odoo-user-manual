@@ -1,10 +1,11 @@
 # <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alur Pembuatan Delivery Order
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *DO* (Delivery Order) hingga menjadi *Invoice* yang siap diproses oleh tim FA.
+**Inventory** > **Delivery Order** > **Waiting** > **Process** > **Ready**.
 
 ## 1. Membuat DO Baru
 
-1. Masuk ke modul **Inventory** > **Delivery Order** > **Waiting** > **Process** > **Ready**.
+1. Masuk ke modul **Inventory** > **Delivery Order**.
 2. *DO* secara otomatis sudah terbuat dari *SO* yang telah terbentuk.
 3. Pilih *DO* yang akan di proses. Dan klik *Edit*.
 4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *DO* ini diterima pada kolom **Date**, dan pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**.
@@ -21,6 +22,7 @@ Pada tab **Operations**, masukkan lot pada produk yang akan dikirimkan ke pelang
 4. Pilih lot/sn produk dari daftar *dropdown* yang akan dikirimkan.
 5. Sistem akan otomatis menarik Expired Date dan UOM pada Lot tersebut.
 6. Masukkan qty produk yang akan dikimkan pada kolom **Done**.
+7. Kemudian klik **Confirm**.
 
 ![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
