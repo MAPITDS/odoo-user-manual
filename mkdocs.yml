@@ -1,6 +1,9 @@
 site_name: MAP Odoo User Manual
 site_url: https://mapitds.github.io/odoo-user-manual/
 
+extra_javascript:
+  - javascripts/scroll.js
+
 theme:
   name: material
   # language: id
@@ -50,6 +53,11 @@ markdown_extensions:
 plugins:
   - search
   - glightbox
+  - encryptcontent:
+      global_password: "123"  # Password Anda
+      summary: "Dokumen ini hanya untuk internal, silakan masukkan password yang benar untuk membukanya."
+      encryption_info_message: "Hubungi tim IT / Administrator untuk mendapatkan akses."
+      placeholder: "Masukkan password..."
   # - git-authors
   - git-committers:
       repository: mapitds/odoo-user-manual
@@ -57,19 +65,6 @@ plugins:
   - git-committers:
       repository: mapitds/odoo-user-manual
       branch: sa-main
-  # - i18n:
-  #     default_language: id
-  #     languages:
-  #       - link: /id/
-  #         locale: id
-  #         name: Indonesian
-  #         default: true
-  #         build: true
-  #       - link: /en/
-  #         locale: en
-  #         name: English
-  #         default: false
-  #         build: true
   - git-revision-date-localized:
       enable_creation_date: true
       type: datetime
@@ -82,16 +77,27 @@ extra:
   generator: false
   assets:
     - icon_modul
-
-extra_javascript:
-  - javascripts/scroll.js
+  # analytics:
+  #   provider: giscus
+  #   repo: mapitds/odoo-user-manual
+  #   repo_id: R_kgDOTUBINw
+  #   category: General
+  #   category_id: DIC_kwDOTUBIN84DBOJi
+  #   mapping: pathname
+  #   strict: 0
+  #   reactions_enabled: 1
+  #   emit_metadata: 0
+  #   input_position: bottom
+  #   theme: preferred_color_scheme
+  #   lang: id
+  #   crossorigin: anonymous
 
 extra_css:
   - stylesheets/extra.css
 
 copyright: |
   <div class="custom-footer">
-    <span>Copyright &copy; 2026 <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">CareSys</a> &mdash; Powered by <a href="https://github.com" target="_blank" rel="noopener">GitHub</a></span>
+    <span>Copyright &copy; 2026 <a href="https://share.google/NLQbzIuipR5ITQR9n/" target="_blank" rel="noopener">CareSys</a> &mdash; Created by <a href="https://github.com/bangjc" target="_blank" rel="noopener">GitHub</a></span>
     <span>Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a></span>
   </div>
 
@@ -100,26 +106,26 @@ nav:
   - "🖥️ Home" : index.md
 
   - Sales Department : 
-    - "🛃 Modules":
+    - "▶️ Modules":
+      - CRM : dept_sales/crm_lead.md
       - Negotiation Sheet : dept_sales/negotiation_sheet.md
       - Sales : dept_sales/sales_quotation.md
       - Sales Target : dept_sales/sales_target.md
-      - CRM : dept_sales/crm_lead.md
   
-  - Purchase Department :
-    - "🛃 Modules":
+  - Product Department :
+    - "▶️ Modules":
       - Purchase Request : dept_prd/purchase_request.md
       - Purchase Order : dept_prd/purchase_order.md
 
   - Warehouse Department :
-    - "🛃 Modules":
+    - "▶️ Modules":
       - Inventory : dept_who/inventory.md
       - Receipts Order : dept_who/inventory_ri.md
       - Delivery Order : dept_who/inventory_do.md
       - Internal Transfer : dept_who/internal_transfer.md
     
   - Finance & Accounting Department :
-    - "🛃 Modules":
+    - "▶️ Modules":
       - Invoices : dept_fa_acc/invoices.md
       - Vendor Bills : dept_fa_acc/vendor_bill.md
       - Bank Statement : dept_fa_acc/bank_statement.md
@@ -129,7 +135,7 @@ nav:
       - E-Faktur : dept_fa_acc/efaktur.md
   
   - Human Resource Department :
-    - "🛃 Modules":
+    - "▶️ Modules":
       - Employee : dept_hr/employee.md
       - Recruitment : dept_hr/recruitment.md
       - Attendance : dept_hr/attendance.md
@@ -138,7 +144,7 @@ nav:
       - Time Off : dept_hr/time_off.md
   
   - Additional Modules :
-    - "🛃 Productivity":
+    - "▶️ Productivity":
       - Advance : dept_all/advance.md
       - Activity : dept_all/activity.md
       - Helpdesk : dept_all/helpdesk.md
@@ -152,4 +158,5 @@ nav:
   - Reporting : 
     - Sales : 
       - KPI : dept_sales/kpi_.md
-    - Inventory : dept_who/inventory.md
+    - Inventory : 
+      - Overview : dept_who/inventory.md
