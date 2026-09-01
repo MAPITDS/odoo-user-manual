@@ -32,7 +32,27 @@ Pada tab **Operations**, masukkan lot pada produk yang akan dikirimkan ke pelang
 
 ---
 
-## 3. Melakukan Konfirmasi menjadi Negotiation Sheet (NS)
+## 3. Memasukkan Tambahan Informasi
+
+Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
+
+1. Pilih **Product** yang akan di masukkan lot nya.
+2. Klik **Detailed Operations** yang ada di sebelah kanan produk.
+3. Klik **Add a line**.
+4. Pilih lot/sn produk dari daftar *dropdown* yang akan dikirimkan.
+5. Sistem akan otomatis menarik Expired Date dan UOM pada Lot tersebut.
+6. Masukkan qty produk yang akan dikimkan pada kolom **Done**.
+7. Kemudian klik **Confirm**.
+
+![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
+*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+
+!!! note "Tips Pengisian Cepat"
+    Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*.
+
+---
+
+## 4. Melakukan Konfirmasi menjadi Negotiation Sheet (NS)
 
 Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusnya menjadi *Sales Order* agar modul *Inventory* dapat mendeteksi adanya kebutuhan pengiriman barang.
 
