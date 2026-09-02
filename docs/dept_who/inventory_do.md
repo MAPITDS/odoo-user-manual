@@ -27,34 +27,35 @@ Pada tab **Operations**, masukkan lot pada produk yang akan dikirimkan ke pelang
 ![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
 
-!!! note "Tips Pengisian Cepat"
-    Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*.
-
 ---
 
 ## 3. Memasukkan Tambahan Informasi
 
 Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 
-1. Pilih **Product** yang akan di masukkan lot nya.
-2. Klik **Detailed Operations** yang ada di sebelah kanan produk.
-3. Klik **Add a line**.
-4. Pilih lot/sn produk dari daftar *dropdown* yang akan dikirimkan.
-5. Sistem akan otomatis menarik Expired Date dan UOM pada Lot tersebut.
-6. Masukkan qty produk yang akan dikimkan pada kolom **Done**.
-7. Kemudian klik **Confirm**.
+1. Pilih proses pengiriman produk **Shipping Policy** dari daftar *dropdown*.
+2. Pilih nomor SO **Sales Order** dari daftar *dropdown* untuk transaksi yang terkait pengiriman produk tersebut.
+3. Masukkan tanggal untuk jadwal pengiriman produk pada kolom **Scheduled Date**.
+4. Pilih prioritas pengiriman produk pada kolom **Priority**.
 
 ![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
 
-!!! note "Tips Pengisian Cepat"
-    Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*.
+---
+
+## 4. Memasukkan Catatan
+
+Pada tab **Note**, masukkan informasi mengenai pengiriman produk yang diperlukan.
+Kemudian klik **Save**.
+
+![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
+*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
 
 ---
 
-## 4. Melakukan Konfirmasi menjadi Negotiation Sheet (NS)
+## 5. Melakukan Konfirmasi Pengiriman Produk
 
-Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusnya menjadi *Sales Order* agar modul *Inventory* dapat mendeteksi adanya kebutuhan pengiriman barang.
+DO yang terbentuk melalui SO maka masuk ke dalam *Delivery Order* akan langsung berstatus **Waiting**. Jika semua langkah sudah di isi maka klik **Validate** dan produk sudah siap untuk dikirimkan. 
 
 * Klik tombol **Confirm** yang berada di barisan tombol aksi kiri atas.
 * Status dokumen di pojok kanan atas akan otomatis berubah dari **Quotation Sent** menjadi **Sales Order**.

@@ -41,7 +41,7 @@ Pada tab **Detail Product**, masukkan produk yang ingin ditawarkan kepada pelang
 2. Pilih produk yang ditawarkan dari daftar *dropdown*.
 3. Masukkan jumlah produk pada kolom **Qty**.
 4. Sistem akan otomatis menarik **Program**, **Faskes**, dan **Harga Produk**. Jika ada kesepakan lain untuk harga bisa dirubah pada kolom **Product Price** sesuai kesepakatan.
-5. Kemudian klik **Save**
+5. Kemudian klik **Save**.
 
 ![Contoh Pengisian Product CRM](../dept_sales/images/crm_product.png)
 <center><em>Gambar 3 : Tampilan pengisian produk pada tab Detail Product.</em></center>
