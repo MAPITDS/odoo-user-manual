@@ -55,25 +55,27 @@ Kemudian klik **Save**.
 
 ## 5. Melakukan Konfirmasi Pengiriman Produk
 
-DO yang terbentuk melalui SO maka masuk ke dalam *Delivery Order* akan langsung berstatus **Waiting**. Jika semua langkah sudah di isi maka klik **Validate** dan produk sudah siap untuk dikirimkan. 
+DO yang terbentuk melalui SO maka masuk ke dalam *Delivery Order* akan langsung berstatus **Waiting**. 
 
-* Klik tombol **Confirm** yang berada di barisan tombol aksi kiri atas.
-* Status dokumen di pojok kanan atas akan otomatis berubah dari **Quotation Sent** menjadi **Sales Order**.
+* Jika semua langkah sudah di isi maka klik **Validate** dan produk sudah siap untuk dikirimkan.
+* Apabila untuk memastikan ketersediaan produk sebelum melakukan validate, maka klik **Check Availability**
 
 !!! warning "Peringatan Penting Sebelum Konfirmasi"
-    Pastikan Anda telah memeriksa ulang **Taxes** (Pajak) dan **Pricelist** yang digunakan. Dokumen yang sudah berstatus *Sales Order* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* atau membuat *credit note*) jika ingin diubah kembali.
+    Pastikan Anda telah memeriksa ulang **Address** dan **Qty** produk yang akan dikirimkan. Dokumen yang sudah berstatus *Ready* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* dan membuat *Reset To Draft*) jika ingin diubah kembali.
 
 ---
+
 
 ## 📝 Evaluasi & Referensi Tambahan
 
 ### SOP Harian (Checklist)
-- [x] Input data Customer dan verifikasi masa berlaku penawaran.
-- [x] Pastikan nominal pajak (VAT 11%) sudah sesuai.
-- [ ] Lakukan konfirmasi menjadi Sales Order setelah mendapat approval klien.
+- [x] Input Qty dan Lot produk sesuai dengan yang akan dikirimkan.
+- [x] Pastikan nama pelanggan dan alamat penerima sudah sesuai.
+- [ ] Lakukan konfirmasi apabila produk sudah dikirimkan ke pelanggan.
+
 
 ### Fitur Berdasarkan Hak Akses
-=== "Tampilan Staff Sales"
+=== "Tampilan User"
     Hanya dapat membuat *Quotation* dan melihat status ketersediaan stok produk secara real-time.
 
 === "Tampilan Supervisor / Manajer"
