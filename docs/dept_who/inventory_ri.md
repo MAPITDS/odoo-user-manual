@@ -1,13 +1,13 @@
 # <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Negotiation Sheet
 
-Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation* (Penawaran Harga) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
+Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *RI* (Penerimaan Barang) hingga menjadi *Invoice* yang siap diproses oleh tim FA.
 
-## 1. Membuat DO Baru
+## 1. Membuat RI Baru
 
-1. Masuk ke modul **Inventory** > **Delivery Order**.
-2. *DO* secara otomatis sudah terbuat dari *SO* yang telah terbentuk.
-3. Pilih *DO* yang akan di proses. Dan klik *Edit*.
-4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *DO* ini diterima pada kolom **Date**, dan pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**.
+1. Masuk ke modul **Inventory** > **Receipts**.
+2. *RI* secara otomatis sudah terbuat dari *PO* yang telah terbentuk.
+3. Pilih *RI* yang akan di proses. Dan klik *Edit*.
+4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *RI* ini diterima pada kolom **Date**, dan pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**.
 
 ---
 
