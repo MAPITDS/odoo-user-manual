@@ -25,6 +25,7 @@ Pada tab **Operations**, masukkan lot pada produk yang akan dikirimkan ke pelang
 
 ![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
 
 ---
 
@@ -50,6 +51,7 @@ Kemudian klik **Save**.
 
 ![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
 
 ---
 

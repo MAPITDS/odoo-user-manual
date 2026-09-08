@@ -10,6 +10,9 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *DO* (Deli
 3. Pilih *DO* yang akan di proses. Dan klik *Edit*.
 4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *DO* ini diterima pada kolom **Date**, dan pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**.
 
+![Contoh Pengisian Order Lines](../inventory/images/do_header.png)
+<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
+
 ---
 
 ## 2. Memasukkan Lot Produk
@@ -24,8 +27,11 @@ Pada tab **Operations**, masukkan lot pada produk yang akan dikirimkan ke pelang
 6. Masukkan qty produk yang akan dikimkan pada kolom **Done**.
 7. Kemudian klik **Confirm**.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Lot Product](../inventory/images/do_operations.png)
+<center><em>Gambar 2.1 : Tampilan pengisian lot produk pada tab Operations.</em></center>
+
+![Contoh Pengisian Lot Product](../inventory/images/do_lot.png)
+<center><em>Gambar 2.2 : Tampilan pengisian lot produk pada tab Operations.</em></center>
 
 ---
 
@@ -38,8 +44,8 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 3. Masukkan tanggal untuk jadwal pengiriman produk pada kolom **Scheduled Date**.
 4. Pilih prioritas pengiriman produk pada kolom **Priority**.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Order Lines](../inventory/images/do_info.png)
+<center><em>Gambar 3 : Tampilan pengisian produk pada tab additional info.</em></center>
 
 ---
 
@@ -48,8 +54,8 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 Pada tab **Note**, masukkan informasi mengenai pengiriman produk yang diperlukan.
 Kemudian klik **Save**.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Order Lines](../inventory/images/do_note.png)
+<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
 
 ---
 
@@ -76,7 +82,8 @@ DO yang terbentuk melalui SO maka masuk ke dalam *Delivery Order* akan langsung 
 
 ### Fitur Berdasarkan Hak Akses
 === "Tampilan User"
-    Hanya dapat membuat *Quotation* dan melihat status ketersediaan stok produk secara real-time.
+    - Dapat membuat *DO* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action untuk melakukan *Validate* sesuai kondisi pengiriman yang terjadi.
 
 === "Tampilan Supervisor / Manajer"
     Memiliki tombol tambahan untuk menyetujui diskon di luar batas standar dan mengubah *Pricelist* khusus.
