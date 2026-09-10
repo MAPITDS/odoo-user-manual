@@ -9,6 +9,9 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *RI* (Pene
 3. Pilih *RI* yang akan di proses. Dan klik *Edit*.
 4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *RI* ini diterima pada kolom **Date**, dan pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**.
 
+![Contoh Pengisian Order Lines](../inventory/images/ri_header.png)
+<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
+
 ---
 
 ## 2. Memasukkan Lot Produk
@@ -23,9 +26,11 @@ Pada tab **Operations**, masukkan lot pada produk yang akan dikirimkan ke pelang
 6. Masukkan qty produk yang akan dikimkan pada kolom **Done**.
 7. Kemudian klik **Confirm**.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
-<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
+![Contoh Pengisian Lot Product](../inventory/images/ri_operations.png)
+<center><em>Gambar 2.1 : Tampilan pengisian lot produk pada tab Operations.</em></center>
+
+![Contoh Pengisian Lot Product](../inventory/images/ri_lot.png)
+<center><em>Gambar 2.2 : Tampilan pengisian lot produk pada tab Operations.</em></center>
 
 ---
 
@@ -39,8 +44,8 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 3. Masukkan tanggal untuk jadwal pengiriman produk pada kolom **Scheduled Date**.
 4. Pilih prioritas pengiriman produk pada kolom **Priority**.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Order Lines](../inventory/images/ri_info.png)
+<center><em>Gambar 1 : Tampilan pengisian produk pada tab additional info.</em></center>
 
 ---
 
@@ -49,8 +54,7 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 Pada tab **Note**, masukkan informasi mengenai pengiriman produk yang diperlukan.
 Kemudian klik **Save**.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Order Lines](../inventory/images/ri_note.png)
 <center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
 
 ---

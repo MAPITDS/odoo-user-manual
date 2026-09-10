@@ -86,7 +86,7 @@ DO yang terbentuk melalui SO maka masuk ke dalam *Delivery Order* akan langsung 
     - Dapat melakukan action untuk melakukan *Validate* sesuai kondisi pengiriman yang terjadi.
 
 === "Tampilan Supervisor / Manajer"
-    Memiliki tombol tambahan untuk menyetujui diskon di luar batas standar dan mengubah *Pricelist* khusus.
+    Memiliki tombol tambahan *Unlock* untuk mengedit *Qty* yang di kirimkan atau yang sudah selesai dikirimkan.
 
 ??? info "Detail Akuntansi Teknis (Klik untuk Membuka)"
     Saat dokumen bertransisi dari *Quotation* menjadi *Sales Order*, sistem Odoo belum membentuk jurnal finansial. Jurnal baru akan terbentuk saat produk dikirim (*Inventory Move*) atau faktur dibuat (*Invoice Created*).
