@@ -92,4 +92,4 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 
 ??? info "What Next?"
     Setelah *SO* sudah berstatus *Locked* selanjutnya dokumen akan masuk ke Modul *Inventory*.
-    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_sales/sales_quotation.md)
+    [Lanjut ke Modul Inventory - Delivery Order :octicons-arrow-right-16:](../dept_sales/inventory_do.md)

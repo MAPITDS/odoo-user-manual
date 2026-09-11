@@ -72,12 +72,12 @@ DO yang terbentuk melalui SO maka masuk ke dalam *Delivery Order* akan langsung 
 ---
 
 
-## 📝 Evaluasi & Referensi Tambahan
+## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-- [x] Input Qty dan Lot produk sesuai dengan yang akan dikirimkan.
-- [x] Pastikan nama pelanggan dan alamat penerima sudah sesuai.
-- [ ] Lakukan konfirmasi apabila produk sudah dikirimkan ke pelanggan.
+* <input type="checkbox"> **Pastikan Qty dan Lot/SN Product** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan Nama Pelanggan dan Alamat Penerima** sudah sesuai dan benar.
+* <input type="checkbox"> **Lakukan Konfirmasi apabila Produk sudah dikirimkan ke pelanggan**.
 
 
 ### Fitur Berdasarkan Hak Akses
@@ -88,5 +88,6 @@ DO yang terbentuk melalui SO maka masuk ke dalam *Delivery Order* akan langsung 
 === "Tampilan Supervisor / Manajer"
     Memiliki tombol tambahan *Unlock* untuk mengedit *Qty* yang di kirimkan atau yang sudah selesai dikirimkan.
 
-??? info "Detail Akuntansi Teknis (Klik untuk Membuka)"
-    Saat dokumen bertransisi dari *Quotation* menjadi *Sales Order*, sistem Odoo belum membentuk jurnal finansial. Jurnal baru akan terbentuk saat produk dikirim (*Inventory Move*) atau faktur dibuat (*Invoice Created*).
+??? info "What Next?"
+    Setelah *DO* sudah dilakukan dan berstatus *Done* selanjutnya dokumen akan masuk ke Modul *Accounting* dengan membuat sebuah faktur **Create Invoice**.
+    [Lanjut ke Modul Accounting - Invoice :octicons-arrow-right-16:](../dept_fa_acc/invoices.md)

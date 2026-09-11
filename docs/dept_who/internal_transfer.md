@@ -1,58 +1,93 @@
-# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Negotiation Sheet
+# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Internal Transfers
 
-Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation* (Penawaran Harga) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
+Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Internal Transfers* (INT) perpindahan produk dari satu gudang ke gudang lainnya hingga menjadi *INT* yang siap diproses oleh tim gudang.
 
-## 1. Membuat Negotiation Baru
+## 1. Membuat INT Baru
 
-1. Masuk ke modul **ns** > **Orders** > **Quotations**.
-2. Klik tombol **New** di pojok kiri atas halaman.
-3. Isi data pelanggan pada kolom **Customer**. Jika pelanggan belum terdaftar, Anda bisa membuatnya langsung dari kolom ini.
-4. Tentukan masa berlaku penawaran pada kolom **Expiration**.
+1. Masuk ke modul **Inventory** > **Internal Transfers**.
+2. *INT* secara otomatis sudah terbuat dari *IT Request* yang telah terbentuk.
+3. Pilih *INT* yang akan di proses. Dan klik *Edit*.
+4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *INT* ini diterima pada kolom **Date**, pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**, dan keterangan untuk *INT* ini pada kolom **Source Document**.
 
----
-
-## 2. Memasukkan Produk dan Harga
-
-Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan:
-
-1. Klik **Add a product**.
-2. Pilih produk dari daftar *dropdown*.
-3. Masukkan jumlah produk pada kolom **Quantity**.
-4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** jika terdapat kesepakatan khusus.
-
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
-
-!!! note "Tips Pengisian Cepat"
-    Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*.
+![Contoh Pengisian Order Lines](../inventory/images/int_header.png)
+<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
 
 ---
 
-## 3. Melakukan Konfirmasi menjadi Negotiation Sheet (NS)
+## 2. Memasukkan Lot Produk
 
-Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusnya menjadi *Sales Order* agar modul *Inventory* dapat mendeteksi adanya kebutuhan pengiriman barang.
+Pada tab **Operations**, masukkan lot pada produk yang akan dikirimkan ke pelanggan :
 
-* Klik tombol **Confirm** yang berada di barisan tombol aksi kiri atas.
-* Status dokumen di pojok kanan atas akan otomatis berubah dari **Quotation Sent** menjadi **Sales Order**.
+1. Pilih **Product** yang akan di masukkan lot nya.
+2. Klik **Detailed Operations** yang ada di sebelah kanan produk.
+3. Klik **Add a line**.
+4. Pilih lot/sn produk dari daftar *dropdown* yang akan dikirimkan.
+5. Sistem akan otomatis menarik Expired Date dan UOM pada Lot tersebut.
+6. Masukkan qty produk yang akan dikimkan pada kolom **Done**.
+7. Kemudian klik **Confirm**.
+
+![Contoh Pengisian Lot Product](../inventory/images/int_operations.png)
+<center><em>Gambar 2.1 : Tampilan pengisian lot produk pada tab Operations.</em></center>
+
+![Contoh Pengisian Lot Product](../inventory/images/int_lot.png)
+<center><em>Gambar 2.2 : Tampilan pengisian lot produk pada tab Operations.</em></center>
+
+---
+
+## 3. Memasukkan Tambahan Informasi
+
+Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
+
+1. Pilih proses pengiriman produk **Shipping Policy** dari daftar *dropdown*.
+2. Pilih nomor SO **Sales Order** dari daftar *dropdown* untuk transaksi yang terkait pengiriman produk tersebut.
+3. Masukkan tanggal untuk jadwal pengiriman produk pada kolom **Scheduled Date**.
+4. Pilih prioritas pengiriman produk pada kolom **Priority**.
+
+![Contoh Pengisian Order Lines](../inventory/images/int_info.png)
+<center><em>Gambar 3 : Tampilan pengisian produk pada tab additional info.</em></center>
+
+---
+
+## 4. Memasukkan Catatan
+
+Pada tab **Note**, masukkan informasi mengenai pengiriman produk yang diperlukan.
+Kemudian klik **Save**.
+
+![Contoh Pengisian Order Lines](../inventory/images/int_note.png)
+<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
+
+---
+
+## 5. Melakukan Konfirmasi Pengiriman Produk
+
+INT yang terbentuk melalui IT Request maka masuk ke dalam *Internal Transfers* akan langsung berstatus **Waiting**. 
+
+* Jika semua langkah sudah di isi maka klik **Validate** dan produk sudah siap untuk dikirimkan.
+* Apabila untuk memastikan ketersediaan produk sebelum melakukan validate, maka klik **Check Availability**
 
 !!! warning "Peringatan Penting Sebelum Konfirmasi"
-    Pastikan Anda telah memeriksa ulang **Taxes** (Pajak) dan **Pricelist** yang digunakan. Dokumen yang sudah berstatus *Sales Order* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* atau membuat *credit note*) jika ingin diubah kembali.
+    Pastikan Anda telah memeriksa ulang **Address**, **Location**, dan **Qty** produk yang akan dipindahkan. Dokumen yang sudah berstatus *Ready* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* dan membuat *Reset To Draft*) jika ingin diubah kembali.
+
 
 ---
 
-## 📝 Evaluasi & Referensi Tambahan
+
+## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-- [x] Input data Customer dan verifikasi masa berlaku penawaran.
-- [x] Pastikan nominal pajak (VAT 11%) sudah sesuai.
-- [ ] Lakukan konfirmasi menjadi Sales Order setelah mendapat approval klien.
+* <input type="checkbox"> **Pastikan Qty dan Lot/SN Product** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan Lokasi Gudang dan Keterangan pengajuan ITR** sudah sesuai dan benar.
+* <input type="checkbox"> **Lakukan Konfirmasi apabila Produk diterima oleh gudang** sudah sesuai dan benar.
+
 
 ### Fitur Berdasarkan Hak Akses
-=== "Tampilan Staff Sales"
-    Hanya dapat membuat *Quotation* dan melihat status ketersediaan stok produk secara real-time.
+=== "Tampilan User"
+    - Dapat membuat *INT* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action untuk melakukan *Validate* sesuai kondisi pengiriman yang terjadi.
 
 === "Tampilan Supervisor / Manajer"
-    Memiliki tombol tambahan untuk menyetujui diskon di luar batas standar dan mengubah *Pricelist* khusus.
+    Memiliki tombol tambahan *Unlock* untuk mengedit *Qty* yang di kirimkan atau yang sudah selesai dikirimkan.
 
-??? info "Detail Akuntansi Teknis (Klik untuk Membuka)"
-    Saat dokumen bertransisi dari *Quotation* menjadi *Sales Order*, sistem Odoo belum membentuk jurnal finansial. Jurnal baru akan terbentuk saat produk dikirim (*Inventory Move*) atau faktur dibuat (*Invoice Created*).
+??? info "What Next?"
+    Setelah *Internal Transfers* sudah dilakukan dan berstatus *Done* selanjutnya dokumen akan masuk ke Modul *Accounting* dengan membuat sebuah faktur **Create Invoice**.
+    [Lanjut ke Modul Accounting - Invoice :octicons-arrow-right-16:](../dept_fa_acc/invoices.md)

@@ -1,4 +1,4 @@
-# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Negotiation Sheet
+# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Receipts
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *RI* (Penerimaan Barang) hingga menjadi *Invoice* yang siap diproses oleh tim FA.
 
@@ -49,30 +49,35 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 
 ---
 
-## 4. Memasukkan Catatan
+## 5. Melakukan Konfirmasi Pengiriman Produk
 
-Pada tab **Note**, masukkan informasi mengenai pengiriman produk yang diperlukan.
-Kemudian klik **Save**.
+RI yang terbentuk melalui PO maka masuk ke dalam *Receipts* akan langsung berstatus **Waiting**. 
 
-![Contoh Pengisian Order Lines](../inventory/images/ri_note.png)
-<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
+* Jika semua langkah sudah di isi maka klik **Validate** dan produk sudah siap untuk dikirimkan.
+* Apabila untuk memastikan ketersediaan produk sebelum melakukan validate, maka klik **Check Availability**
+
+!!! warning "Peringatan Penting Sebelum Konfirmasi"
+    Pastikan Anda telah memeriksa ulang **Address** dan **Qty** produk yang diterima. Dokumen yang sudah berstatus *Ready* dan melahirkan dokumen penerimaan gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* dan membuat *Reset To Draft*) jika ingin diubah kembali.
 
 ---
 
 
-## 📝 Evaluasi & Referensi Tambahan
+## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-- [x] Input data Customer dan verifikasi masa berlaku penawaran.
-- [x] Pastikan nominal pajak (VAT 11%) sudah sesuai.
-- [ ] Lakukan konfirmasi menjadi Sales Order setelah mendapat approval klien.
+* <input type="checkbox"> **Pastikan Qty dan Lot/SN Product** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan Nama Pelanggan dan Alamat Pengirim** sudah sesuai dan benar.
+* <input type="checkbox"> **Lakukan Konfirmasi apabila Produk diterima oleh gudang** sudah sesuai dan benar.
+
 
 ### Fitur Berdasarkan Hak Akses
-=== "Tampilan Staff Sales"
-    Hanya dapat membuat *Quotation* dan melihat status ketersediaan stok produk secara real-time.
+=== "Tampilan User"
+    - Dapat membuat *RI* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action untuk melakukan *Validate* sesuai kondisi pengiriman yang terjadi.
 
 === "Tampilan Supervisor / Manajer"
-    Memiliki tombol tambahan untuk menyetujui diskon di luar batas standar dan mengubah *Pricelist* khusus.
+    Memiliki tombol tambahan *Unlock* untuk mengedit *Qty* yang di kirimkan atau yang sudah selesai dikirimkan.
 
-??? info "Detail Akuntansi Teknis (Klik untuk Membuka)"
-    Saat dokumen bertransisi dari *Quotation* menjadi *Sales Order*, sistem Odoo belum membentuk jurnal finansial. Jurnal baru akan terbentuk saat produk dikirim (*Inventory Move*) atau faktur dibuat (*Invoice Created*).
+??? info "What Next?"
+    Setelah *RI* sudah dilakukan dan berstatus *Done* selanjutnya dokumen akan masuk ke Modul *Accounting* dengan membuat sebuah faktur **Create Invoice**.
+    [Lanjut ke Modul Accounting - Invoice :octicons-arrow-right-16:](../dept_fa_acc/invoices.md)
