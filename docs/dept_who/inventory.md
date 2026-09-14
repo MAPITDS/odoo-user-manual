@@ -1,24 +1,30 @@
-# <img src="../../icon_modul/inventory.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Negotiation Sheet
+# <img src="../../icon_modul/inventory.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Inventory
 
-Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation* (Penawaran Harga) hingga menjadi *Sales Order* (SO) yang siap diproses oleh tim gudang.
+Halaman ini menjelaskan langkah-langkah standar untuk membuat dan mengelola *Inventory* (Produk).
 
-## 1. Membuat Negotiation Baru
+## 1. Membuat Produk Baru
 
-1. Masuk ke modul **ns** > **Orders** > **Quotations**.
-2. Klik tombol **New** di pojok kiri atas halaman.
-3. Isi data pelanggan pada kolom **Customer**. Jika pelanggan belum terdaftar, Anda bisa membuatnya langsung dari kolom ini.
-4. Tentukan masa berlaku penawaran pada kolom **Expiration**.
+1. Masuk ke modul **Inventory** > **Master Data** > **Products**.
+2. Klik tombol **Create** di pojok kiri atas halaman.
+3. Isi nama produk pada kolom **Product Name**.
+4. Ceklis berdasarkan kriteria produk, apakah produk tersebut merupakan produk jual (*Can be Sold*)/ produk beli (*Can be Purchased*) / biaya produk (*Is a Landed Cost*) / produk operasional (*Can be Expensed*).
+5. Masukkan foto produk jika ada pada kolom **Image** di sebelah kanan.
+
+![Contoh Pengisian Produk Baru](../dept_hr/images/employee_header.png)
+<center><em>Gambar 1 : Tampilan pengisian form pada Produk.</em></center>
 
 ---
 
-## 2. Memasukkan Produk dan Harga
+## 2. Memasukkan Informasi Produk
 
-Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan:
+Pada tab **General Information**, masukkan semua informasi mengenai produk tersebut :
 
-1. Klik **Add a product**.
-2. Pilih produk dari daftar *dropdown*.
-3. Masukkan jumlah produk pada kolom **Quantity**.
-4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** jika terdapat kesepakatan khusus.
+1. Pilih tipe produk dari daftar *dropdown* pada kolom **Product Type**. apakah produk tersebut merupakan produk fisik yang disimpan yang bisa terlihat keluar masuk produk tersebut (*Storable Product*) / product service (*Service*) / produk habis pakai (*Consumable*).
+2. Pilih kategori produk pada kolom **Product Category**. Jika kategori belum terdaftar, Anda bisa membuatnya langsung dari kolom ini.
+3. Masukkan informasi produk dari mulai kode product *Internal Reference*, *Barcode*, *AKL*, *Info AKL*, dan *HS Code*.
+4. Pilih kode vendor produk pada kolom **Principal**. Jika kategori belum terdaftar, Anda bisa membuatnya langsung dari kolom ini.
+5. Masukkan tanggal penerimaan form pengajuan produk tersebut pada kolom **Received Date**.
+6. 
 
 ![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
 *Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
