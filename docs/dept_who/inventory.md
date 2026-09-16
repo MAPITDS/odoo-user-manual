@@ -10,7 +10,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dan mengelola *Inv
 4. Ceklis berdasarkan kriteria produk, apakah produk tersebut merupakan produk jual (*Can be Sold*)/ produk beli (*Can be Purchased*) / biaya produk (*Is a Landed Cost*) / produk operasional (*Can be Expensed*).
 5. Masukkan foto produk jika ada pada kolom **Image** di sebelah kanan.
 
-![Contoh Pengisian Produk Baru](../dept_hr/images/employee_header.png)
+![Contoh Pengisian Produk Baru](../dept_hr/images/inv_header.png)
 <center><em>Gambar 1 : Tampilan pengisian form pada Produk.</em></center>
 
 ---
@@ -28,8 +28,8 @@ Pada tab **General Information**, masukkan semua informasi mengenai produk terse
 7. Masukkan satuan / pack produk tersebut pada **Unit of Measure**, **Physical unit**, dan **Purchase Unit of Measure**.
 8. Isi catatan yang diperlukan mengenai produk tersebut pada kolom **Internal Notes**.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Informasi Produk](../dept_hr/images/inv_info.png)
+<center><em>Gambar 1 : Tampilan pengisian informasi pada Produk.</em></center>
 
 !!! note "Tips Pengisian Cepat"
     Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*.
@@ -45,8 +45,8 @@ Pada tab **Variants**, masukkan semua informasi mengenai variasi pada produk ter
 3. Masukkan nilai kelengkapan produk pada kolom **Attribute Values**. Jika nilai belum terdaftar, Anda bisa membuatnya langsung dari kolom ini.
 8. Isi catatan yang diperlukan mengenai produk tersebut pada kolom **Internal Notes**.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Variasi Produk](../dept_hr/images/inv_variants.png)
+<center><em>Gambar 1 : Tampilan pengisian variasi pada Produk.</em></center>
 
 ---
 
@@ -57,8 +57,8 @@ Pada tab **Service**, masukkan peringatan pada produk tersebut yang akan muncul 
 1. Ceklis jika akan memunculkan peringatan **Warning**.
 2. Isi peringatan produk yang akan muncul pada kolom **Note Warning**.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Notifikasi Service Produk](../dept_hr/images/inv_service.png)
+<center><em>Gambar 1 : Tampilan pengisian notifikasi produk pada modul service.</em></center>
 
 ---
 
@@ -73,8 +73,8 @@ Pada tab **Sales**, masukkan semua informasi untuk penjualan pada produk tersebu
 5. Pilih opsi produk yang sama pada kolom **Optional Products**, jika tidak ada tidak perlu di isi.
 6. Isi deskripsi untuk produk **Description for Customers** dan pilihan warning **Warning when Selling this Product** apabila catatan tersebut diperlukan untuk notif ketika ada nya SO pada produk tersebut.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Harga Jual Produk](../dept_hr/images/inv_sales.png)
+<center><em>Gambar 1 : Tampilan pengisian harga jual pada Produk.</em></center>
 
 ---
 
@@ -87,23 +87,80 @@ Pada tab **Purchase**, masukkan semua informasi untuk pembelian pada produk ters
 3. Pilih kebijakan pembayaran berdasarkan orderan produk *On ordered quantities* atau berdasarkan penerimaan produk *On received quantities*. Dan pilih pajak vendornya pada kolom **Vendor Taxes**.
 4. Isi deskripsi untuk produk **Description for Vendors** dan pilihan warning **Warning when Purchasing this Product** apabila catatan tersebut diperlukan untuk notif ketika ada nya pembelian pada produk tersebut.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Harga Beli Baru](../dept_hr/images/inv_purchase.png)
+<center><em>Gambar 1 : Tampilan pengisian harga beli pada Produk.</em></center>
 
 ---
 
 ## 7. Memasukkan Informasi Pengiriman Produk
 
-Pada tab **Inventory**, masukkan semua informasi untuk estimasi waktu pengiriman pada produk tersebut.
+Pada tab **Inventory**, masukkan semua informasi untuk estimasi waktu pengiriman/penerimaan pada produk tersebut.
 
 1. Pilih **Routes** untuk produk ini didapatkan dari membeli/produksi/order.
 2. Isi estimasi pengiriman produk dari vandor hingga diterima **Manufacturing Lead Time**, dan estimasi pengemasan produk untuk dikirimkan kepada pelanggan **Customer Lead Time**.
 3. Pilih **Tracking** produk apakah mempunyai lot  *By Lots* atau tidak *No Tracking*.
 4. Jika tracking produk *By Lots* isi estimasi berapa lama produk digunakan pada kolom *Dates*, dan isi berat beserta ukuran produk pada kolom *Logistics*.
-5. 
+5. Isi bentuk ukuran paket produk nya pada kolom **Packaging** jika diperlukan.
+6. Isi deskripsi untuk produk **Description for Delivery Orders** untuk tampil notif pada DO, **Description for Receipts** untuk tampil notif pada RI, dan **Description for Internal Transfers** untuk tampil notif pada ITR.
 
-![Contoh Pengisian Order Lines](../inventory/images/inventory_header.png)
-*Gambar 1.1: Tampilan pengisian produk pada tab Order Lines.*
+![Contoh Pengisian Estimasi Pengiriman/Penerimaan Produk](../dept_hr/images/inv_inv.png)
+<center><em>Gambar 1 : Tampilan pengisian Estimasi Pengiriman/Penerimaan pada Produk.</em></center>
+
+---
+
+## 8. Memasukkan Informasi Ukuran Produk
+
+Pada tab **Cargo Info**, masukkan informasi mengenai ukuran pada produk tersebut.
+    
+1. Masukkan panjang produk pada kolom **Length (cm)**.
+2. Masukkan lebar produk pada kolom **Width (cm)**.
+3. Masukkan tinggi produk pada kolom **Height (cm)**.
+4. Masukkan berat produk pada kolom **Weight (kg)**.
+5. Sistem secara otomatis akan menghitung **Kubikasi (CM3)** dan **Value** pada produk berdasarkan ukuran yang telah dimasukkan.
+
+![Contoh Pengisian Ukuran Produk](../dept_hr/images/inv_cargo.png)
+<center><em>Gambar 1 : Tampilan pengisian ukuran pada Produk.</em></center>
+
+---
+
+## 9. Memasukkan Informasi Link Produk
+
+Pada tab **Link**, masukkan informasi link yang berhubungan pada produk tersebut yang dapat diakses.
+    
+1. Masukkan link brosur produk pada kolom **Link Brochure**.
+2. Masukkan link AKL produk pada kolom **Link AKL**.
+3. Masukkan link penggunaan produk pada kolom **Link User Manual**.
+4. Masukkan link ecatalog produk pada kolom **Link Ecatalog**.
+5. Masukkan link lainnya terkait produk pada kolom **Other Link**.
+
+![Contoh Pengisian Link Produk](../dept_hr/images/inv_link.png)
+<center><em>Gambar 1 : Tampilan pengisian link pada Produk.</em></center>
+
+---
+
+## 10. Memasukkan Informasi Diskon Produk
+
+Pada tab **Discount**, masukkan semua informasi untuk diskon maksimal yang diberikan kepada pelanggan yang akan mempengaruhi perhitungan dan warna pada SPH.
+
+1. Klik **Add a line**.
+2. Pilih **Pricelist** produk dari daftar *dropdown*.
+3. Pilih **COM** komisi produk dari daftar *dropdown*.
+4. Masukkan nilai diskon pada kolom **DP**, **RSM**, **GSM**, **D**, **DD**, **GSM**, dan **D** sesuai dengan nilai yang telah ditentukan management.
+
+![Contoh Pengisian Diskon Produk](../dept_hr/images/inv_diskon.png)
+<center><em>Gambar 1 : Tampilan pengisian diskon pada Produk.</em></center>
+
+---
+
+## 11. Memasukkan Informasi Invoice Produk
+
+Pada tab **E-Invoicing**, masukkan informasi untuk invoice produk tersebut.
+
+1. Checklist **Is E-Invoicing Exported** jika ingin mengexport produk tersebut.
+2. Pilih tanggal export invoice untuk produk tersebut pada kolom **E-Invoicing Exported Date**.
+
+![Contoh Pengisian E-Invoicing Baru](../dept_hr/images/inv_invoice.png)
+<center><em>Gambar 1 : Tampilan pengisian E-Invoicing pada Produk.</em></center>
 
 ---
 
