@@ -164,17 +164,6 @@ Pada tab **E-Invoicing**, masukkan informasi untuk invoice produk tersebut.
 
 ---
 
-## 3. Melakukan Konfirmasi menjadi Negotiation Sheet (NS)
-
-Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusnya menjadi *Sales Order* agar modul *Inventory* dapat mendeteksi adanya kebutuhan pengiriman barang.
-
-* Klik tombol **Confirm** yang berada di barisan tombol aksi kiri atas.
-* Status dokumen di pojok kanan atas akan otomatis berubah dari **Quotation Sent** menjadi **Sales Order**.
-
-!!! warning "Peringatan Penting Sebelum Konfirmasi"
-    Pastikan Anda telah memeriksa ulang **Taxes** (Pajak) dan **Pricelist** yang digunakan. Dokumen yang sudah berstatus *Sales Order* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* atau membuat *credit note*) jika ingin diubah kembali.
-
----
 
 ## 🔄 Gambaran Umum Alur Barang
 
