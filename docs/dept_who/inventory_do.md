@@ -1,4 +1,4 @@
-# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alur Pembuatan Delivery Order
+# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Delivery Order
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *DO* (Delivery Order) hingga menjadi *Invoice* yang siap diproses oleh tim FA.
 **Inventory** > **Delivery Order** > **Waiting** > **Process** > **Ready**.
@@ -10,7 +10,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *DO* (Deli
 3. Pilih *DO* yang akan di proses. Dan klik *Edit*.
 4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *DO* ini diterima pada kolom **Date**, dan pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**.
 
-![Contoh Pengisian Order Lines](../inventory/images/do_header.png)
+![Contoh Pengisian Order Lines](../dept_who/images/do_header.png)
 <center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
 
 ---
@@ -22,15 +22,15 @@ Pada tab **Operations**, masukkan lot pada produk yang akan dikirimkan ke pelang
 1. Pilih **Product** yang akan di masukkan lot nya.
 2. Klik **Detailed Operations** yang ada di sebelah kanan produk.
 3. Klik **Add a line**.
-4. Pilih lot/sn produk dari daftar *dropdown* yang akan dikirimkan.
-5. Sistem akan otomatis menarik Expired Date dan UOM pada Lot tersebut.
+4. Pilih **Lot/SN** produk dari daftar *dropdown* yang akan dikirimkan.
+5. Sistem akan otomatis menarik **Expired Date** dan **UOM** pada Lot tersebut.
 6. Masukkan qty produk yang akan dikimkan pada kolom **Done**.
 7. Kemudian klik **Confirm**.
 
-![Contoh Pengisian Lot Product](../inventory/images/do_operations.png)
+![Contoh Pengisian Lot Product](../dept_who/images/do_operations.png)
 <center><em>Gambar 2.1 : Tampilan pengisian lot produk pada tab Operations.</em></center>
 
-![Contoh Pengisian Lot Product](../inventory/images/do_lot.png)
+![Contoh Pengisian Lot Product](../dept_who/images/do_lot.png)
 <center><em>Gambar 2.2 : Tampilan pengisian lot produk pada tab Operations.</em></center>
 
 ---
@@ -44,7 +44,7 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 3. Masukkan tanggal untuk jadwal pengiriman produk pada kolom **Scheduled Date**.
 4. Pilih prioritas pengiriman produk pada kolom **Priority**.
 
-![Contoh Pengisian Order Lines](../inventory/images/do_info.png)
+![Contoh Pengisian Order Lines](../dept_who/images/do_info.png)
 <center><em>Gambar 3 : Tampilan pengisian produk pada tab additional info.</em></center>
 
 ---
@@ -54,7 +54,7 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 Pada tab **Note**, masukkan informasi mengenai pengiriman produk yang diperlukan.
 Kemudian klik **Save**.
 
-![Contoh Pengisian Order Lines](../inventory/images/do_note.png)
+![Contoh Pengisian Order Lines](../dept_who/images/do_note.png)
 <center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
 
 ---

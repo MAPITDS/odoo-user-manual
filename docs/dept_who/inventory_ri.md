@@ -9,8 +9,8 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *RI* (Pene
 3. Pilih *RI* yang akan di proses. Dan klik *Edit*.
 4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *RI* ini diterima pada kolom **Date**, dan pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**.
 
-![Contoh Pengisian Order Lines](../dept_who/images/ri_header.png)
-<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
+![Contoh Pengisian Informasi Penerimaan Produk](../dept_who/images/ri_header.png)
+<center><em>Gambar 1 : Tampilan pengisian informasi penerimaan produk.</em></center>
 
 ---
 
@@ -21,8 +21,8 @@ Pada tab **Operations**, masukkan lot pada produk yang akan telah diterima oleh 
 1. Pilih **Product** yang akan di masukkan lot nya.
 2. Klik **Detailed Operations** yang ada di sebelah kanan produk.
 3. Klik **Add a line**.
-4. Pilih lot/sn produk dari daftar *dropdown* sesuai produk yang diterima, Jika lot/sn belum terdaftar, Anda bisa membuatnya langsung dari kolom ini.
-5. Sistem akan otomatis menarik Expired Date dan UOM pada Lot tersebut.
+4. Pilih **Lot/SN** produk dari daftar *dropdown* sesuai produk yang diterima, Jika lot/sn belum terdaftar, Anda bisa membuatnya langsung dari kolom ini.
+5. Sistem akan otomatis menarik **Expired Date** dan **UOM** pada Lot tersebut.
 6. Masukkan qty produk yang akan dikimkan pada kolom **Done**.
 7. Kemudian klik **Confirm**.
 
@@ -34,22 +34,17 @@ Pada tab **Operations**, masukkan lot pada produk yang akan telah diterima oleh 
 
 ---
 
+## 3. Memasukkan Catatan
 
-## 3. Memasukkan Tambahan Informasi
+Pada tab **Note**, masukkan informasi mengenai penerimaan produk yang diperlukan.
+Kemudian klik **Save**.
 
-Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
-
-1. Pilih proses pengiriman produk **Shipping Policy** dari daftar *dropdown*.
-2. Pilih nomor SO **Sales Order** dari daftar *dropdown* untuk transaksi yang terkait pengiriman produk tersebut.
-3. Masukkan tanggal untuk jadwal pengiriman produk pada kolom **Scheduled Date**.
-4. Pilih prioritas pengiriman produk pada kolom **Priority**.
-
-![Contoh Pengisian Order Lines](../dept_who/images/ri_info.png)
-<center><em>Gambar 1 : Tampilan pengisian produk pada tab additional info.</em></center>
+![Contoh Pengisian Catatan Penerimaan Produk](../dept_who/images/ri_note.png)
+<center><em>Gambar 3 : Tampilan pengisian catatan pada tab note.</em></center>
 
 ---
 
-## 5. Melakukan Konfirmasi Pengiriman Produk
+## 4. Melakukan Konfirmasi Pengiriman Produk
 
 RI yang terbentuk melalui PO maka masuk ke dalam *Receipts* akan langsung berstatus **Waiting**. 
 
@@ -57,16 +52,14 @@ RI yang terbentuk melalui PO maka masuk ke dalam *Receipts* akan langsung bersta
 2. Apabila untuk memastikan ketersediaan produk sebelum melakukan validate, maka klik **Check Availability**
 
 !!! warning "Peringatan Penting Sebelum Konfirmasi"
-    Pastikan Anda telah memeriksa ulang **Address** dan **Qty** produk yang diterima. Dokumen yang sudah berstatus *Ready* dan melahirkan dokumen penerimaan gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* dan membuat *Reset To Draft*) jika ingin diubah kembali.
-
----
+    Pastikan Anda telah memeriksa ulang **Partner** dan **Qty** produk yang diterima. Dokumen yang sudah berstatus *Ready* dan melahirkan dokumen penerimaan gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* dan membuat *Reset To Draft*) jika ingin diubah kembali.
 
 
 ## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Pastikan Qty dan Lot/SN Product** sudah sesuai dan benar.
-* <input type="checkbox"> **Pastikan Nama Pelanggan dan Alamat Pengirim** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan Qty dan Lot/SN Produk** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan Nama Pelanggan dan Tanggal penerimaan Produk** sudah sesuai dan benar.
 * <input type="checkbox"> **Lakukan Konfirmasi apabila Produk diterima oleh gudang** sudah sesuai dan benar.
 
 
@@ -77,6 +70,7 @@ RI yang terbentuk melalui PO maka masuk ke dalam *Receipts* akan langsung bersta
 
 === "Tampilan Supervisor / Manajer"
     Memiliki tombol tambahan *Unlock* untuk mengedit *Qty* yang di kirimkan atau yang sudah selesai dikirimkan.
+
 
 ??? info "What Next?"
     Setelah *RI* sudah dilakukan dan berstatus *Done* selanjutnya dokumen akan masuk ke Modul *Accounting* dengan membuat sebuah faktur **Create Invoice**.

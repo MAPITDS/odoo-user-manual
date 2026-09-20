@@ -1,4 +1,4 @@
-# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Internal Transfers
+# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Internal Transfers
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Internal Transfers* (INT) perpindahan produk dari satu gudang ke gudang lainnya hingga menjadi *INT* yang siap diproses oleh tim gudang.
 
@@ -9,52 +9,52 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Internal 
 3. Pilih *INT* yang akan di proses. Dan klik *Edit*.
 4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *INT* ini diterima pada kolom **Date**, pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**, dan keterangan untuk *INT* ini pada kolom **Source Document**.
 
-![Contoh Pengisian Order Lines](../inventory/images/int_header.png)
-<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
+![Contoh Pengisian Informasi Perpindahan Produk](../dept_who/images/int_header.png)
+<center><em>Gambar 1 : Tampilan pengisian perpindahan produk.</em></center>
 
 ---
 
 ## 2. Memasukkan Lot Produk
 
-Pada tab **Operations**, masukkan lot pada produk yang akan dikirimkan ke pelanggan :
+Pada tab **Operations**, masukkan lot pada produk yang akan dipindahkan gudang :
 
 1. Pilih **Product** yang akan di masukkan lot nya.
 2. Klik **Detailed Operations** yang ada di sebelah kanan produk.
 3. Klik **Add a line**.
-4. Pilih lot/sn produk dari daftar *dropdown* yang akan dikirimkan.
-5. Sistem akan otomatis menarik Expired Date dan UOM pada Lot tersebut.
-6. Masukkan qty produk yang akan dikimkan pada kolom **Done**.
+4. Pilih **Lot/SN** produk dari daftar *dropdown* yang akan dipindahkan.
+5. Sistem akan otomatis menarik **Expired Date** dan **UOM** pada Lot tersebut.
+6. Masukkan qty produk yang akan dipindahkan pada kolom **Done**.
 7. Kemudian klik **Confirm**.
 
-![Contoh Pengisian Lot Product](../inventory/images/int_operations.png)
+![Contoh Pengisian Lot Product](../dept_who/images/int_operations.png)
 <center><em>Gambar 2.1 : Tampilan pengisian lot produk pada tab Operations.</em></center>
 
-![Contoh Pengisian Lot Product](../inventory/images/int_lot.png)
+![Contoh Pengisian Lot Product](../dept_who/images/int_lot.png)
 <center><em>Gambar 2.2 : Tampilan pengisian lot produk pada tab Operations.</em></center>
 
 ---
 
 ## 3. Memasukkan Tambahan Informasi
 
-Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
+Pada tab **Additional Info**, masukkan informasi mengenai perpindahan produk :
 
-1. Pilih proses pengiriman produk **Shipping Policy** dari daftar *dropdown*.
-2. Pilih nomor SO **Sales Order** dari daftar *dropdown* untuk transaksi yang terkait pengiriman produk tersebut.
+1. Pilih proses perpindahan produk **Shipping Policy** dari daftar *dropdown*.
+2. Pilih nomor SO **Sales Order** dari daftar *dropdown* untuk transaksi yang terkait perpindahan produk tersebut.
 3. Masukkan tanggal untuk jadwal pengiriman produk pada kolom **Scheduled Date**.
 4. Pilih prioritas pengiriman produk pada kolom **Priority**.
 
-![Contoh Pengisian Order Lines](../inventory/images/int_info.png)
-<center><em>Gambar 3 : Tampilan pengisian produk pada tab additional info.</em></center>
+![Contoh Pengisian Tambahan Informasi Produk](../dept_who/images/int_info.png)
+<center><em>Gambar 3 : Tampilan pengisian tambahan informasi produk pada tab additional info.</em></center>
 
 ---
 
 ## 4. Memasukkan Catatan
 
-Pada tab **Note**, masukkan informasi mengenai pengiriman produk yang diperlukan.
+Pada tab **Note**, masukkan informasi mengenai perpindahan produk yang diperlukan.
 Kemudian klik **Save**.
 
-![Contoh Pengisian Order Lines](../inventory/images/int_note.png)
-<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
+![Contoh Pengisian Catatan Produk](../dept_who/images/int_note.png)
+<center><em>Gambar 4 : Tampilan pengisian catatan produk pada tab note.</em></center>
 
 ---
 
@@ -67,9 +67,6 @@ INT yang terbentuk melalui IT Request maka masuk ke dalam *Internal Transfers* a
 
 !!! warning "Peringatan Penting Sebelum Konfirmasi"
     Pastikan Anda telah memeriksa ulang **Address**, **Location**, dan **Qty** produk yang akan dipindahkan. Dokumen yang sudah berstatus *Ready* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* dan membuat *Reset To Draft*) jika ingin diubah kembali.
-
-
----
 
 
 ## 📝 Referensi Tambahan
