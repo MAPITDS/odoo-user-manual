@@ -1,10 +1,11 @@
 # <img src="../../icon_modul/activity.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Activity
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Aktivitas* untuk mengetahui kegiatan/kunjungan yang dilakukan oleh user per hari dalam periode bulan yang berjalan.
+**Activity** > **Waiting Approval** > **Post Journal**.
 
 ## 1. Membuat Aktivitas Baru
 
-1. Masuk ke modul **Activity** > **Waiting Approval** > **Post Journal**.
+1. Masuk ke modul **Activity**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Isi bulan yang berjalan pada kolom **Month Periode**.
 4. Sistem akan otomatis menarik nama pembuat sesuai user yang digunakan pada kolom **Name**.
@@ -58,7 +59,7 @@ Pada tab **Costs**, masukkan semua biaya terkait kegiatan/kunjungan yang dilakuk
 
 ## 5. Menunggu Approval Atasan
 
-Pada state **Approver 1**, atasan yang akan mengapprove aktivitas user tersebut.
+Pada state **Approver 1**, atasan yang akan menyetujui aktivitas user tersebut.
 
 1. Pada state **Approver 1** atasan wajib memeriksa kegiatan/kunjungan yang telah di submit oleh team nya. 
 2. Setelah sudah sesuai semua maka klik **Approve Atasan**.
@@ -93,10 +94,10 @@ Pada state **Approver Finance**, Team FA akan memerikasa keseluruhan dan kesamaa
     - Dapat melakukan perubahan data pada tab *Costs* untuk menyamakan nilai yang diinput user dengan bon/kwitansi yang diterima.
 
 === "Approve Atasan"
-    Memiliki tombol untuk meyetujui aktivitas yang sudah diisi per periode bulan berjalan dan mengubah status aktivity yang masuk ke dalam **Approver 1** menjadi **Approver Finance**.
+    Memiliki tombol untuk meyetujui aktivitas yang sudah diisi per periode bulan berjalan dan mengubah status activity yang masuk ke dalam **Approver 1** menjadi **Approver Finance**.
 
 === "Approve FA Manager"
-    Memiliki tombol untuk meyetujui aktivitas yang sudah diisi per periode bulan berjalan dan mengubah status aktivity yang masuk ke dalam **Approver Finance** menjadi **Post Journal**.
+    Memiliki tombol untuk meyetujui aktivitas yang sudah diisi per periode bulan berjalan dan mengubah status activity yang masuk ke dalam **Approver Finance** menjadi **Post Journal**.
 
 === "Post Jurnal"
-    Memiliki tombol untuk mengeksekusi jurnal yang masuk ke dalam akun-akun biaya yang dipilih pada aktivity tersebut yang masuk ke dalam **Post Journal** yang sudah di setujui oleh *Atasan* dan *FA Manager*.        
+    Memiliki tombol untuk mengeksekusi jurnal yang masuk ke dalam akun-akun biaya yang dipilih pada activity tersebut yang masuk ke dalam **Post Journal** yang sudah di setujui oleh *Atasan* dan *FA Manager*.        

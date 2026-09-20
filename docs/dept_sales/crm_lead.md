@@ -105,6 +105,7 @@ Pada state **WON** merupakan keberhasilan untuk penawaran penjualan yang sudah a
 === "RSM"
     - Dapat membuat *CRM* baru dan dapat melihat keseluruhan data per region yang dibawahi pada modul.
     - Dapat melakukan action untuk memindahkan progress *Stage* sesuai kondisi perencanaan penjualan yang terjadi.
+    - Dapat melakukan action untuk melakukan ceklis *Verified* yang menandakan bahwa perencanaan data tersebut benar.
 
 === "GSM"
     - Dapat membuat *CRM* baru dan dapat melihat keseluruhan data pada modul.

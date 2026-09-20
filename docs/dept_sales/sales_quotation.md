@@ -8,7 +8,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation
 1. Masuk ke modul **Sales**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
 3. Isi data pelanggan pada kolom **Customer**, **Billing Address**, dan **Shipping Address**. Jika pelanggan belum terdaftar, Anda bisa mengajukan Form New Customer ke Team EDP.
-4. Tentukan termin pembayaran penawaran pada kolom **Payment Terms**.
+4. Tentukan **Pricelist** dan termin pembayaran penawaran pada kolom **Payment Terms**.
 
 ![Contoh Pengisian Form SO](../dept_sales/images/so_header.png)
 <center><em>Gambar 1 : Tampilan pengisian form pada Sales Order.</em></center>
@@ -20,7 +20,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation
 Pada tab **Order Lines**, masukkan produk yang ingin ditawarkan kepada pelanggan:
 
 1. Klik **Add a product**.
-2. Pilih produk dari daftar *dropdown*.
+2. Pilih **Product** dari daftar *dropdown*.
 3. Masukkan jumlah produk pada kolom **Ordered Qty**.
 4. Sistem akan otomatis menarik harga standar. Anda dapat mengubah harga satuan secara manual pada kolom **Unit Price** dan mengubah diskon pada kolom **Discount xx+xx(%)** jika terdapat kesepakatan khusus.
 
@@ -72,7 +72,7 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 ## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Pastikan Nama Customer (Customer - Billing Address - Shipping Address - Payment Terms)** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan Nama Customer (Customer - Billing Address - Shipping Address) dan Payment Terms** sudah sesuai dan benar.
 * <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
 * <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
 
@@ -81,7 +81,7 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
 === "Admin SAS"
     - Dapat membuat *SO* baru dan dapat melihat keseluruhan data pada modul.
     - Dapat melakukan action *Confirm* jika penawaran sudah sesuai.
-    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval.
+    - Dapat melakukan action *Convert to SO* jika sudah selesai tahap Approval.
 
 === "SPV SAS"
     Memiliki tombol untuk melakukan *Confirm* jika penawaran sudah sesuai.

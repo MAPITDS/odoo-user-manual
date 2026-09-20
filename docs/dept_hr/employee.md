@@ -24,7 +24,7 @@ Pada tab **Work Information**  masukkan informasi tempat kerja karyawan :
 3. Masukkan level komisi untuk pemberian komisi penjualan pada kolom **Level Komisi**.
 4. Masukkan jam kerja karyawan pada kolom **Working Hours**.
 
-![Contoh Pengisian Informasi Kerja Karyawan](../dept_sales/images/employee_work.png)
+![Contoh Pengisian Informasi Kerja Karyawan](../dept_hr/images/employee_work.png)
 <center><em>Gambar 2 : Tampilan pengisian informasi tempat kerja karyawan pada tab Work Information.</em></center>
 
 ---
@@ -37,7 +37,7 @@ Pada tab **Private Information**  masukkan informasi data pribadi karyawan :
 2. Masukkan informasi status karyawan dari mulai *Agama*, *Jenis Kelamin*, dan *Status Pernikahan*.
 3. Masukkan informasi kelahiran karyawan dari mulai *Tanggal Lahir* dan *Tempat Lahir*.
 
-![Contoh Pengisian Data Pribadi Karyawan](../dept_sales/images/employee_private.png)
+![Contoh Pengisian Data Pribadi Karyawan](../dept_hr/images/employee_private.png)
 <center><em>Gambar 3 : Tampilan pengisian data pribadi karyawan pada tab Private Information.</em></center>
 
 ---
@@ -46,7 +46,7 @@ Pada tab **Private Information**  masukkan informasi data pribadi karyawan :
 
 Pada tab **Bank-Tax** merupakan informasi mengenai kode dan sistem secara otomatis akan menarik *Kode Department*, *NIK Atasan*, *Kode Jabatan*, dan *Kode Lokasi*.
 
-![Contoh Pengisian Kode Karyawan](../dept_sales/images/employee_bank.png)
+![Contoh Pengisian Kode Karyawan](../dept_hr/images/employee_bank.png)
 <center><em>Gambar 4 : Tampilan pengisian kode karyawan tab Bank-Tax.</em></center>
 
 ---
@@ -61,7 +61,7 @@ Pada tab **Product Spesialis**  masukkan informasi mengenai daftar product yang 
 4. Pilih department dari daftar *dropdown* pada kolom **Region**.
 5. Masukkan presentase komisi yang akan didapatkan untuk penjualan produk pada kolom **%**.
 
-![Contoh Pengisian Produk ](../dept_sales/images/employee_product.png)
+![Contoh Pengisian Produk ](../dept_hr/images/employee_product.png)
 <center><em>Gambar 5 : Tampilan pengisian produk tab Product Spesialis.</em></center>
 
 ---
@@ -74,7 +74,7 @@ Pada tab **HR Settings**  masukkan informasi mengenai perbaikan asset :
 2. Pilih nama pengguna yang sudah didaftarkan ke Team ITDS dari daftar *dropdown* pada kolom **Related User**.
 3. Ceklis jika menerima pendapatan pada kolom **Is Gross**.
 
-![Contoh Pengisian Pengaturan HR](../dept_sales/images/employee_hr.png)
+![Contoh Pengisian Pengaturan HR](../dept_hr/images/employee_hr.png)
 <center><em>Gambar 6 : Tampilan pengisian pengaturan hr pada tab HR Settings.</em></center>
 
 ---
@@ -86,7 +86,7 @@ Pada tab **Activity/Advance Setting**  merupakan pengaturan untuk atasan yang bi
 1. Ceklis pada kolom **Approved**.
 2. Kemudian klik **Save**
 
-![Contoh Pengaturan Aktivity/Advance](../dept_sales/images/ga_asset_document.png)
+![Contoh Pengaturan Aktivity/Advance](../dept_hr/images/ga_asset_document.png)
 <center><em>Gambar 6 : Tampilan pengaturan Activity/Advance pada tab Activity/Advance Setting.</em></center>
 
 ---

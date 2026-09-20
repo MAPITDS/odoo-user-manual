@@ -21,7 +21,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Quotation
 Pada tab **Product Detail**, masukkan produk yang ingin ditawarkan kepada pelanggan:
 
 1. Klik **Add a line**.
-2. Pilih produk dari daftar *dropdown*.
+2. Pilih **Product** dari daftar *dropdown*.
 3. Masukkan jumlah produk pada kolom **Qty**.
 4. Sistem akan otomatis menarik harga standar, ongkos kirim, dan diskon. Anda dapat mengubah harga satuan secara manual pada kolom **Quote Price**, mengubah ongkos kirim pada kolom **FINS**, dan mengubah diskon pada kolom **Disc** jika terdapat kesepakatan khusus.
 5. Isi **Note** jika diperlukan.
@@ -39,10 +39,10 @@ Pada tab **Product Detail**, masukkan produk yang ingin ditawarkan kepada pelang
 Pada tab **Cost of Sales**, masukkan biaya yang ingin ditawarkan kepada pelanggan:
 
 1. Klik **Add a line**.
-2. Pilih biaya dari daftar *dropdown*.
+2. Pilih biaya **COS Item** dari daftar *dropdown*.
 3. Sistem akan otomatis menarik biaya nya berdasarkan cost item yang dipilih. Ada beberapa cos item yang bisa dirubah biaya nya, maka masukkan biaya pada kolom **Amount** atau presentase nya pada kolom **%**.
 4. Isi **Note** jika diperlukan.
-5. Lalu klik **Save** dan *state* akan berada di **Draft** dan masih bisa di edit.
+5. Lalu klik **Save** maka *state* akan berada di **Draft** dan masih bisa di edit.
 6. Jika sudah sesuai semua dan tidak ada revisi, kemudian klik **Submit** maka akan ke langkah selanjutnya.
 
 ![Contoh Pengisian COS Item](../dept_sales/images/ns_cos.png)
@@ -100,7 +100,7 @@ Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusny
     Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
 
 === "ASM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *Hanya dapat melihat area masing-masing*.
+     Hanya dapat melihat data user dan area masing-masing.
 
 ??? info "What Next?"
     Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales*.

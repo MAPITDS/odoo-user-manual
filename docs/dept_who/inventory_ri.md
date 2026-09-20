@@ -1,4 +1,4 @@
-# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> alar Pembuatan Receipts
+# <img src="../../icon_modul/.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Receipts
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *RI* (Penerimaan Barang) hingga menjadi *Invoice* yang siap diproses oleh tim FA.
 
@@ -9,27 +9,27 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *RI* (Pene
 3. Pilih *RI* yang akan di proses. Dan klik *Edit*.
 4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *RI* ini diterima pada kolom **Date**, dan pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**.
 
-![Contoh Pengisian Order Lines](../inventory/images/ri_header.png)
+![Contoh Pengisian Order Lines](../dept_who/images/ri_header.png)
 <center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
 
 ---
 
 ## 2. Memasukkan Lot Produk
 
-Pada tab **Operations**, masukkan lot pada produk yang akan dikirimkan ke pelanggan :
+Pada tab **Operations**, masukkan lot pada produk yang akan telah diterima oleh gudang :
 
 1. Pilih **Product** yang akan di masukkan lot nya.
 2. Klik **Detailed Operations** yang ada di sebelah kanan produk.
 3. Klik **Add a line**.
-4. Pilih lot/sn produk dari daftar *dropdown* yang akan dikirimkan.
+4. Pilih lot/sn produk dari daftar *dropdown* sesuai produk yang diterima, Jika lot/sn belum terdaftar, Anda bisa membuatnya langsung dari kolom ini.
 5. Sistem akan otomatis menarik Expired Date dan UOM pada Lot tersebut.
 6. Masukkan qty produk yang akan dikimkan pada kolom **Done**.
 7. Kemudian klik **Confirm**.
 
-![Contoh Pengisian Lot Product](../inventory/images/ri_operations.png)
+![Contoh Pengisian Lot Product](../dept_who/images/ri_operations.png)
 <center><em>Gambar 2.1 : Tampilan pengisian lot produk pada tab Operations.</em></center>
 
-![Contoh Pengisian Lot Product](../inventory/images/ri_lot.png)
+![Contoh Pengisian Lot Product](../dept_who/images/ri_lot.png)
 <center><em>Gambar 2.2 : Tampilan pengisian lot produk pada tab Operations.</em></center>
 
 ---
@@ -44,7 +44,7 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 3. Masukkan tanggal untuk jadwal pengiriman produk pada kolom **Scheduled Date**.
 4. Pilih prioritas pengiriman produk pada kolom **Priority**.
 
-![Contoh Pengisian Order Lines](../inventory/images/ri_info.png)
+![Contoh Pengisian Order Lines](../dept_who/images/ri_info.png)
 <center><em>Gambar 1 : Tampilan pengisian produk pada tab additional info.</em></center>
 
 ---
@@ -53,8 +53,8 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 
 RI yang terbentuk melalui PO maka masuk ke dalam *Receipts* akan langsung berstatus **Waiting**. 
 
-* Jika semua langkah sudah di isi maka klik **Validate** dan produk sudah siap untuk dikirimkan.
-* Apabila untuk memastikan ketersediaan produk sebelum melakukan validate, maka klik **Check Availability**
+1. Jika semua langkah sudah di isi maka klik **Validate** dan produk sudah siap untuk dikirimkan.
+2. Apabila untuk memastikan ketersediaan produk sebelum melakukan validate, maka klik **Check Availability**
 
 !!! warning "Peringatan Penting Sebelum Konfirmasi"
     Pastikan Anda telah memeriksa ulang **Address** dan **Qty** produk yang diterima. Dokumen yang sudah berstatus *Ready* dan melahirkan dokumen penerimaan gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* dan membuat *Reset To Draft*) jika ingin diubah kembali.
