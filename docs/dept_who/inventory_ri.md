@@ -54,6 +54,29 @@ RI yang terbentuk melalui PO maka masuk ke dalam *Receipts* akan langsung bersta
 !!! warning "Peringatan Penting Sebelum Konfirmasi"
     Pastikan Anda telah memeriksa ulang **Partner** dan **Qty** produk yang diterima. Dokumen yang sudah berstatus *Ready* dan melahirkan dokumen penerimaan gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* dan membuat *Reset To Draft*) jika ingin diubah kembali.
 
+---
+
+## 🔄 Gambaran Umum Alur Barang
+
+=== "Alur Barang Masuk (Inbound)"
+    1. Tim Purchasing menerbitkan *Purchase Order* (PO).
+    2. Sistem Odoo secara otomatis membuat dokumen **Receipts (IN)** di modul Inventory.
+    3. Tim Gudang melakukan pemeriksaan fisik, mencocokkan jumlah, lalu melakukan *Validate* untuk menambah stok.
+
+---
+
+## 📝 Protokol Wajib Tim Gudang (SOP)
+
+Sebelum melakukan validasi dokumen pergerakan barang, pastikan langkah-langkah berikut telah terpenuhi:
+
+-   [ ] Memeriksa fisik barang (tidak cacat/rusak).
+-   [ ] Memastikan kuantitas fisik sama persis dengan kolom **Done** di Odoo.
+-   [ ] Mengisi nomor seri (*Lot/Serial Number*) jika produk yang diterima wajib *tracking*.
+
+!!! warning "Penting untuk Diperhatikan"
+    Jangan pernah menekan tombol **Validate** jika jumlah barang fisik belum sesuai dengan yang tertera di sistem. Jika terjadi selisih, gunakan fitur *Backorder* yang disediakan oleh Odoo.
+
+---
 
 ## 📝 Referensi Tambahan
 
@@ -62,6 +85,7 @@ RI yang terbentuk melalui PO maka masuk ke dalam *Receipts* akan langsung bersta
 * <input type="checkbox"> **Pastikan Nama Pelanggan dan Tanggal penerimaan Produk** sudah sesuai dan benar.
 * <input type="checkbox"> **Lakukan Konfirmasi apabila Produk diterima oleh gudang** sudah sesuai dan benar.
 
+---
 
 ### Fitur Berdasarkan Hak Akses
 === "Tampilan User"

@@ -68,6 +68,7 @@ INT yang terbentuk melalui IT Request maka masuk ke dalam *Internal Transfers* a
 !!! warning "Peringatan Penting Sebelum Konfirmasi"
     Pastikan Anda telah memeriksa ulang **Address**, **Location**, dan **Qty** produk yang akan dipindahkan. Dokumen yang sudah berstatus *Ready* dan melahirkan dokumen pengiriman gudang akan memerlukan *effort* lebih (seperti melakukan *cancel* dan membuat *Reset To Draft*) jika ingin diubah kembali.
 
+---
 
 ## 📝 Referensi Tambahan
 
@@ -76,6 +77,10 @@ INT yang terbentuk melalui IT Request maka masuk ke dalam *Internal Transfers* a
 * <input type="checkbox"> **Pastikan Lokasi Gudang dan Keterangan pengajuan ITR** sudah sesuai dan benar.
 * <input type="checkbox"> **Lakukan Konfirmasi apabila Produk diterima oleh gudang** sudah sesuai dan benar.
 
+!!! warning "Penting untuk Diperhatikan"
+    Jangan pernah menekan tombol **Validate** jika jumlah barang fisik belum sesuai dengan yang tertera di sistem. Jika terjadi selisih, gunakan fitur *Backorder* yang disediakan oleh Odoo.
+
+---
 
 ### Fitur Berdasarkan Hak Akses
 === "Tampilan User"

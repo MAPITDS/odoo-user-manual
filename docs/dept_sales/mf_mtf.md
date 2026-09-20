@@ -13,10 +13,10 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Request* 
 6. Jika tipe yang dipilih adalah *MTF* maka isi nomor rek penerima pada kolom **Serial Number**, isi kode bank pada kolom **Number SN** dan isi nama penerima pada kolom **PIC Name**
 
 ![Contoh Pengisian Form MF](../dept_sales/images/mf_header.png)
-<center>*Gambar 1.1 : Tampilan pengisian form MF.*</center>
+<center>Gambar 1.1 : Tampilan pengisian form MF.</center>
 
 ![Contoh Pengisian Form MTF](../dept_sales/images/mtf_header.png)
-<center>*Gambar 1.2 : Tampilan pengisian form MTF.*</center>
+<center>Gambar 1.2 : Tampilan pengisian form MTF.</center>
 
 ---
 
@@ -33,20 +33,21 @@ Merupakan pengajuan MF belum Full 100% yang merupakan advance (dibatasi tidak bo
 
 **B. Pengisian Harga dan Ongkos Kirim**
 
-Pada tab **MF Details**, masukkan nilai penjualan dan ongkir penjualan nya (untuk permintaan Full MF / Pelunasan MF). Jika merupakan pengajuan (advance) maka lewai langkah ini.
+Pada tab **MF Details**, masukkan nilai penjualan dan ongkir penjualan nya (untuk permintaan Full MF / Pelunasan MF). Jika merupakan pengajuan (advance) maka lewati langkah ini.
 
 1. Klik **Add a line**.
 2. Pilih **PPN** nya dari daftar *dropdown*.
 3. Masukkan Harga dan ongkos kirim ecat pada kolom **Price Ecat** dan **Shipping Cost Ecat**.
 4. Masukkan presentase nilai MF dan ekstra MF pada kolom **Value MF (%)** dan **Value Extra MF(%)**.
-5. Sistem akan otomatis menghitung *MF*, *Shipping Cost*, dan *Extra MF*
+5. Masukkan nilai ongkir yang dibebankan oleh perusahaan pada kolom **Ship Fee Receipt MAP** dan ongkir yang dibebankan oleh distributor pada kolom **Ship Fee Receipt Dist**.
+6. Sistem akan otomatis menghitung *MF*, *Shipping Cost*, dan *Extra MF*.
 
 ![Contoh Pengisian Detail MF](../dept_sales/images/mf_detail.png)
-<center>*Gambar 2 : Tampilan pengisian product pada Sales Order.*</center>
+<center>Gambar 2.1 : Tampilan pengisian detail mf pada tab mf details.</center>
 
 **C. Pengisian Sundry Account**
 
-Merupakan potongan-potongan lain yang mengurangi besarnya nilai pembayaran dan juga account-account yang digunakan untuk pembayaran. Jika tidak ada pengajuan maka lewati langkah ini.
+Merupakan potongan-potongan lain yang mengurangi besarnya nilai pembayaran dan juga account-account yang digunakan untuk pembayaran. Jika merupakan pengajuan (advance) maka lewati langkah ini.
 
 1. Klik **Add a line**.
 2. Pilih account yang akan diisi dari daftar *dropdown*. Account yang harus dipilih yaitu (nilai akan otomatis terisi):
@@ -57,6 +58,9 @@ Merupakan potongan-potongan lain yang mengurangi besarnya nilai pembayaran dan j
 3. Apabila ada biaya selisih ongkir maka pilih account *204.07.00.000 Biaya YMH Dibayar - Marketing Fee Distributor* dan ubah nilai nya sesuai nilai *selisih ongkir*.
 4. Pilih account lainnya yang terkait potongan-potongan lainnya dan isi nominal potongan tersebut pada kolom **Sundry Amount**.
 5. Apabila nilai nya sudah sesuai maka klik **Save**.
+
+![Contoh Pengisian Sundry Account](../dept_sales/images/mf_detail.png)
+<center>Gambar 2.2 : Tampilan pengisian sundry account pada tab mf details.</center>
 
 ---
 
@@ -73,8 +77,8 @@ Pada tab **MTF Details**, masukkan produk yang ingin ditawarkan kepada pelanggan
 7. Jika ada potongan biaya ARS PPH maka masukkan nilai pada kolom **ARS PPH Cut**
 8. Apabila nilai nya sudah sesuai maka klik **Save**
 
-![Contoh Pengisian OrderLines](../dept_sales/images/mtf_detail.png)
-<center>*Gambar 2 : Tampilan pengisian product pada Sales Order.*</center>
+![Contoh Pengisian Detail MTF](../dept_sales/images/mtf_detail.png)
+<center>Gambar 3 : Tampilan pengisian detail mtf pada tab mtf details</center>
 
 ---
 
@@ -102,3 +106,25 @@ Pada state **Review 1** dan **Approve GSM**
 Review 1 yaitu *SPV SAS* dengan mengecek kebenaran data nya dan jika sudah sesuai maka akan di Approve oleh  *GSM*
 
 ---
+
+## 📝 Referensi Tambahan
+
+### SOP Harian (Checklist)
+* <input type="checkbox"> **Pastikan Qty dan Lot/SN Produk** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan Nama Pelanggan dan Tanggal penerimaan Produk** sudah sesuai dan benar.
+* <input type="checkbox"> **Lakukan Konfirmasi apabila Produk diterima oleh gudang** sudah sesuai dan benar.
+
+---
+
+### Fitur Berdasarkan Hak Akses
+=== "Tampilan User"
+    - Dapat membuat *RI* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action untuk melakukan *Validate* sesuai kondisi pengiriman yang terjadi.
+
+=== "Tampilan Supervisor / Manajer"
+    Memiliki tombol tambahan *Unlock* untuk mengedit *Qty* yang di kirimkan atau yang sudah selesai dikirimkan.
+
+
+??? info "What Next?"
+    Setelah *RI* sudah dilakukan dan berstatus *Done* selanjutnya dokumen akan masuk ke Modul *Accounting* dengan membuat sebuah faktur **Create Invoice**.
+    [Lanjut ke Modul Accounting - Invoice :octicons-arrow-right-16:](../dept_fa_acc/invoices.md)

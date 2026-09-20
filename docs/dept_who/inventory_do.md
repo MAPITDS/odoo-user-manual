@@ -10,8 +10,8 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *DO* (Deli
 3. Pilih *DO* yang akan di proses. Dan klik *Edit*.
 4. Lengkapi pengisian kolom yang belum terisi seperti pengisian tanggal *DO* ini diterima pada kolom **Date**, dan pengisian catatan yang sehubungan dengan pengiriman barang tersebut pada kolom **Note Warehouse**.
 
-![Contoh Pengisian Order Lines](../dept_who/images/do_header.png)
-<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
+![Contoh Pengisian Informasi Pengiriman Produk](../dept_who/images/do_header.png)
+<center><em>Gambar 1 : Tampilan pengisian informasi penerimaan produk.</em></center>
 
 ---
 
@@ -44,8 +44,8 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 3. Masukkan tanggal untuk jadwal pengiriman produk pada kolom **Scheduled Date**.
 4. Pilih prioritas pengiriman produk pada kolom **Priority**.
 
-![Contoh Pengisian Order Lines](../dept_who/images/do_info.png)
-<center><em>Gambar 3 : Tampilan pengisian produk pada tab additional info.</em></center>
+![Contoh Pengisian Tambahan Informasi Pengiriman Produk](../dept_who/images/do_info.png)
+<center><em>Gambar 3 : Tampilan pengisian tambahan informasi produk pada tab additional info.</em></center>
 
 ---
 
@@ -54,8 +54,8 @@ Pada tab **Additional Info**, masukkan informasi mengenai pengiriman produk :
 Pada tab **Note**, masukkan informasi mengenai pengiriman produk yang diperlukan.
 Kemudian klik **Save**.
 
-![Contoh Pengisian Order Lines](../dept_who/images/do_note.png)
-<center><em>Gambar 1 : Tampilan pengisian produk pada tab Order Lines.</em></center>
+![Contoh Pengisian Catatan Pengiriman Produk](../dept_who/images/do_note.png)
+<center><em>Gambar 4 : Tampilan pengisian catatan produk pada tab note.</em></center>
 
 ---
 
@@ -71,6 +71,14 @@ DO yang terbentuk melalui SO maka masuk ke dalam *Delivery Order* akan langsung 
 
 ---
 
+## 🔄 Gambaran Umum Alur Barang
+
+=== "Alur Barang Keluar (Outbound)"
+    1. Tim Sales mengonfirmasi *Sales Order* (SO).
+    2. Sistem Odoo secara otomatis menerbitkan dokumen **Delivery Orders (OUT)**.
+    3. Tim Gudang melakukan *picking*, *packing*, dan memvalidasi pengiriman agar stok berkurang secara *real-time*.
+
+---
 
 ## 📝 Referensi Tambahan
 
@@ -79,6 +87,10 @@ DO yang terbentuk melalui SO maka masuk ke dalam *Delivery Order* akan langsung 
 * <input type="checkbox"> **Pastikan Nama Pelanggan dan Alamat Penerima** sudah sesuai dan benar.
 * <input type="checkbox"> **Lakukan Konfirmasi apabila Produk sudah dikirimkan ke pelanggan**.
 
+!!! warning "Penting untuk Diperhatikan"
+    Jangan pernah menekan tombol **Validate** jika jumlah barang fisik belum sesuai dengan yang tertera di sistem. Jika terjadi selisih, gunakan fitur *Backorder* yang disediakan oleh Odoo.
+
+---
 
 ### Fitur Berdasarkan Hak Akses
 === "Tampilan User"
