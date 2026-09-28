@@ -61,7 +61,7 @@ Pada state yang bukan **New** merupakan progres untuk crm tersebut, maka *klik* 
 7. **Lost** : Gagal. Apabila klik progress ini maka masukkan alasan gagalnya penawaran pada kolom **Lost Reason**.
 8. **Won** : Sudah menerima PO / SP / Kontrak.
 9. **CBS** : Batal otomatis oleh Sistem dikarenakan beberapa kondisi :
-   A. Sudah melebihi batas tanggal yang sudah ditentukan pada kolom *Expected Closing*. 
+   A. Sudah melebihi batas tanggal yang sudah ditentukan pada kolom *Expected Closing*. Jika Expected Closing Berada ditahun yang sama dengan saat ini diupdate menjadi tahun depan (maka Tidak bisa di edit kembali untuk mundur menjadi tahun sekarang), dan jika sudah berada di tahun depan (bisa diupdate mundur hanya bulan dan tanggal nya saja).
    B. Apabila stage *New* tidak ada progress selama >15 hari.
    B. Apabila tidak ada perubahan stage selama >45 hari.
 
@@ -115,7 +115,7 @@ Pada state **WON** merupakan keberhasilan untuk penawaran penjualan yang sudah a
     - Hanya dapat melihat seluruh perencanaan penjualan product yang sudah dibuat oleh sales.
 
 === "ITDS"
-    - Dapat melakukan action untuk memindahkan progress *Stage* **WON** menjadi *Stage* yang dibutuhkan sesuai kondisi perencanaan penjualan yang terjadi.
+    - Dapat melakukan action untuk memindahkan progress *Stage* **WON** menjadi *Stage* yang dibutuhkan sesuai kondisi perencanaan penjualan yang terjadi. Dan dapat melakukan action untuk mengubah tanggal *Expected Closing* sesuai kebutuhan.
 
 
 ??? info "What Next?"

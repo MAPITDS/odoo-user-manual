@@ -85,46 +85,51 @@ Pada tab **MTF Details**, masukkan produk yang ingin ditawarkan kepada pelanggan
 ## 4. Menunggu Review 1 dan Approval GSM 
 
 Pada state **Review 1** dan **Approve GSM**
-Review 1 yaitu *SPV SAS* dengan mengecek kebenaran data nya dan jika sudah sesuai maka akan di Approve oleh  *GSM*
+Review 1 yaitu *SPV SAS* dengan mengecek kebenaran data nya dan jika sudah sesuai maka klik tombol **Review 1**. Setelah itu akan di Approve oleh *GSM* dengan mengklik tombol **Approve GSM**.
 
 ---
 
 ## 5. Menunggu Review 2 dan Approval FAM 
 
-Pada state **Review 2** dan **Approve FAM**, ada beberapa kondisi ketika masuk ke state ini:
-
-1. Credit Limit yang bermasalah karena sudah melebihi batas dari **Credit Limit** yang sudah ditentukan.
-2. Kabupaten / Kota yang perlu di waspadai berdasarkan **Kota/Kab** pelanggan
-3. Jika kondisi **Credit limit** dan **Kota/Kab** tidak bermasalah maka bisa lewati langkah ini.
-4. Pengajuan pembukaan **Credit Limit** melalui Form yang sudah disetujui oleh FA dan DIR, dan akan di proses oleh ITDS untuk Approve.
+Pada state **Review 2** dan **Approve FAM**
+Review 2 yaitu *SPV FA* dengan mengecek kebenaran data nya dan jika sudah sesuai maka klik tombol **Review 2**. Setelah itu akan di Approve oleh *FAM* dengan mengklik tombol **Approve FAM**.
 
 ---
 
 ## 6. Menunggu Approval DIR 
 
-Pada state **Review 1** dan **Approve GSM**
-Review 1 yaitu *SPV SAS* dengan mengecek kebenaran data nya dan jika sudah sesuai maka akan di Approve oleh  *GSM*
+Pada state **Approve DIR**
+Direktur melihat nilai data nya dan jika sudah sesuai maka akan menekan tombol  **Approve DIR**.
 
 ---
 
 ## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Pastikan Qty dan Lot/SN Produk** sudah sesuai dan benar.
-* <input type="checkbox"> **Pastikan Nama Pelanggan dan Tanggal penerimaan Produk** sudah sesuai dan benar.
-* <input type="checkbox"> **Lakukan Konfirmasi apabila Produk diterima oleh gudang** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan PPN, Harga, dan Ongkir E-Cat Produk** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan presentase Value MF dan Extra MF** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan biaya ongkir yang dibebankan MAP / Distributor** sudah sesuai dan benar.
 
 ---
 
 ### Fitur Berdasarkan Hak Akses
 === "Tampilan User"
-    - Dapat membuat *RI* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat membuat *MF/MTF* baru dan hanya dapat melihat .
     - Dapat melakukan action untuk melakukan *Validate* sesuai kondisi pengiriman yang terjadi.
 
-=== "Tampilan Supervisor / Manajer"
-    Memiliki tombol tambahan *Unlock* untuk mengedit *Qty* yang di kirimkan atau yang sudah selesai dikirimkan.
+=== "Tampilan Review"
+    - Dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action untuk melakukan *Review* data yang akan diajukan.
+
+=== "Tampilan Manager (GSM/FAM/DIR)"
+    - Dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action untuk melakukan *Approve* data yang diajukan.
+
+=== "Tampilan Manager ITDS"
+    - Dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan semua action sesuai kondisi yang dibutuhkan.
 
 
 ??? info "What Next?"
-    Setelah *RI* sudah dilakukan dan berstatus *Done* selanjutnya dokumen akan masuk ke Modul *Accounting* dengan membuat sebuah faktur **Create Invoice**.
-    [Lanjut ke Modul Accounting - Invoice :octicons-arrow-right-16:](../dept_fa_acc/invoices.md)
+    Setelah *MF/MTF* sudah dilakukan dan berstatus *Approve DIR* selanjutnya dokumen akan masuk ke Modul *Accounting* dengan membuat sebuah **Payments**.
+    [Lanjut ke Modul Accounting - Invoice :octicons-arrow-right-16:](../dept_fa_acc/payments.md)
