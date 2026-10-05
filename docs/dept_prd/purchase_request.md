@@ -7,9 +7,10 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *PR* (Perm
 
 1. Masuk ke modul **Purchase Requests**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
-3. Isi data pelanggan pada kolom **Bill To**, **Ship To** dan **Partner**. Jika pelanggan belum terdaftar, Anda bisa mengisi pada kolom **Customer Universal**.
-4. Tentukan termin pembayaran penawaran pada kolom **Payment Term**.
-5. Isi **Note** jika diperlukan.
+3. Isi data yang mebgajukan permintaan pada kolom **Requested by**, dan yang akan menyetujui permintaan pada kolom **Approver**.
+4. Pilih tipe pengambilan barang dari gudang mana pada kolom **Picking Type**.
+5. Isi sumber dokumen **Source Document** dan **Description** jika diperlukan.
+6. Pilih **Procurement Group**.
 
 ![Contoh Pengisian Form NS](../dept_sales/images/ns_header.png)
 <center><em>Gambar 1 : Tampilan pengisian form pada Negotiation Sheet.</em></center>
