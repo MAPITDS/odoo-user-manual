@@ -37,25 +37,17 @@ Pada tab **Products**, masukkan produk yang akan diajukan pembeliannya:
 ![Contoh Pengisian Order Lines](../dept_sales/images/ns_product.png)
 <center><em>Gambar 2 : Tampilan pengisian produk pada tab Product Detail.</em></center>
 
-<!-- !!! note "Tips Pengisian Cepat"
-    Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*. -->
-
 ---
 
 ## 3. Menunggu Approval
 
-Pada state **Waiting Approval**, ada beberapa kondisi berdasarkan warna pada Negotiation Sheet yang dibuat :
+Pada state **To Be Approved**, ada beberapa kondisi berdasarkan warna pada Negotiation Sheet yang dibuat :
 
 1. Warna "Hijau" berarti tidak perlu meminta Approval, bisa dilewati pada langkah ini.
-2. Lakukan pemeriksaan berkala pada PR yang diajukan. Jika pihak terk
-(MKT/PE) sudah melakukan approved, maka akan terdapat informasi I untuk PR yang dibua
-3. Kemudian jika vendor sudah melakukan pengiriman maka akan tampil dat
-terkait pengiriman yaitu stock moves artinya perpindahan stok dari gudang
-vendor ke gudang perusahaan
-4. Kemudian odoo akan menampilkan informasi terkait penerimaan barang dan
-penambahan stok barang pada gudang
-5. Pihak yang melakukan penginputan selanjutnya dapat melakukan proses
-selanjutnya karena produk yang dibutuhkan sudah tersedia di gudang Center
+2. Lakukan pemeriksaan berkala pada PR yang diajukan. Jika pihak terkait (MKT/PE) sudah melakukan approved, maka akan terdapat informasi PO untuk PR yang dibuat.
+3. Kemudian jika vendor sudah melakukan pengiriman maka akan tampil data terkait pengiriman yaitu stock moves artinya perpindahan stok dari gudang vendor ke gudang perusahaan.
+4. Kemudian odoo akan menampilkan informasi terkait penerimaan barang dan penambahan stok barang pada gudang.
+5. Pihak yang melakukan penginputan selanjutnya dapat melakukan proses selanjutnya karena produk yang dibutuhkan sudah tersedia di gudang Center.
 
 ---
 
