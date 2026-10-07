@@ -1,3 +1,4 @@
+
 # <img src="../../icon_modul/ns.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Purchase Request
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *PR* (Permintaan Pembelian Barang) hingga menjadi *Purchase* yang siap diproses oleh tim purchase.
@@ -7,25 +8,31 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *PR* (Perm
 
 1. Masuk ke modul **Purchase Requests**.
 2. Klik tombol **Create** di pojok kiri atas halaman.
-3. Isi data yang mebgajukan permintaan pada kolom **Requested by**, dan yang akan menyetujui permintaan pada kolom **Approver**.
+3. Isi data yang mengajukan permintaan pada kolom **Requested by**, dan yang akan menyetujui permintaan pada kolom **Approver**.
 4. Pilih tipe pengambilan barang dari gudang mana pada kolom **Picking Type**.
-5. Isi sumber dokumen **Source Document** dan **Description** jika diperlukan.
-6. Pilih **Procurement Group**.
+5. Isi sumber dokumen **Source Document** dan alasan permintaan pengadaan produk **Description**.
+6. Pilih sumber pengajuan pembelian produk dari nomor so berapa pada kolom **Procurement Group** jika ada.
 
 ![Contoh Pengisian Form NS](../dept_sales/images/ns_header.png)
 <center><em>Gambar 1 : Tampilan pengisian form pada Negotiation Sheet.</em></center>
 
 ---
 
-## 2. Pengisian Produk dan Harga
+## 2. Pengisian Produk
 
-Pada tab **Product Detail**, masukkan produk yang ingin ditawarkan kepada pelanggan:
+Pada tab **Products**, masukkan produk yang akan diajukan pembeliannya:
 
 1. Klik **Add a line**.
-2. Pilih **Product** dari daftar *dropdown*.
-3. Masukkan jumlah produk pada kolom **Qty**.
-4. Sistem akan otomatis menarik harga standar, ongkos kirim, dan diskon. Anda dapat mengubah harga satuan secara manual pada kolom **Quote Price**, mengubah ongkos kirim pada kolom **FINS**, dan mengubah diskon pada kolom **Disc** jika terdapat kesepakatan khusus.
-5. Isi **Note** jika diperlukan.
+2. Pilih **Product** dari daftar *dropdown*, sistem akan otomatis menarik **Description** produk.
+3. Masukkan jumlah produk yang akan diajukan pada kolom **Quantity** dan pilih satuan yang diajukan.
+4. Pilih departemen pada kolom **Analytic Account** dan isi tanggal pengajuan pembelian pada kolom **Request Date**.
+5. Masukkan perkiraan harga pembelian produk jika ada pada kolom **Estimated Cost**.
+6. Masukkan spesifikasi produk secara detail pada kolom **Specifications**.
+7. Sistem akan otomatis mengisi *Tracking* mengenai pelacakan produk yang diajukan sudah sampai tahap apa.
+8. Sistem juga akan otomatis menarik data pada tab *Purchase Order Lines* mengenai pelajakan produk PO tersebut
+6. Klik **Save & Close** jika produk yang diajukan hanya 1, apabila lebih dari 1 maka klik **Save & New** dan isi produk selanjutnya.
+7. Kemudian klik **Save**.
+8. Klik tombol **Request Approval** jika sudah tidak ada revisi pengajuan pembelian produk lagi, apabila sudah diklik maka sudah tidak bisa diedit lagi.
 
 ![Contoh Pengisian Order Lines](../dept_sales/images/ns_product.png)
 <center><em>Gambar 2 : Tampilan pengisian produk pada tab Product Detail.</em></center>
@@ -35,31 +42,20 @@ Pada tab **Product Detail**, masukkan produk yang ingin ditawarkan kepada pelang
 
 ---
 
-## 3. Pengisian Cost of Sales
-
-Pada tab **Cost of Sales**, masukkan biaya yang ingin ditawarkan kepada pelanggan:
-
-1. Klik **Add a line**.
-2. Pilih biaya **COS Item** dari daftar *dropdown*.
-3. Sistem akan otomatis menarik biaya nya berdasarkan cost item yang dipilih. Ada beberapa cos item yang bisa dirubah biaya nya, maka masukkan biaya pada kolom **Amount** atau presentase nya pada kolom **%**.
-4. Isi **Note** jika diperlukan.
-5. Lalu klik **Save** maka *state* akan berada di **Draft** dan masih bisa di edit.
-6. Jika sudah sesuai semua dan tidak ada revisi, kemudian klik **Submit** maka akan ke langkah selanjutnya.
-
-![Contoh Pengisian COS Item](../dept_sales/images/ns_cos.png)
-<center><em>Gambar 3 : Tampilan cos item pada tabel Cost of Sales.</em></center>
-
----
-
-## 4. Menunggu Approval
+## 3. Menunggu Approval
 
 Pada state **Waiting Approval**, ada beberapa kondisi berdasarkan warna pada Negotiation Sheet yang dibuat :
 
 1. Warna "Hijau" berarti tidak perlu meminta Approval, bisa dilewati pada langkah ini.
-2. Warna "Biru" meminta Approval "RSM".
-3. Warna "Kuning" meminta Approval "GSM".
-4. Warna "Oranye" meminta Approval "RSM" kemudian "GSM" dan "DIR".
-5. Warna "Merah" meminta Approval "RSM" kemudian "GSM" dan "DIR".
+2. Lakukan pemeriksaan berkala pada PR yang diajukan. Jika pihak terk
+(MKT/PE) sudah melakukan approved, maka akan terdapat informasi I untuk PR yang dibua
+3. Kemudian jika vendor sudah melakukan pengiriman maka akan tampil dat
+terkait pengiriman yaitu stock moves artinya perpindahan stok dari gudang
+vendor ke gudang perusahaan
+4. Kemudian odoo akan menampilkan informasi terkait penerimaan barang dan
+penambahan stok barang pada gudang
+5. Pihak yang melakukan penginputan selanjutnya dapat melakukan proses
+selanjutnya karena produk yang dibutuhkan sudah tersedia di gudang Center
 
 ---
 
