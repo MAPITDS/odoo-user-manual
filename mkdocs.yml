@@ -74,8 +74,6 @@ plugins:
 
 # --- Pastikan bagian extra diatur seperti ini ---
 extra:
-  analytics:
-    google_site_verification: "4noj1LEjgqhcIrg58IbUFhBJv4ewxMays1mWxNrSipU"
   generator: false
   assets:
     - icon_modul
