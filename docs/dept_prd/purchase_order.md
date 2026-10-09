@@ -6,12 +6,14 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *PO* (Perm
 
 ## 1. Membuat Pembelian Produk
 
-1. Masuk ke modul **Purchase Requests**.
-2. Klik tombol **Create** di pojok kiri atas halaman.
-3. Isi data yang mengajukan permintaan pada kolom **Requested by**, dan yang akan menyetujui permintaan pada kolom **Approver**.
-4. Pilih tipe pengambilan barang dari gudang mana pada kolom **Picking Type**.
-5. Isi sumber dokumen **Source Document** dan alasan permintaan pengadaan produk **Description**.
-6. Pilih sumber pengajuan pembelian produk dari nomor so berapa pada kolom **Procurement Group** jika ada.
+1. Masuk ke modul **Purchase**.
+2. Klik tombol **Create** di pojok kiri atas halaman. Atau pilih PO yang  sudah terbentuk dari PR.
+3. Pilih nama **Vendor**, dan isi referensi kode vendor pada kolom **Vendor Reference**.
+4. Pilih nilai tukar pembayaran ke vendor pada kolom **Currency**.
+5. Isi tanggal pemesanan pembelian pada kolom **Order Date**.
+6. Pilih pengiriman **Ship To** ke negara mana dan menggunakan transportasi pengiriman apa pada kolom **Ship By**.
+7. Pilih divisi mana yang mengajukan pembelian tersebut pada kolom **Division**.
+8. Isi keterangan PO diambil dari PR yang mana dan keterangan lainnya yang diperlukan pada kolom **Source Document**.
 
 ![Contoh Pengisian Form NS](../dept_sales/images/ns_header.png)
 <center><em>Gambar 1 : Tampilan pengisian form pada Negotiation Sheet.</em></center>
@@ -23,31 +25,32 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *PO* (Perm
 Pada tab **Products**, masukkan produk yang akan diajukan pembeliannya:
 
 1. Klik **Add a line**.
-2. Pilih **Product** dari daftar *dropdown*, sistem akan otomatis menarik **Description** produk.
-3. Masukkan jumlah produk yang akan diajukan pada kolom **Quantity** dan pilih satuan yang diajukan.
-4. Pilih departemen pada kolom **Analytic Account** dan isi tanggal pengajuan pembelian pada kolom **Request Date**.
-5. Masukkan perkiraan harga pembelian produk jika ada pada kolom **Estimated Cost**.
-6. Masukkan spesifikasi produk secara detail pada kolom **Specifications**.
-7. Sistem akan otomatis mengisi *Tracking* mengenai pelacakan produk yang diajukan sudah sampai tahap apa.
-8. Sistem juga akan otomatis menarik data pada tab *Purchase Order Lines* mengenai pelajakan produk PO tersebut
-6. Klik **Save & Close** jika produk yang diajukan hanya 1, apabila lebih dari 1 maka klik **Save & New** dan isi produk selanjutnya.
-7. Kemudian klik **Save**.
-8. Klik tombol **Request Approval** jika sudah tidak ada revisi pengajuan pembelian produk lagi, apabila sudah diklik maka sudah tidak bisa diedit lagi.
+2. Pilih **Product** dari daftar *dropdown*, sistem akan otomatis menarik **Description**, **AKL**, dan **HS Code** produk.
+3. Masukkan jumlah produk yang akan dibeli pada kolom **Quantity** dan pilih satuan yang diajukan pada kolom **Product of Measure**.
+4. Masukkan presentase diskon jika ada pada kolom **Discount (%)**.
+6. Masukkan harga beli sesuai harga yang telah diberikan dari vendor pada kolom **Unit Price**, sistem akan otomatis menarik jumlah **Subtotal**.
+7. Isi keterangan pada *Define your terms and conditions* jika diperlukan terkait keterangan untuk pembelian produk tersebut.
 
 ![Contoh Pengisian Order Lines](../dept_sales/images/ns_product.png)
 <center><em>Gambar 2 : Tampilan pengisian produk pada tab Product Detail.</em></center>
 
 ---
 
-## 3. Menunggu Approval
+## 3. Pengisian Informasi 
 
-Pada state **To Be Approved**, ada beberapa kondisi berdasarkan warna pada Negotiation Sheet yang dibuat :
+Pada tab **Other Information**, masukkan informasi mengenai pembelian produk.
 
-1. Warna "Hijau" berarti tidak perlu meminta Approval, bisa dilewati pada langkah ini.
-2. Lakukan pemeriksaan berkala pada PR yang diajukan. Jika pihak terkait (MKT/PE) sudah melakukan approved, maka akan terdapat informasi PO untuk PR yang dibuat.
-3. Kemudian jika vendor sudah melakukan pengiriman maka akan tampil data terkait pengiriman yaitu stock moves artinya perpindahan stok dari gudang vendor ke gudang perusahaan.
-4. Kemudian odoo akan menampilkan informasi terkait penerimaan barang dan penambahan stok barang pada gudang.
-5. Pihak yang melakukan penginputan selanjutnya dapat melakukan proses selanjutnya karena produk yang dibutuhkan sudah tersedia di gudang Center.
+1. Klik **Add a line**.
+2. Masukkan tanggal jadwal pengiriman pembelian pada kolom **Scheduled Date**.
+3. Pilih gudang yang akan menerima pembelian produk tersebut pada kolom **Deliver To**.
+4. Pilih ketentuan pengiriman produk jika ada pada kolom **Incoterm**.
+6. Masukkan tanggal perkiraan sampai barang pada kolom **Update ETA** dan isi keterangan terkait pengiriman tersebut pada kolom **Description ETA**.
+7. Pilih nama yang membuat pembelian tersebut pada kolom **Purchase Representative**.
+8. Pilih termin pembayaran pembelian tersebut pada kolom **Payment Terms**.
+9. Kemudian klik **Save**.
+
+![Contoh Pengisian Order Lines](../dept_sales/images/ns_product.png)
+<center><em>Gambar 2 : Tampilan pengisian produk pada tab Product Detail.</em></center>
 
 ---
 
