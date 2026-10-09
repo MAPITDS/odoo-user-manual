@@ -79,6 +79,8 @@ extra:
   generator: false
   assets:
     - icon_modul
+  meta:
+    keywords: odoo user manual, panduan odoo, erp mitra asa pratama, tutorial odoo itds, map odoo, mitra asa pratama, odoo mitra asa, odoo asa, asa, mitra asa, odoo itds
   # analytics:
   #   provider: giscus
   #   repo: mapitds/odoo-user-manual
