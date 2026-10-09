@@ -37,35 +37,24 @@ Pada tab **Products**, masukkan produk yang akan diajukan pembeliannya:
 ![Contoh Pengisian Order Lines](../dept_sales/images/ns_product.png)
 <center><em>Gambar 2 : Tampilan pengisian produk pada tab Product Detail.</em></center>
 
-<!-- !!! note "Tips Pengisian Cepat"
-    Anda bisa menekan tombol `Tab` pada *keyboard* untuk berpindah antar-kolom di Order Lines dengan lebih cepat tanpa perlu klik *mouse*. -->
-
 ---
 
 ## 3. Menunggu Approval
 
-Pada state **Waiting Approval**, ada beberapa kondisi berdasarkan warna pada Negotiation Sheet yang dibuat :
+Pada state **To Be Approved**, maka yang menyetujui permintaan pembelian produk yaitu yang telah di set pada Field *Approver*. Setelah sudah di setujui maka akan terbentuk PO dan di dalam PR terdapat informasi PO untuk PR yang dibuat.
 
-1. Warna "Hijau" berarti tidak perlu meminta Approval, bisa dilewati pada langkah ini.
-2. Lakukan pemeriksaan berkala pada PR yang diajukan. Jika pihak terk
-(MKT/PE) sudah melakukan approved, maka akan terdapat informasi I untuk PR yang dibua
-3. Kemudian jika vendor sudah melakukan pengiriman maka akan tampil dat
-terkait pengiriman yaitu stock moves artinya perpindahan stok dari gudang
-vendor ke gudang perusahaan
-4. Kemudian odoo akan menampilkan informasi terkait penerimaan barang dan
-penambahan stok barang pada gudang
-5. Pihak yang melakukan penginputan selanjutnya dapat melakukan proses
-selanjutnya karena produk yang dibutuhkan sudah tersedia di gudang Center
+Kemudian jika vendor sudah melakukan pengiriman maka akan tampil data terkait pengiriman yaitu stock moves artinya perpindahan stok dari gudang vendor ke gudang perusahaan. Odoo akan menampilkan informasi terkait penerimaan barang dan penambahan stok barang pada gudang.
 
 ---
 
-## 5. Melakukan Konfirmasi menjadi Converted 
+## 5. Melakukan Konfirmasi Pembuatan PO
 
-Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusnya menjadi *Converted* agar modul *Sales* dapat mendeteksi adanya penjualan barang.
+Setelah dokumen PR disetujui, Anda harus membuat PO yang akan berstatus *RFQ*.
 
-* Klik tombol **Convert To So** yang berada di barisan tombol aksi kiri atas.
-* Pilih tipe convert **Full** atau **Partial**
-* Status dokumen di pojok kanan atas akan otomatis berubah dari **Approved** menjadi **Converted** atau **Partially Converted**.
+1. Klik button lines.
+2. Kemudian check List Item yang akan dibuatkan PO.
+3. Pilih **Action**
+4. Klik **Create RFQ**.
 
 ![Contoh Pengisian pilihan convert](../dept_sales/images/ns_convert.png)
 <center><em>Gambar 4 : Tampilan confirm Convert To SO.</em></center>
