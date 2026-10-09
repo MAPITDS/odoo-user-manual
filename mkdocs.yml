@@ -1,4 +1,6 @@
 site_name: MAP Odoo User Manual
+site_description: Panduan lengkap dan dokumentasi penggunaan sistem ERP Odoo untuk operasional internal PT Mitra Asa Pratama.
+site_author: Care System
 site_url: https://mapitds.github.io/odoo-user-manual/
 
 extra_javascript:
