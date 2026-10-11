@@ -13,8 +13,8 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *PR* (Perm
 5. Isi sumber dokumen **Source Document** dan alasan permintaan pengadaan produk **Description**.
 6. Pilih sumber pengajuan pembelian produk dari nomor so berapa pada kolom **Procurement Group** jika ada.
 
-![Contoh Pengisian Form NS](../dept_sales/images/ns_header.png)
-<center><em>Gambar 1 : Tampilan pengisian form pada Negotiation Sheet.</em></center>
+![Contoh Pengisian Form PR](../dept_prd/images/pr_header.png)
+<center><em>Gambar 1 : Tampilan pengisian form pada Purchase Request.</em></center>
 
 ---
 
@@ -29,12 +29,12 @@ Pada tab **Products**, masukkan produk yang akan diajukan pembeliannya:
 5. Masukkan perkiraan harga pembelian produk jika ada pada kolom **Estimated Cost**.
 6. Masukkan spesifikasi produk secara detail pada kolom **Specifications**.
 7. Sistem akan otomatis mengisi *Tracking* mengenai pelacakan produk yang diajukan sudah sampai tahap apa.
-8. Sistem juga akan otomatis menarik data pada tab *Purchase Order Lines* mengenai pelajakan produk PO tersebut
-6. Klik **Save & Close** jika produk yang diajukan hanya 1, apabila lebih dari 1 maka klik **Save & New** dan isi produk selanjutnya.
-7. Kemudian klik **Save**.
-8. Klik tombol **Request Approval** jika sudah tidak ada revisi pengajuan pembelian produk lagi, apabila sudah diklik maka sudah tidak bisa diedit lagi.
+8. Sistem juga akan otomatis menarik data pada tab *Purchase Order Lines* mengenai pelacakan produk PO tersebut.
+9. Klik **Save & Close** jika produk yang diajukan hanya 1, apabila lebih dari 1 maka klik **Save & New** dan isi produk selanjutnya.
+10. Kemudian klik **Save**.
+11. Klik tombol **Request Approval** jika sudah tidak ada revisi pengajuan pembelian produk lagi, apabila sudah diklik maka sudah tidak bisa diubah lagi.
 
-![Contoh Pengisian Order Lines](../dept_sales/images/ns_product.png)
+![Contoh Pengisian Order Lines](../dept_prd/images/pr_product.png)
 <center><em>Gambar 2 : Tampilan pengisian produk pada tab Product Detail.</em></center>
 
 ---
@@ -51,43 +51,33 @@ Kemudian jika vendor sudah melakukan pengiriman maka akan tampil data terkait pe
 
 Setelah dokumen PR disetujui, Anda harus membuat PO yang akan berstatus *RFQ*.
 
-1. Klik button lines.
-2. Kemudian check List Item yang akan dibuatkan PO.
-3. Pilih **Action**
+1. Klik **Button Lines**.
+2. Kemudian ceklis *List Item* yang akan dibuatkan PO.
+3. Pilih **Action**.
 4. Klik **Create RFQ**.
+5. Kemudian cek kembali apakah sudah benar dan sesuai PR yang akan diajukan, jika sudah klik button **Create RFQ**. Maka akan terbentuk nomor *PO*.
 
-![Contoh Pengisian pilihan convert](../dept_sales/images/ns_convert.png)
-<center><em>Gambar 4 : Tampilan confirm Convert To SO.</em></center>
-
-<!-- !!! warning "Peringatan Penting Sebelum Konfirmasi"
-    Pastikan Anda telah memeriksa ulang nilai pada Tabel **Calculation** dan **Warna** yang tertera. Dokumen yang sudah berstatus *Converted* maka sudah bisa lanjut pada modul **Sales**. -->
+---
 
 ## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Pastikan Nama Customer (Bill To - Ship To - Partner - Customer Universal)** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
-* <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
+* <input type="checkbox"> **Memastikan Produk dan Quantity yang akan diajukan** sudah sesuai dengan kebutuhan pembeli.
+* <input type="checkbox"> **Memastikan spesifikasi yang akan diajukan** sudah lengkap dan sesuai dengan kebutuhan pembeli.
+* <input type="checkbox"> **Pastikan ketika PR sudah disetujui sudah dibuatkan menjadi PO** sesuai dengan kesepakatan.
 
 ### Fitur Berdasarkan Hak Akses
-=== "Admin SAS"
-    - Dapat membuat *NS* baru dan dapat melihat keseluruhan data pada modul.
-    - Dapat melakukan action *Submit* jika penawaran sudah sesuai 
-    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
+=== "User"
+    - Dapat membuat *PR* baru dan hanya dapat melihat data yang telah dibuat user pada modul.
+    - Dapat melakukan action *Submit* jika permintaan sudah sesuai.
+    - Dapat melakukan action *Create RFQ* jika sesuai selesai tahap Approval.
 
-=== "DIR"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Oranye*).
-    Memiliki tampilan Tab perhitungan (Dir View)
+=== "Manager"
+    - Dapat membuat *PR* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action *Approve* jika permintaan sudah sesuai.
+    - Dapat melakukan action *Create RFQ* jika sesuai selesai tahap Approval.
 
-=== "GSM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
-
-=== "RSM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
-
-=== "ASM"
-     Hanya dapat melihat data user dan area masing-masing.
 
 ??? info "What Next?"
-    Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales*.
-    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_sales/sales_quotation.md)
+    Setelah *PR* sudah dilakukan *Create RFQ* selanjutnya dokumen akan masuk ke Modul *Purchase*.
+    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_prd/purchase_order.md)
