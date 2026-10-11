@@ -34,8 +34,11 @@ Pada tab **Products**, masukkan produk yang akan diajukan pembeliannya:
 10. Kemudian klik **Save**.
 11. Klik tombol **Request Approval** jika sudah tidak ada revisi pengajuan pembelian produk lagi, apabila sudah diklik maka sudah tidak bisa diubah lagi.
 
-![Contoh Pengisian Order Lines](../dept_prd/images/pr_product.png)
-<center><em>Gambar 2 : Tampilan pengisian produk pada tab Product Detail.</em></center>
+![Contoh Pengisian Produk](../dept_prd/images/pr_product.png)
+<center><em>Gambar 2.1 : Tampilan pengisian produk pada Products.</em></center>
+
+![Contoh Pengisian Produk](../dept_prd/images/pr_product.png)
+<center><em>Gambar 2.2 : Tampilan pengisian produk untuk pembelian pada Products.</em></center>
 
 ---
 
