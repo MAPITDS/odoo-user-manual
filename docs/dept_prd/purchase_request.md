@@ -37,7 +37,7 @@ Pada tab **Products**, masukkan produk yang akan diajukan pembeliannya:
 ![Contoh Pengisian Produk](../dept_prd/images/pr_product.png)
 <center><em>Gambar 2.1 : Tampilan pengisian produk pada Products.</em></center>
 
-![Contoh Pengisian Produk](../dept_prd/images/pr_product.png)
+![Contoh Pengisian Produk](../dept_prd/images/pr_product2.png)
 <center><em>Gambar 2.2 : Tampilan pengisian produk untuk pembelian pada Products.</em></center>
 
 ---

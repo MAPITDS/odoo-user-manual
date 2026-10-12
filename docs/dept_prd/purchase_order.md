@@ -59,27 +59,25 @@ Pada tab **Other Information**, masukkan informasi mengenai pembelian produk.
 
 ## 4. Menunggu Approval
 
-Pada state *To Approved*, maka atasan akan mengecek pembelian produk tersebut, jika sudah sesuai dan menyetujui pembelian produk tersebut maka tekan tombol **Approve Order**.
+Pada state *To Approved*, atasan akan mengecek pembelian produk tersebut, jika sudah sesuai dan menyetujui pembelian produk tersebut maka tekan tombol **Approve Order**.
 
 
 
 ## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Pastikan Nama Customer (Bill To - Ship To - Partner - Customer Universal)** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
-* <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
+* <input type="checkbox"> **Memastikan Nama Vendor dan Currency** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Produk, Quantity serta Diskon** sudah sesuai dengan kebutuhan pembeli.
+* <input type="checkbox"> **Pastikan Deliver To** sudah sesuai dan benar.
+
 
 ### Fitur Berdasarkan Hak Akses
 === "User"
-    - Dapat membuat *PO* baru dan dapat melihat keseluruhan data pada modul.
-    - Dapat melakukan action *Confirm Order* jika permintaan sudah sesuai.
-    - Dapat melakukan action *Receive Products* jika sudah menerima produk tersebut.
+    - Dapat membuat *PR* baru dan dapat melihat keseluruhan data pada modul.
 
 === "Manager"
     - Dapat membuat *PR* baru dan dapat melihat keseluruhan data pada modul.
-    - Dapat melakukan action *Approve* jika permintaan sudah sesuai.
-    - Dapat melakukan action *Create RFQ* jika sesuai selesai tahap Approval.
+    - Dapat melihat tampilan menu *Analisa Harga Beli* dan *Reporting*.
 
 === "Approver"
     - Dapat membuat *PR* baru dan dapat melihat keseluruhan data pada modul.
