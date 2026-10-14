@@ -4,26 +4,25 @@
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Invoice* (Pembelian Barang) hingga menjadi *RI* yang siap diproses oleh tim warehouse.
 
 
-## 1. Membuat Pembelian Produk
+## 1. Membuat Invoice Baru
 
-1. Masuk ke modul **Purchase**.
-2. Klik tombol **Create** di pojok kiri atas halaman. Atau pilih *PO* yang  sudah terbentuk dari *PR*.
-3. Pilih nama **Vendor**, dan isi referensi kode vendor pada kolom **Vendor Reference**.
-4. Ceklis **Apply Manual Exchange** jika menggunakan pemesanan manual.
-5. Pilih nilai tukar pembayaran (mata uang) ke vendor pada kolom **Currency**.
-6. Tanggal pemesanan pembelian akan otomatis terisi pada kolom **Order Date** berdasarkan tanggal pembuatan *PO* dan bisa di ubah.
-7. Pilih pengiriman **Ship To** ke negara mana dan menggunakan transportasi pengiriman apa pada kolom **Ship By**.
-8. Pilih divisi mana yang mengajukan pembelian tersebut pada kolom **Division**.
-9. Isi keterangan PO diambil dari PR yang mana dan keterangan lainnya yang diperlukan pada kolom **Source Document**.
+1. Masuk ke modul **Accounting** > **Customer** > **Invoices**.
+2. Klik tombol **Create** di pojok kiri atas halaman. Atau pilih *Invoice* yang  sudah terbentuk dari *DO/RI*.
+3. Pilih nama customer pada kolom **Partner**, isi alamat pengiriman pada kolom **Delivery Address**, dan pilih **Type Customer**.
+4. Pilih termin pembayaran pada kolom **Payment Terms**. 
+5. Pilih nama sales yang menjual produk tersebut pada kolom **Sales Person**. Sistem akan otomatis menarik *Region, *Area*, *District*, dan *Regency/City*.
+6. Jika ada pembayaran sebelumnya menggunaka DP maka ceklis pada kolom *Is DP* dan isi nomor pembayaran invoice sebelumnya pada kolom *DP Invoice*.
+7. Pilih nilai tukar pembayaran (mata uang) ke vendor pada kolom **Currency**.
+8. Pilih nomor SO untuk invoice tersebut pada kolom **Number SO**.
 
 ![Contoh Pengisian Form PO](../dept_prd/images/po_header.png)
 <center><em>Gambar 1 : Tampilan pengisian form pada purchase order.</em></center>
 
 ---
 
-## 2. Pengisian Produk
+## 2. Pengisian Produk Pada Invoice
 
-Pada tab **Products**, masukkan produk yang akan dilakukan pembelian:
+Pada tab **Invoice Lines**, masukkan produk yang akan diterbitkan invoice :
 
 1. Klik **Add a line**.
 2. Pilih **Product** dari daftar *dropdown*, sistem akan otomatis menarik **Description**, **AKL**, dan **HS Code** produk.
