@@ -1,96 +1,88 @@
 
 # <img src="../../icon_modul/ns.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Purchase Order
 
-Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *PO* (Permintaan Pembelian Barang) hingga menjadi *RI* yang siap diproses oleh tim warehouse.
+Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *PO* (Pembelian Barang) hingga menjadi *RI* yang siap diproses oleh tim warehouse.
 
 
 ## 1. Membuat Pembelian Produk
 
-1. Masuk ke modul **Purchase Requests**.
-2. Klik tombol **Create** di pojok kiri atas halaman.
-3. Isi data yang mengajukan permintaan pada kolom **Requested by**, dan yang akan menyetujui permintaan pada kolom **Approver**.
-4. Pilih tipe pengambilan barang dari gudang mana pada kolom **Picking Type**.
-5. Isi sumber dokumen **Source Document** dan alasan permintaan pengadaan produk **Description**.
-6. Pilih sumber pengajuan pembelian produk dari nomor so berapa pada kolom **Procurement Group** jika ada.
+1. Masuk ke modul **Purchase**.
+2. Klik tombol **Create** di pojok kiri atas halaman. Atau pilih *PO* yang  sudah terbentuk dari *PR*.
+3. Pilih nama **Vendor**, dan isi referensi kode vendor pada kolom **Vendor Reference**.
+4. Ceklis **Apply Manual Exchange** jika menggunakan pemesanan manual.
+5. Pilih nilai tukar pembayaran (mata uang) ke vendor pada kolom **Currency**.
+6. Tanggal pemesanan pembelian akan otomatis terisi pada kolom **Order Date** berdasarkan tanggal pembuatan *PO* dan bisa di ubah.
+7. Pilih pengiriman **Ship To** ke negara mana dan menggunakan transportasi pengiriman apa pada kolom **Ship By**.
+8. Pilih divisi mana yang mengajukan pembelian tersebut pada kolom **Division**.
+9. Isi keterangan PO diambil dari PR yang mana dan keterangan lainnya yang diperlukan pada kolom **Source Document**.
 
-![Contoh Pengisian Form NS](../dept_sales/images/ns_header.png)
-<center><em>Gambar 1 : Tampilan pengisian form pada Negotiation Sheet.</em></center>
+![Contoh Pengisian Form PO](../dept_prd/images/po_header.png)
+<center><em>Gambar 1 : Tampilan pengisian form pada purchase order.</em></center>
 
 ---
 
 ## 2. Pengisian Produk
 
-Pada tab **Products**, masukkan produk yang akan diajukan pembeliannya:
+Pada tab **Products**, masukkan produk yang akan dilakukan pembelian:
 
 1. Klik **Add a line**.
-2. Pilih **Product** dari daftar *dropdown*, sistem akan otomatis menarik **Description** produk.
-3. Masukkan jumlah produk yang akan diajukan pada kolom **Quantity** dan pilih satuan yang diajukan.
-4. Pilih departemen pada kolom **Analytic Account** dan isi tanggal pengajuan pembelian pada kolom **Request Date**.
-5. Masukkan perkiraan harga pembelian produk jika ada pada kolom **Estimated Cost**.
-6. Masukkan spesifikasi produk secara detail pada kolom **Specifications**.
-7. Sistem akan otomatis mengisi *Tracking* mengenai pelacakan produk yang diajukan sudah sampai tahap apa.
-8. Sistem juga akan otomatis menarik data pada tab *Purchase Order Lines* mengenai pelajakan produk PO tersebut
-6. Klik **Save & Close** jika produk yang diajukan hanya 1, apabila lebih dari 1 maka klik **Save & New** dan isi produk selanjutnya.
-7. Kemudian klik **Save**.
-8. Klik tombol **Request Approval** jika sudah tidak ada revisi pengajuan pembelian produk lagi, apabila sudah diklik maka sudah tidak bisa diedit lagi.
+2. Pilih **Product** dari daftar *dropdown*, sistem akan otomatis menarik **Description**, **AKL**, dan **HS Code** produk.
+3. Pilih tanggal perkiraan pengiriman produk pada kolom **Scheduled Date**.
+4. Masukkan jumlah produk yang akan dibeli pada kolom **Quantity** dan pilih satuan yang diajukan pada kolom **Product Unit of Measure**.
+5. Masukkan presentase diskon jika ada pada kolom **Discount (%)**.
+6. Masukkan harga beli sesuai harga yang telah diberikan dari vendor pada kolom **Unit Price**, sistem akan otomatis menarik jumlah **Subtotal**.
+7. Isi keterangan pada *Define your terms and conditions* jika diperlukan terkait keterangan untuk pembelian produk tersebut.
 
-![Contoh Pengisian Order Lines](../dept_sales/images/ns_product.png)
-<center><em>Gambar 2 : Tampilan pengisian produk pada tab Product Detail.</em></center>
+![Contoh Pengisian Produk](../dept_prd/images/po_product.png)
+<center><em>Gambar 2 : Tampilan pengisian produk pada tab Products.</em></center>
 
 ---
 
-## 3. Menunggu Approval
+## 3. Pengisian Informasi 
 
-Pada state **To Be Approved**, ada beberapa kondisi berdasarkan warna pada Negotiation Sheet yang dibuat :
+Pada tab **Other Information**, masukkan informasi mengenai pembelian produk.
 
-1. Warna "Hijau" berarti tidak perlu meminta Approval, bisa dilewati pada langkah ini.
-2. Lakukan pemeriksaan berkala pada PR yang diajukan. Jika pihak terkait (MKT/PE) sudah melakukan approved, maka akan terdapat informasi PO untuk PR yang dibuat.
-3. Kemudian jika vendor sudah melakukan pengiriman maka akan tampil data terkait pengiriman yaitu stock moves artinya perpindahan stok dari gudang vendor ke gudang perusahaan.
-4. Kemudian odoo akan menampilkan informasi terkait penerimaan barang dan penambahan stok barang pada gudang.
-5. Pihak yang melakukan penginputan selanjutnya dapat melakukan proses selanjutnya karena produk yang dibutuhkan sudah tersedia di gudang Center.
+1. Sistem akan otomatis mengisi tanggal penjadwalan pengiriman produk dan status pembayaran pada kolom **Scheduled Date** dan **Billing Status**.
+2. Pilih gudang yang akan menerima pembelian produk tersebut pada kolom **Deliver To**.
+3. Pilih ketentuan pengiriman produk jika ada pada kolom **Incoterm**.
+4. Masukkan tanggal perkiraan sampai barang pada kolom **Update ETA** dan isi keterangan terkait pengiriman tersebut pada kolom **Description ETA**.
+5. Pilih nama yang membuat pembelian tersebut pada kolom **Purchase Representative**.
+6. Pilih termin pembayaran pembelian tersebut pada kolom **Payment Terms**.
+7. Jika ada aturan penyesuain pajak pada transaksi pembelian ini maka isi pada kolom **Fiscal Position**.
+8. Kemudian klik **Save**.
+9. Klik tombol **Confirm Order** jika sudah tidak ada revisi pengajuan pembelian produk lagi, apabila sudah diklik maka sudah tidak bisa diubah lagi.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
 
 ---
 
-## 5. Melakukan Konfirmasi menjadi Converted 
+## 4. Menunggu Approval
 
-Setelah dokumen penawaran disetujui oleh pelanggan, Anda harus mengubah statusnya menjadi *Converted* agar modul *Sales* dapat mendeteksi adanya penjualan barang.
+Pada state *To Approved*, atasan akan mengecek pembelian produk tersebut, jika sudah sesuai dan menyetujui pembelian produk tersebut maka tekan tombol **Approve Order**.
 
-* Klik tombol **Convert To So** yang berada di barisan tombol aksi kiri atas.
-* Pilih tipe convert **Full** atau **Partial**
-* Status dokumen di pojok kanan atas akan otomatis berubah dari **Approved** menjadi **Converted** atau **Partially Converted**.
 
-![Contoh Pengisian pilihan convert](../dept_sales/images/ns_convert.png)
-<center><em>Gambar 4 : Tampilan confirm Convert To SO.</em></center>
-
-<!-- !!! warning "Peringatan Penting Sebelum Konfirmasi"
-    Pastikan Anda telah memeriksa ulang nilai pada Tabel **Calculation** dan **Warna** yang tertera. Dokumen yang sudah berstatus *Converted* maka sudah bisa lanjut pada modul **Sales**. -->
 
 ## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Pastikan Nama Customer (Bill To - Ship To - Partner - Customer Universal)** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan Produk dan Quantity serta Diskon atau potongan harga dan ongkir** sudah sesuai dengan kebutuhan customer/pembeli.
-* <input type="checkbox"> **Pastikan Bagian COS (Cost of Sales)** sudah sesuai dengan kesepakatan.
+* <input type="checkbox"> **Memastikan Nama Vendor dan Currency** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Produk, Quantity serta Diskon** sudah sesuai dengan kebutuhan pembeli.
+* <input type="checkbox"> **Pastikan Deliver To** sudah sesuai dan benar.
+
 
 ### Fitur Berdasarkan Hak Akses
-=== "Admin SAS"
-    - Dapat membuat *NS* baru dan dapat melihat keseluruhan data pada modul.
-    - Dapat melakukan action *Submit* jika penawaran sudah sesuai 
-    - Dapat melakukan action *Convert to SO* jika sesuai selesai tahap Approval
+=== "User"
+    - Dapat membuat *PR* baru dan dapat melihat keseluruhan data pada modul.
 
-=== "DIR"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar dan mengubah *APPROVE* khusus (*Merah atau Oranye*).
-    Memiliki tampilan Tab perhitungan (Dir View)
+=== "Manager"
+    - Dapat membuat *PR* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melihat tampilan menu *Analisa Harga Beli* dan *Reporting*.
 
-=== "GSM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Kuning*).
-
-=== "RSM"
-    Memiliki tombol untuk menyetujui diskon di luar batas standar *APPROVE* khusus (*Biru*).
-
-=== "ASM"
-     Hanya dapat melihat data user dan area masing-masing.
+=== "Approver"
+    - Dapat membuat *PR* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat melakukan action *Approve Order* jika permintaan sudah sesuai.
 
 ??? info "What Next?"
-    Setelah *NS* sudah dilakukan *Convert to SO* selanjutnya dokumen akan masuk ke Modul *Sales*.
-    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_sales/sales_quotation.md)
+    Setelah *PO* sudah dilakukan *Approve Order* selanjutnya dokumen akan masuk ke Modul *RI*.
+    [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_who/inventory_ri.md)
