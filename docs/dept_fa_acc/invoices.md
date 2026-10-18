@@ -11,7 +11,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Invoice* 
 3. Pilih nama customer pada kolom **Partner**, isi alamat pengiriman pada kolom **Delivery Address**, dan pilih **Type Customer**.
 4. Pilih termin pembayaran pada kolom **Payment Terms**. 
 5. Pilih nama sales yang menjual produk tersebut pada kolom **Sales Person**. Sistem akan otomatis menarik *Region, *Area*, *District*, dan *Regency/City*.
-6. Jika ada pembayaran sebelumnya menggunaka DP maka ceklis pada kolom *Is DP* dan isi nomor pembayaran invoice sebelumnya pada kolom *DP Invoice*.
+6. Jika ada pembayaran sebelumnya menggunaka DP maka ceklis pada kolom *Is DP* dan isi nomor pembayaran invoice sebelumnya pada kolom *DP Invoice*. Sistem akan otomatis menarik nilai DP tersebut pada kolom **DP Amount**.
 7. Pilih nilai tukar pembayaran (mata uang) ke vendor pada kolom **Currency**.
 8. Pilih nomor SO untuk invoice tersebut pada kolom **Number SO**.
 
@@ -25,31 +25,116 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Invoice* 
 Pada tab **Invoice Lines**, masukkan produk yang akan diterbitkan invoice :
 
 1. Klik **Add a line**.
-2. Pilih **Product** dari daftar *dropdown*, sistem akan otomatis menarik **Description**, **AKL**, dan **HS Code** produk.
-3. Pilih tanggal perkiraan pengiriman produk pada kolom **Scheduled Date**.
-4. Masukkan jumlah produk yang akan dibeli pada kolom **Quantity** dan pilih satuan yang diajukan pada kolom **Product Unit of Measure**.
-5. Masukkan presentase diskon jika ada pada kolom **Discount (%)**.
-6. Masukkan harga beli sesuai harga yang telah diberikan dari vendor pada kolom **Unit Price**, sistem akan otomatis menarik jumlah **Subtotal**.
-7. Isi keterangan pada *Define your terms and conditions* jika diperlukan terkait keterangan untuk pembelian produk tersebut.
+2. Pilih **Product** dari daftar *dropdown*, sistem akan otomatis menarik **Description**, **Program**, **Faskes**, **Sale Program** dan **Discount xx+xx (%)** produk.
+3. Pilih **Analytic Account** dan **Analytic Tags**.
+4. Masukkan jumlah produk yang akan dibeli pada kolom **Quantity** dan isi harga yang dijual pada kolom **Price**.
+5. Pilih satuan peoduk pada kolom **Unit of Measure**.
+6. Sistem akan otomatis menarik jumlah **Subtotal**.
+7. Isi keterangan pada *Terms and conditions* jika diperlukan terkait keterangan untuk pembayaran produk tersebut.
+8. Jika ada diskon pilih tipe diskon nya pada kolom **Global Discount Type** dan isi nilainya pada kolom **Discount Rate**.
+9. Apabila ada diskon tambahan lagi pilih tipe diskon pada kolom **Cash Discount Type** dan isi nilainya pada kolom **Cash/Extra Disc Amount**.
 
 ![Contoh Pengisian Produk](../dept_prd/images/po_product.png)
 <center><em>Gambar 2 : Tampilan pengisian produk pada tab Products.</em></center>
 
 ---
 
-## 3. Pengisian Informasi 
+## 3. Pengisian Pajak Diskon 
 
-Pada tab **Other Information**, masukkan informasi mengenai pembelian produk.
+Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
 
-1. Sistem akan otomatis mengisi tanggal penjadwalan pengiriman produk dan status pembayaran pada kolom **Scheduled Date** dan **Billing Status**.
-2. Pilih gudang yang akan menerima pembelian produk tersebut pada kolom **Deliver To**.
-3. Pilih ketentuan pengiriman produk jika ada pada kolom **Incoterm**.
-4. Masukkan tanggal perkiraan sampai barang pada kolom **Update ETA** dan isi keterangan terkait pengiriman tersebut pada kolom **Description ETA**.
-5. Pilih nama yang membuat pembelian tersebut pada kolom **Purchase Representative**.
-6. Pilih termin pembayaran pembelian tersebut pada kolom **Payment Terms**.
-7. Jika ada aturan penyesuain pajak pada transaksi pembelian ini maka isi pada kolom **Fiscal Position**.
-8. Kemudian klik **Save**.
-9. Klik tombol **Confirm Order** jika sudah tidak ada revisi pengajuan pembelian produk lagi, apabila sudah diklik maka sudah tidak bisa diubah lagi.
+1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
+2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 4. Pengisian E-Invoicing
+
+Pada tab **E-Invoicing Invoice Line**, masukkan informasi mengenai elektronik invoice jika ada (lewati langkah ini jika tidak ada).
+
+1. Isi kode dokumen elektroniknya pada kolom **Supporting Document Code**.
+2. Klik **Add a line**.
+3. Pilih **Product** dari daftar *dropdown*. 
+4. Isi deskripsi produk pada kolom **Description**.
+5. Isi jumlah produk yang tertera pada invoice pada kolom **Quantity**.
+6. Pilih satuan peoduk pada kolom **Unit of Measure**.
+7. Isi **Price**, **Discount**, **DPP**, **Tax Amount**, dan **Total**. 
+8. Jika full diskon ceklis pada kolom **Full Discount**, dan jika diluar pajak ny klik pada kolom **Excluded**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 5. Pengisian Informasi
+
+Pada tab **Other Info**, masukkan informasi mengenai informasi terkait invoice tersebut.
+
+1. Sistem secara otomatis telah mnegisi **Journal**, **Account**, **Source Document**, dan juga *List* pajak yang sudah dipilih.
+2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 3. Pengisian Pajak Diskon 
+
+Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+
+1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
+2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 3. Pengisian Pajak Diskon 
+
+Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+
+1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
+2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 3. Pengisian Pajak Diskon 
+
+Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+
+1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
+2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 3. Pengisian Pajak Diskon 
+
+Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+
+1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
+2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 3. Pengisian Pajak Diskon 
+
+Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+
+1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
+2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
 
 ![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
 <center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
