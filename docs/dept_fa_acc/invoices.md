@@ -74,16 +74,47 @@ Pada tab **E-Invoicing Invoice Line**, masukkan informasi mengenai elektronik in
 Pada tab **Other Info**, masukkan informasi mengenai informasi terkait invoice tersebut.
 
 1. Sistem secara otomatis telah mnegisi **Journal**, **Account**, **Source Document**, dan juga *List* pajak yang sudah dipilih.
-2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+2. Pilih referensi pwmbayaran pada kolom **Payment Ref.**, dan isi deskripsinya pada kolom **Reference/Description**.
+3. Jika transaksi ini merupakan transaksi dengan negara lain maka isi ketentuan nya pada kolom **Incoterm** dan **Fiscal Position**.
+4. Masukkan kode akun bank pada kolom **Bank Account**.
 
 ![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
 <center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
 
 ---
 
-## 3. Pengisian Pajak Diskon 
+## 6. Pengisian E-Invoicing
 
-Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+Pada tab **E-Invoicing**, masukkan informasi mengenai elektronik invoice.
+
+1. Ceklis apabila e-invoicing akan di export pada kolom **Is E-Invoicing Exported**.
+2. Isi tanggal export'an e-invoiceing tersebut pada kolom **E-Invoicing Exported Date**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 7. Pengisian Commission
+
+Pada tab **Commission**, masukkan informasi mengenai komisi yang diberikan pada invoice tersebut. Sistem akan otomatis mengisi pada tab komisi ini.
+
+1. Klik **Add a line**.
+2. Pilih **Product** dari daftar *dropdown*. 
+3. Isi deskripsi produk pada kolom **Description**.
+4. Isi jumlah produk yang tertera pada invoice pada kolom **Quantity**.
+5. Pilih satuan peoduk pada kolom **Unit of Measure**.
+6. Isi **Price**, **Discount**, **DPP**, **Tax Amount**, dan **Total**. 
+7. Jika full diskon ceklis pada kolom **Full Discount**, dan jika diluar pajak ny klik pada kolom **Excluded**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 8. Pengisian Return Commission
+
+Pada tab **Return Commission**, masukkan informasi mengenai pengembalian komisi pada invoice tersebut.
 
 1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
 2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
@@ -93,21 +124,9 @@ Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada
 
 ---
 
-## 3. Pengisian Pajak Diskon 
+## 9. Pengisian Duedate Installment
 
-Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
-
-1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
-2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
-
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
-
----
-
-## 3. Pengisian Pajak Diskon 
-
-Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+Pada tab **Duedate Installment**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
 
 1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
 2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
@@ -117,21 +136,9 @@ Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada
 
 ---
 
-## 3. Pengisian Pajak Diskon 
+## 10. Pengisian Picking References 
 
-Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
-
-1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
-2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
-
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
-
----
-
-## 3. Pengisian Pajak Diskon 
-
-Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+Pada tab **Picking References**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
 
 1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
 2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
@@ -141,7 +148,43 @@ Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada
 
 ---
 
-## 4. Menunggu Approval
+## 11. Pengisian Print Layout
+
+Pada tab **Print Layout**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+
+1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
+2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 12. Pengisian Negotiation
+
+Pada tab **Negotiation**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+
+1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
+2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 13. Pengisian Negotiation New 
+
+Pada tab **Negotiation New**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+
+1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
+2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+
+![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
+<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+
+---
+
+## 14. Menunggu Approval
 
 Pada state *To Approved*, atasan akan mengecek pembelian produk tersebut, jika sudah sesuai dan menyetujui pembelian produk tersebut maka tekan tombol **Approve Order**.
 
