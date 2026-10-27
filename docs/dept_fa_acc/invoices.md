@@ -97,15 +97,7 @@ Pada tab **E-Invoicing**, masukkan informasi mengenai elektronik invoice.
 
 ## 7. Pengisian Commission
 
-Pada tab **Commission**, masukkan informasi mengenai komisi yang diberikan pada invoice tersebut. Sistem akan otomatis mengisi pada tab komisi ini.
-
-1. Klik **Add a line**.
-2. Pilih **Product** dari daftar *dropdown*. 
-3. Isi deskripsi produk pada kolom **Description**.
-4. Isi jumlah produk yang tertera pada invoice pada kolom **Quantity**.
-5. Pilih satuan peoduk pada kolom **Unit of Measure**.
-6. Isi **Price**, **Discount**, **DPP**, **Tax Amount**, dan **Total**. 
-7. Jika full diskon ceklis pada kolom **Full Discount**, dan jika diluar pajak ny klik pada kolom **Excluded**.
+Pada tab **Commission**, Sistem akan otomatis mengisi pada tab komisi ini ketika state sudah berpindah dari *Draft* ke *Open*.
 
 ![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
 <center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
@@ -126,10 +118,10 @@ Pada tab **Return Commission**, masukkan informasi mengenai pengembalian komisi 
 
 ## 9. Pengisian Duedate Installment
 
-Pada tab **Duedate Installment**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+Pada tab **Duedate Installment**, masukkan informasi mengenai tanggal cicilan pada invoice tersebut.
 
-1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
-2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+1. Pilih detail ke berapa pada kolom **Add Installments**.
+2. Pilih tanggal cicilan tersebut pada kolom **Date**.
 
 ![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
 <center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
