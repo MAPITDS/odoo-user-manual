@@ -15,8 +15,8 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Invoice* 
 7. Pilih nilai tukar pembayaran (mata uang) ke vendor pada kolom **Currency**.
 8. Pilih nomor SO untuk invoice tersebut pada kolom **Number SO**.
 
-![Contoh Pengisian Form PO](../dept_prd/images/po_header.png)
-<center><em>Gambar 1 : Tampilan pengisian form pada purchase order.</em></center>
+![Contoh Pengisian Form Invoice](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 1 : Tampilan pengisian form pada invoices.</em></center>
 
 ---
 
@@ -34,7 +34,7 @@ Pada tab **Invoice Lines**, masukkan produk yang akan diterbitkan invoice :
 8. Jika ada diskon pilih tipe diskon nya pada kolom **Global Discount Type** dan isi nilainya pada kolom **Discount Rate**.
 9. Apabila ada diskon tambahan lagi pilih tipe diskon pada kolom **Cash Discount Type** dan isi nilainya pada kolom **Cash/Extra Disc Amount**.
 
-![Contoh Pengisian Produk](../dept_prd/images/po_product.png)
+![Contoh Pengisian Produk](../dept_fa_acc/images/po_header.png)
 <center><em>Gambar 2 : Tampilan pengisian produk pada tab Products.</em></center>
 
 ---
@@ -46,8 +46,8 @@ Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada
 1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
 2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
 
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Pengisian Pajak Diskon](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 3 : Tampilan pengisian pajak pada tab discount tax.</em></center>
 
 ---
 
@@ -64,8 +64,8 @@ Pada tab **E-Invoicing Invoice Line**, masukkan informasi mengenai elektronik in
 7. Isi **Price**, **Discount**, **DPP**, **Tax Amount**, dan **Total**. 
 8. Jika full diskon ceklis pada kolom **Full Discount**, dan jika diluar pajak ny klik pada kolom **Excluded**.
 
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Pengisian E-Invoicing Line](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 4 : Tampilan pengisian informasi e-invoicing pada tab e-invoicing invoice line.</em></center>
 
 ---
 
@@ -78,8 +78,8 @@ Pada tab **Other Info**, masukkan informasi mengenai informasi terkait invoice t
 3. Jika transaksi ini merupakan transaksi dengan negara lain maka isi ketentuan nya pada kolom **Incoterm** dan **Fiscal Position**.
 4. Masukkan kode akun bank pada kolom **Bank Account**.
 
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Pengisian Informasi Lainnya](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 5 : Tampilan pengisian informasi invoice pada tab other info.</em></center>
 
 ---
 
@@ -90,8 +90,8 @@ Pada tab **E-Invoicing**, masukkan informasi mengenai elektronik invoice.
 1. Ceklis apabila e-invoicing akan di export pada kolom **Is E-Invoicing Exported**.
 2. Isi tanggal export'an e-invoiceing tersebut pada kolom **E-Invoicing Exported Date**.
 
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Pengisian Cetak E-Invoicing](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 6 : Tampilan pengisian informasi cetak e-invoicing pada tab e-invoicing.</em></center>
 
 ---
 
@@ -99,8 +99,8 @@ Pada tab **E-Invoicing**, masukkan informasi mengenai elektronik invoice.
 
 Pada tab **Commission**, Sistem akan otomatis mengisi pada tab komisi ini ketika state sudah berpindah dari *Draft* ke *Open*.
 
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Tampilan Komisi](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 7 : Tampilan informasi komisi pada tab commission.</em></center>
 
 ---
 
@@ -108,11 +108,12 @@ Pada tab **Commission**, Sistem akan otomatis mengisi pada tab komisi ini ketika
 
 Pada tab **Return Commission**, masukkan informasi mengenai pengembalian komisi pada invoice tersebut.
 
-1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
-2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+1. Klik **Add a line**.
+2. Pilih invoice yang akan dikembalikan komisinya pada kolom **Invoice**.
+3. Sistem akan otomatis mengisi detail pada kolom yang ada untuk komisi yang sudah dipilih.
 
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Pengisian Pengembalian Komisi](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 8 : Tampilan pengisian informasi pengembalian komisi pada tab return commission.</em></center>
 
 ---
 
@@ -120,74 +121,67 @@ Pada tab **Return Commission**, masukkan informasi mengenai pengembalian komisi 
 
 Pada tab **Duedate Installment**, masukkan informasi mengenai tanggal cicilan pada invoice tersebut.
 
-1. Pilih detail ke berapa pada kolom **Add Installments**.
-2. Pilih tanggal cicilan tersebut pada kolom **Date**.
+1. Klik **Add a line**.
+2. Pilih nomor cicilan ke berapa pada kolom **Installments**.
+3. Isi tanggal cicilan tersebut pada kolom **Date**.
 
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Pengisian Cicilan Invoice](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 9 : Tampilan pengisian informasi cicilan pembayaran pada tab Duedate Installment.</em></center>
 
 ---
 
 ## 10. Pengisian Picking References 
 
-Pada tab **Picking References**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+Pada tab **Picking References**, masukkan informasi mengenai pengambilan barang di gudang dan status barang tersebut.
 
-1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
-2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
+1. Klik **Add a line**.
+2. Pilih nomor DO yang akan dimasukkan.
+3. Klik **Select**, maka akan tampil keterangan barang pada DO yang terlah dipilih.
 
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Pengisian Tracking Barang](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 10 : Tampilan pengisian informasi status barang pada tab picking references.</em></center>
 
 ---
 
 ## 11. Pengisian Print Layout
 
-Pada tab **Print Layout**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+Pada tab **Print Layout**, merupakan tampilan invoice yang akan di cetak dan bisa dicek terlebih dahulu nilai invoicenya apakah sudah sesuai sebelum dicetak.
 
-1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
-2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
-
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Tampilan Cetak Invoice](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 11 : Tampilan informasi nilai invoice yang akan dicetak pada tab print layout.</em></center>
 
 ---
 
 ## 12. Pengisian Negotiation
 
-Pada tab **Negotiation**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+Pada tab **Negotiation**, merupakan informasi mengenai nilai COS yang tertera pada modul Negotiation Sheet lama sesuai dengan nomor transaksi yang akan di invoice kan.
 
-1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
-2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
-
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Tampilan COS Negotiation Lama](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 12 : Tampilan informasi cos negotiation lama pada tab negotiation.</em></center>
 
 ---
 
 ## 13. Pengisian Negotiation New 
 
-Pada tab **Negotiation New**, masukkan informasi mengenai pajak yang diberikan pada invoice tersebut.
+Pada tab **Negotiation New**, merupakan informasi mengenai nilai COS yang tertera pada modul Negotiation Sheet baru sesuai dengan nomor transaksi yang akan di invoice kan.
 
-1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
-2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
-
-![Contoh Pengisian Informasi Pembelian](../dept_sales/images/po_info.png)
-<center><em>Gambar 3 : Tampilan pengisian informasi pembelian pada tab other information.</em></center>
+![Contoh Tampilan COS Negotiation Baru](../dept_fa_acc/images/po_header.png)
+<center><em>Gambar 13 : Tampilan informasi cos negotiation baru pada tab negotiation baru.</em></center>
 
 ---
 
-## 14. Menunggu Approval
+## 14. Menunggu Pembayaran
 
-Pada state *To Approved*, atasan akan mengecek pembelian produk tersebut, jika sudah sesuai dan menyetujui pembelian produk tersebut maka tekan tombol **Approve Order**.
+Pada state *Open*, akan dilakukan pembayaran invoice tersebut, dan apabila sudah dibayarkan sesuai nilai yang tertera maka state akan berubah menjadi *Paid*.
 
 
 
 ## 📝 Referensi Tambahan
 
 ### SOP Harian (Checklist)
-* <input type="checkbox"> **Memastikan Nama Vendor dan Currency** sudah sesuai dan benar.
-* <input type="checkbox"> **Memastikan Produk, Quantity serta Diskon** sudah sesuai dengan kebutuhan pembeli.
-* <input type="checkbox"> **Pastikan Deliver To** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Nama Pelanggan** sudah sesuai dan benar.
+* <input type="checkbox"> **Memastikan Produk, Quantity, Diskon, dan Tax** sudah sesuai dan benar.
+* <input type="checkbox"> **Pastikan Nilai Amount dan Total** sudah sesuai dan benar.
 
 
 ### Fitur Berdasarkan Hak Akses
@@ -203,5 +197,5 @@ Pada state *To Approved*, atasan akan mengecek pembelian produk tersebut, jika s
     - Dapat melakukan action *Approve Order* jika permintaan sudah sesuai.
 
 ??? info "What Next?"
-    Setelah *PO* sudah dilakukan *Approve Order* selanjutnya dokumen akan masuk ke Modul *RI*.
+    Setelah *Invoice* sudah dilakukan *Validate* selanjutnya dokumen akan masuk ke Modul *Payment*.
     [Lanjut ke Modul Sales:octicons-arrow-right-16:](../dept_who/inventory_ri.md)
