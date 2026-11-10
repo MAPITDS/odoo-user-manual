@@ -14,8 +14,9 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Invoice* 
 6. Jika ada pembayaran sebelumnya menggunaka DP maka ceklis pada kolom *Is DP* dan isi nomor pembayaran invoice sebelumnya pada kolom *DP Invoice*. Sistem akan otomatis menarik nilai DP tersebut pada kolom **DP Amount**.
 7. Pilih nilai tukar pembayaran (mata uang) ke vendor pada kolom **Currency**.
 8. Pilih nomor SO untuk invoice tersebut pada kolom **Number SO**.
+9. Jika ada kondisi untuk pemberian komisi maka isi pada bagian *Commission Condition*. 
 
-![Contoh Pengisian Form Invoice](../dept_fa_acc/images/po_header.png)
+![Contoh Pengisian Form Invoice](../dept_fa_acc/images/inv_header.png)
 <center><em>Gambar 1 : Tampilan pengisian form pada invoices.</em></center>
 
 ---
@@ -34,7 +35,7 @@ Pada tab **Invoice Lines**, masukkan produk yang akan diterbitkan invoice :
 8. Jika ada diskon pilih tipe diskon nya pada kolom **Global Discount Type** dan isi nilainya pada kolom **Discount Rate**.
 9. Apabila ada diskon tambahan lagi pilih tipe diskon pada kolom **Cash Discount Type** dan isi nilainya pada kolom **Cash/Extra Disc Amount**.
 
-![Contoh Pengisian Produk](../dept_fa_acc/images/po_header.png)
+![Contoh Pengisian Produk](../dept_fa_acc/images/inv_lines.png)
 <center><em>Gambar 2 : Tampilan pengisian produk pada tab Products.</em></center>
 
 ---
@@ -46,7 +47,7 @@ Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada
 1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
 2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
 
-![Contoh Pengisian Pajak Diskon](../dept_fa_acc/images/po_header.png)
+![Contoh Pengisian Pajak Diskon](../dept_fa_acc/images/inv_tax.png)
 <center><em>Gambar 3 : Tampilan pengisian pajak pada tab discount tax.</em></center>
 
 ---
@@ -64,7 +65,7 @@ Pada tab **E-Invoicing Invoice Line**, masukkan informasi mengenai elektronik in
 7. Isi **Price**, **Discount**, **DPP**, **Tax Amount**, dan **Total**. 
 8. Jika full diskon ceklis pada kolom **Full Discount**, dan jika diluar pajak ny klik pada kolom **Excluded**.
 
-![Contoh Pengisian E-Invoicing Line](../dept_fa_acc/images/po_header.png)
+![Contoh Pengisian E-Invoicing Line](../dept_fa_acc/images/inv_e-inv_lines.png)
 <center><em>Gambar 4 : Tampilan pengisian informasi e-invoicing pada tab e-invoicing invoice line.</em></center>
 
 ---
@@ -78,7 +79,7 @@ Pada tab **Other Info**, masukkan informasi mengenai informasi terkait invoice t
 3. Jika transaksi ini merupakan transaksi dengan negara lain maka isi ketentuan nya pada kolom **Incoterm** dan **Fiscal Position**.
 4. Masukkan kode akun bank pada kolom **Bank Account**.
 
-![Contoh Pengisian Informasi Lainnya](../dept_fa_acc/images/po_header.png)
+![Contoh Pengisian Informasi Lainnya](../dept_fa_acc/images/inv_info.png)
 <center><em>Gambar 5 : Tampilan pengisian informasi invoice pada tab other info.</em></center>
 
 ---
@@ -90,7 +91,7 @@ Pada tab **E-Invoicing**, masukkan informasi mengenai elektronik invoice.
 1. Ceklis apabila e-invoicing akan di export pada kolom **Is E-Invoicing Exported**.
 2. Isi tanggal export'an e-invoiceing tersebut pada kolom **E-Invoicing Exported Date**.
 
-![Contoh Pengisian Cetak E-Invoicing](../dept_fa_acc/images/po_header.png)
+![Contoh Pengisian Cetak E-Invoicing](../dept_fa_acc/images/inv_e-inv.png)
 <center><em>Gambar 6 : Tampilan pengisian informasi cetak e-invoicing pada tab e-invoicing.</em></center>
 
 ---
@@ -99,7 +100,7 @@ Pada tab **E-Invoicing**, masukkan informasi mengenai elektronik invoice.
 
 Pada tab **Commission**, Sistem akan otomatis mengisi pada tab komisi ini ketika state sudah berpindah dari *Draft* ke *Open*.
 
-![Contoh Tampilan Komisi](../dept_fa_acc/images/po_header.png)
+![Contoh Tampilan Komisi](../dept_fa_acc/images/inv_commission.png)
 <center><em>Gambar 7 : Tampilan informasi komisi pada tab commission.</em></center>
 
 ---
@@ -112,7 +113,7 @@ Pada tab **Return Commission**, masukkan informasi mengenai pengembalian komisi 
 2. Pilih invoice yang akan dikembalikan komisinya pada kolom **Invoice**.
 3. Sistem akan otomatis mengisi detail pada kolom yang ada untuk komisi yang sudah dipilih.
 
-![Contoh Pengisian Pengembalian Komisi](../dept_fa_acc/images/po_header.png)
+![Contoh Pengisian Pengembalian Komisi](../dept_fa_acc/images/inv_return_comm.png)
 <center><em>Gambar 8 : Tampilan pengisian informasi pengembalian komisi pada tab return commission.</em></center>
 
 ---
@@ -125,7 +126,7 @@ Pada tab **Duedate Installment**, masukkan informasi mengenai tanggal cicilan pa
 2. Pilih nomor cicilan ke berapa pada kolom **Installments**.
 3. Isi tanggal cicilan tersebut pada kolom **Date**.
 
-![Contoh Pengisian Cicilan Invoice](../dept_fa_acc/images/po_header.png)
+![Contoh Pengisian Cicilan Invoice](../dept_fa_acc/images/inv_duedate.png)
 <center><em>Gambar 9 : Tampilan pengisian informasi cicilan pembayaran pada tab Duedate Installment.</em></center>
 
 ---
@@ -138,7 +139,7 @@ Pada tab **Picking References**, masukkan informasi mengenai pengambilan barang 
 2. Pilih nomor DO yang akan dimasukkan.
 3. Klik **Select**, maka akan tampil keterangan barang pada DO yang terlah dipilih.
 
-![Contoh Pengisian Tracking Barang](../dept_fa_acc/images/po_header.png)
+![Contoh Pengisian Tracking Barang](../dept_fa_acc/images/inv_picking.png)
 <center><em>Gambar 10 : Tampilan pengisian informasi status barang pada tab picking references.</em></center>
 
 ---
@@ -147,7 +148,7 @@ Pada tab **Picking References**, masukkan informasi mengenai pengambilan barang 
 
 Pada tab **Print Layout**, merupakan tampilan invoice yang akan di cetak dan bisa dicek terlebih dahulu nilai invoicenya apakah sudah sesuai sebelum dicetak.
 
-![Contoh Tampilan Cetak Invoice](../dept_fa_acc/images/po_header.png)
+![Contoh Tampilan Cetak Invoice](../dept_fa_acc/images/inv_print.png)
 <center><em>Gambar 11 : Tampilan informasi nilai invoice yang akan dicetak pada tab print layout.</em></center>
 
 ---
@@ -156,7 +157,7 @@ Pada tab **Print Layout**, merupakan tampilan invoice yang akan di cetak dan bis
 
 Pada tab **Negotiation**, merupakan informasi mengenai nilai COS yang tertera pada modul Negotiation Sheet lama sesuai dengan nomor transaksi yang akan di invoice kan.
 
-![Contoh Tampilan COS Negotiation Lama](../dept_fa_acc/images/po_header.png)
+![Contoh Tampilan COS Negotiation Lama](../dept_fa_acc/images/inv_nego.png)
 <center><em>Gambar 12 : Tampilan informasi cos negotiation lama pada tab negotiation.</em></center>
 
 ---
@@ -165,7 +166,7 @@ Pada tab **Negotiation**, merupakan informasi mengenai nilai COS yang tertera pa
 
 Pada tab **Negotiation New**, merupakan informasi mengenai nilai COS yang tertera pada modul Negotiation Sheet baru sesuai dengan nomor transaksi yang akan di invoice kan.
 
-![Contoh Tampilan COS Negotiation Baru](../dept_fa_acc/images/po_header.png)
+![Contoh Tampilan COS Negotiation Baru](../dept_fa_acc/images/inv_nego_new.png)
 <center><em>Gambar 13 : Tampilan informasi cos negotiation baru pada tab negotiation baru.</em></center>
 
 ---
@@ -185,11 +186,8 @@ Pada state *Open*, akan dilakukan pembayaran invoice tersebut, dan apabila sudah
 
 
 ### Fitur Berdasarkan Hak Akses
-=== "User"
-    - Dapat membuat *PR* baru dan dapat melihat keseluruhan data pada modul.
-
 === "Manager"
-    - Dapat membuat *PR* baru dan dapat melihat keseluruhan data pada modul.
+    - Dapat membuat *Invoice* baru dan dapat melihat keseluruhan data pada modul.
     - Dapat melihat tampilan menu *Analisa Harga Beli* dan *Reporting*.
 
 === "Approver"
