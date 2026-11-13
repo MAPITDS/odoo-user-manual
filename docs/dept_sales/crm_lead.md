@@ -63,7 +63,7 @@ Pada state yang bukan **New** merupakan progres untuk crm tersebut, maka *klik* 
 9. **CBS** : Batal otomatis oleh Sistem dikarenakan beberapa kondisi :
    A. Sudah melebihi batas tanggal yang sudah ditentukan pada kolom *Expected Closing*. Jika Expected Closing Berada ditahun yang sama dengan saat ini diupdate menjadi tahun depan (maka Tidak bisa di edit kembali untuk mundur menjadi tahun sekarang), dan jika sudah berada di tahun depan (bisa diupdate mundur hanya bulan dan tanggal nya saja).
    B. Apabila stage *New* tidak ada progress selama >15 hari.
-   B. Apabila tidak ada perubahan stage selama >45 hari.
+   B. Apabila tidak ada perubahan stage selama >90 hari di tahun yang sama berdasarkan tahun pada kolom *Expected Closing* .
 
 ![Contoh Tampilan Stage CRM](../dept_sales/images/crm_stage.png)
 <center><em>Gambar 4 : Tampilan stage pada crm.</em></center>
