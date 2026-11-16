@@ -1,7 +1,7 @@
 
-# <img src="../../icon_modul/ns.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Invoices
+# <img src="../../icon_modul/invoice.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Invoices
 
-Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Invoice* (Pembelian Barang) hingga menjadi *RI* yang siap diproses oleh tim warehouse.
+Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Invoice* (Faktur Penjualan) hingga menjadi *Payment* yang siap diproses oleh tim kasir.
 
 
 ## 1. Membuat Invoice Baru
