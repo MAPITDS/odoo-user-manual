@@ -1,4 +1,4 @@
-
+    
 # <img src="../../icon_modul/ns.png" width="36" style="vertical-align: middle; margin-right: 12px; filter: brightness(0.9);"> Alur Pembuatan Vendor Bill
 
 Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Vendor Bill* (Pembayaran) hingga menjadi *Payment* yang siap diproses oleh tim kasir.
@@ -6,9 +6,9 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Vendor Bi
 
 ## 1. Membuat Vendor Bill Baru
 
-1. Masuk ke modul **Accounting** > **Customer** > **Invoices**.
-2. Klik tombol **Create** di pojok kiri atas halaman. Atau pilih *Invoice* yang  sudah terbentuk dari *DO/RI*.
-3. Pilih nama customer pada kolom **Partner**, isi alamat pengiriman pada kolom **Delivery Address**, dan pilih **Type Customer**.
+1. Masuk ke modul **Purchase** > **Control** > **Vendor Bills**.
+2. Klik tombol **Create** di pojok kiri atas halaman. Atau pilih *Vendor Bill* yang  sudah terbentuk dari *PO*.
+3. Pilih nama vendor pada kolom **Vendor**, isi referensi keteranga vendor pada kolom **Vendor Reference**.
 4. Pilih termin pembayaran pada kolom **Payment Terms**. 
 5. Pilih nama sales yang menjual produk tersebut pada kolom **Sales Person**. Sistem akan otomatis menarik *Region, *Area*, *District*, dan *Regency/City*.
 6. Jika ada pembayaran sebelumnya menggunaka DP maka ceklis pada kolom *Is DP* dan isi nomor pembayaran invoice sebelumnya pada kolom *DP Invoice*. Sistem akan otomatis menarik nilai DP tersebut pada kolom **DP Amount**.
