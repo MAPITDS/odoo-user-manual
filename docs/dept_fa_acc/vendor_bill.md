@@ -9,31 +9,32 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Vendor Bi
 1. Masuk ke modul **Purchase** > **Control** > **Vendor Bills**.
 2. Klik tombol **Create** di pojok kiri atas halaman. Atau pilih *Vendor Bill* yang  sudah terbentuk dari *PO*.
 3. Pilih nama vendor pada kolom **Vendor**, isi referensi keteranga vendor pada kolom **Vendor Reference**.
-4. Pilih termin pembayaran pada kolom **Payment Terms**. 
-5. Pilih nama sales yang menjual produk tersebut pada kolom **Sales Person**. Sistem akan otomatis menarik *Region, *Area*, *District*, dan *Regency/City*.
-6. Jika ada pembayaran sebelumnya menggunaka DP maka ceklis pada kolom *Is DP* dan isi nomor pembayaran invoice sebelumnya pada kolom *DP Invoice*. Sistem akan otomatis menarik nilai DP tersebut pada kolom **DP Amount**.
+4. Isi nomor PO pada kolom **Source Document**. 
+5. Isi tanggal pembayaran pada kolom **Bill Date**. Sistem akan otomatis menarik *Due Date*.
+6. Masukkan nomor pajak invoice pada kolom **Input Tax Invoice Serial Number**.
 7. Pilih nilai tukar pembayaran (mata uang) ke vendor pada kolom **Currency**.
-8. Pilih nomor SO untuk invoice tersebut pada kolom **Number SO**.
-9. Jika ada kondisi untuk pemberian komisi maka isi pada bagian *Commission Condition*. 
+
 
 ![Contoh Pengisian Form Invoice](../dept_fa_acc/images/inv_header.png)
 <center><em>Gambar 1 : Tampilan pengisian form pada invoices.</em></center>
 
 ---
 
-## 2. Pengisian Produk Pada Invoice
+## 2. Pengisian Produk Pada Bill
 
-Pada tab **Invoice Lines**, masukkan produk yang akan diterbitkan invoice :
+Pada tab **Bill**, masukkan produk yang akan dibayarkan :
 
 1. Klik **Add a line**.
-2. Pilih **Product** dari daftar *dropdown*, sistem akan otomatis menarik **Description**, **Program**, **Faskes**, **Sale Program** dan **Discount xx+xx (%)** produk.
+2. Pilih **Product** dari daftar *dropdown*, sistem akan otomatis menarik **Description**.
+3. Jika merupakan pembelian asset maka pilih kategori asset pada kolom **Asset Category**.
 3. Pilih **Analytic Account** dan **Analytic Tags**.
-4. Masukkan jumlah produk yang akan dibeli pada kolom **Quantity** dan isi harga yang dijual pada kolom **Price**.
+4. Masukkan jumlah produk yang akan dibeli pada kolom **Quantity** dan isi harga beli pada kolom **Unit Price**.
 5. Pilih satuan peoduk pada kolom **Unit of Measure**.
-6. Sistem akan otomatis menarik jumlah **Subtotal**.
-7. Isi keterangan pada *Terms and conditions* jika diperlukan terkait keterangan untuk pembayaran produk tersebut.
+6. Pilih pajak pembelian tersebut pada kolom **Taxes**.
+7. Sistem akan otomatis menarik jumlah **Amount**.
 8. Jika ada diskon pilih tipe diskon nya pada kolom **Global Discount Type** dan isi nilainya pada kolom **Discount Rate**.
-9. Apabila ada diskon tambahan lagi pilih tipe diskon pada kolom **Cash Discount Type** dan isi nilainya pada kolom **Cash/Extra Disc Amount**.
+9. Apabila ada pajak maka masukkan pada kolom pajak **Tax Description**, masukkan kode akun pajaknya pada kolom **Tax Account**, Pilih **Analytic Account** dan **Analytic Tags**, dan masukkan nilai pajak nya pada kolom **Tax Amount**.
+10. Masukkan keterangan untuk bill tersebut jika ada pada kolom **Additional notes**.
 
 ![Contoh Pengisian Produk](../dept_fa_acc/images/inv_lines.png)
 <center><em>Gambar 2 : Tampilan pengisian produk pada tab Products.</em></center>
@@ -74,10 +75,13 @@ Pada tab **E-Invoicing Invoice Line**, masukkan informasi mengenai elektronik in
 
 Pada tab **Other Info**, masukkan informasi mengenai informasi terkait invoice tersebut.
 
-1. Sistem secara otomatis telah mnegisi **Journal**, **Account**, **Source Document**, dan juga *List* pajak yang sudah dipilih.
-2. Pilih referensi pwmbayaran pada kolom **Payment Ref.**, dan isi deskripsinya pada kolom **Reference/Description**.
-3. Jika transaksi ini merupakan transaksi dengan negara lain maka isi ketentuan nya pada kolom **Incoterm** dan **Fiscal Position**.
-4. Masukkan kode akun bank pada kolom **Bank Account**.
+1. Pilih user yang mengajukan pembelian produk tersebut pada kolom **Purchase Representative**.
+2. Pilih jurnal bill tersebut pada kolom **Journal**.
+3. Masukkan nomor akun untuk bill tersebut pada kolom **Account**.
+4. Pilih tanggal untuk dimasukkan ke dalam invoice pada kolom **Accounting Date**.
+5. Masukkan keterangan lainnya terkait bill tersebut pada kolom **Reference/Description**.
+6. Pilih ketentuan yang ditetapkan vendor luar negeri jika ada pada kolom **Incoterm** dan **Fiscal Position**.
+7. Pilih tipe pembayaran yang akan dilakukan pada kolom **Payment Terms**.
 
 ![Contoh Pengisian Informasi Lainnya](../dept_fa_acc/images/inv_info.png)
 <center><em>Gambar 5 : Tampilan pengisian informasi invoice pada tab other info.</em></center>
@@ -96,78 +100,16 @@ Pada tab **E-Invoicing**, masukkan informasi mengenai elektronik invoice.
 
 ---
 
-## 7. Pengisian Commission
-
-Pada tab **Commission**, Sistem akan otomatis mengisi pada tab komisi ini ketika state sudah berpindah dari *Draft* ke *Open*.
-
-![Contoh Tampilan Komisi](../dept_fa_acc/images/inv_commission.png)
-<center><em>Gambar 7 : Tampilan informasi komisi pada tab commission.</em></center>
-
----
-
-## 8. Pengisian Return Commission
-
-Pada tab **Return Commission**, masukkan informasi mengenai pengembalian komisi pada invoice tersebut.
-
-1. Klik **Add a line**.
-2. Pilih invoice yang akan dikembalikan komisinya pada kolom **Invoice**.
-3. Sistem akan otomatis mengisi detail pada kolom yang ada untuk komisi yang sudah dipilih.
-
-![Contoh Pengisian Pengembalian Komisi](../dept_fa_acc/images/inv_return_comm.png)
-<center><em>Gambar 8 : Tampilan pengisian informasi pengembalian komisi pada tab return commission.</em></center>
-
----
-
-## 9. Pengisian Duedate Installment
-
-Pada tab **Duedate Installment**, masukkan informasi mengenai tanggal cicilan pada invoice tersebut.
-
-1. Klik **Add a line**.
-2. Pilih nomor cicilan ke berapa pada kolom **Installments**.
-3. Isi tanggal cicilan tersebut pada kolom **Date**.
-
-![Contoh Pengisian Cicilan Invoice](../dept_fa_acc/images/inv_duedate.png)
-<center><em>Gambar 9 : Tampilan pengisian informasi cicilan pembayaran pada tab Duedate Installment.</em></center>
-
----
-
 ## 10. Pengisian Picking References 
 
 Pada tab **Picking References**, masukkan informasi mengenai pengambilan barang di gudang dan status barang tersebut.
 
 1. Klik **Add a line**.
 2. Pilih nomor DO yang akan dimasukkan.
-3. Klik **Select**, maka akan tampil keterangan barang pada DO yang terlah dipilih.
+3. Klik **Select**, maka akan tampil keterangan barang pada DO yang telah dipilih.
 
 ![Contoh Pengisian Tracking Barang](../dept_fa_acc/images/inv_picking.png)
 <center><em>Gambar 10 : Tampilan pengisian informasi status barang pada tab picking references.</em></center>
-
----
-
-## 11. Pengisian Print Layout
-
-Pada tab **Print Layout**, merupakan tampilan invoice yang akan di cetak dan bisa dicek terlebih dahulu nilai invoicenya apakah sudah sesuai sebelum dicetak.
-
-![Contoh Tampilan Cetak Invoice](../dept_fa_acc/images/inv_print.png)
-<center><em>Gambar 11 : Tampilan informasi nilai invoice yang akan dicetak pada tab print layout.</em></center>
-
----
-
-## 12. Pengisian Negotiation
-
-Pada tab **Negotiation**, merupakan informasi mengenai nilai COS yang tertera pada modul Negotiation Sheet lama sesuai dengan nomor transaksi yang akan di invoice kan.
-
-![Contoh Tampilan COS Negotiation Lama](../dept_fa_acc/images/inv_nego.png)
-<center><em>Gambar 12 : Tampilan informasi cos negotiation lama pada tab negotiation.</em></center>
-
----
-
-## 13. Pengisian Negotiation New 
-
-Pada tab **Negotiation New**, merupakan informasi mengenai nilai COS yang tertera pada modul Negotiation Sheet baru sesuai dengan nomor transaksi yang akan di invoice kan.
-
-![Contoh Tampilan COS Negotiation Baru](../dept_fa_acc/images/inv_nego_new.png)
-<center><em>Gambar 13 : Tampilan informasi cos negotiation baru pada tab negotiation baru.</em></center>
 
 ---
 
