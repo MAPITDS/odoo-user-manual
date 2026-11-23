@@ -29,7 +29,7 @@ Pada tab **Bill**, masukkan produk yang akan dibayarkan :
 3. Jika merupakan pembelian asset maka pilih kategori asset pada kolom **Asset Category**.
 3. Pilih **Analytic Account** dan **Analytic Tags**.
 4. Masukkan jumlah produk yang akan dibeli pada kolom **Quantity** dan isi harga beli pada kolom **Unit Price**.
-5. Pilih satuan peoduk pada kolom **Unit of Measure**.
+5. Pilih satuan produk pada kolom **Unit of Measure**.
 6. Pilih pajak pembelian tersebut pada kolom **Taxes**.
 7. Sistem akan otomatis menarik jumlah **Amount**.
 8. Jika ada diskon pilih tipe diskon nya pada kolom **Global Discount Type** dan isi nilainya pada kolom **Discount Rate**.
@@ -53,25 +53,7 @@ Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada
 
 ---
 
-## 4. Pengisian E-Invoicing
-
-Pada tab **E-Invoicing Invoice Line**, masukkan informasi mengenai elektronik invoice jika ada (lewati langkah ini jika tidak ada).
-
-1. Isi kode dokumen elektroniknya pada kolom **Supporting Document Code**.
-2. Klik **Add a line**.
-3. Pilih **Product** dari daftar *dropdown*. 
-4. Isi deskripsi produk pada kolom **Description**.
-5. Isi jumlah produk yang tertera pada invoice pada kolom **Quantity**.
-6. Pilih satuan peoduk pada kolom **Unit of Measure**.
-7. Isi **Price**, **Discount**, **DPP**, **Tax Amount**, dan **Total**. 
-8. Jika full diskon ceklis pada kolom **Full Discount**, dan jika diluar pajak ny klik pada kolom **Excluded**.
-
-![Contoh Pengisian E-Invoicing Line](../dept_fa_acc/images/inv_e-inv_lines.png)
-<center><em>Gambar 4 : Tampilan pengisian informasi e-invoicing pada tab e-invoicing invoice line.</em></center>
-
----
-
-## 5. Pengisian Informasi
+## 4. Pengisian Informasi
 
 Pada tab **Other Info**, masukkan informasi mengenai informasi terkait invoice tersebut.
 
@@ -88,7 +70,7 @@ Pada tab **Other Info**, masukkan informasi mengenai informasi terkait invoice t
 
 ---
 
-## 6. Pengisian E-Invoicing
+## 5. Pengisian E-Invoicing
 
 Pada tab **E-Invoicing**, masukkan informasi mengenai elektronik invoice.
 
@@ -100,12 +82,12 @@ Pada tab **E-Invoicing**, masukkan informasi mengenai elektronik invoice.
 
 ---
 
-## 10. Pengisian Picking References 
+## 6. Pengisian Picking References 
 
 Pada tab **Picking References**, masukkan informasi mengenai pengambilan barang di gudang dan status barang tersebut.
 
 1. Klik **Add a line**.
-2. Pilih nomor DO yang akan dimasukkan.
+2. Pilih nomor DO yang akan dimasukkan pada kolom **No DO Manual**.
 3. Klik **Select**, maka akan tampil keterangan barang pada DO yang telah dipilih.
 
 ![Contoh Pengisian Tracking Barang](../dept_fa_acc/images/inv_picking.png)
