@@ -137,7 +137,7 @@ Pada tab **Picking References**, masukkan informasi mengenai pengambilan barang 
 
 1. Klik **Add a line**.
 2. Pilih nomor DO yang akan dimasukkan.
-3. Klik **Select**, maka akan tampil keterangan barang pada DO yang terlah dipilih.
+3. Klik **Select**, maka akan tampil keterangan barang pada DO yang telah dipilih.
 
 ![Contoh Pengisian Tracking Barang](../dept_fa_acc/images/inv_picking.png)
 <center><em>Gambar 10 : Tampilan pengisian informasi status barang pada tab picking references.</em></center>
