@@ -95,9 +95,9 @@ Pada tab **Picking References**, masukkan informasi mengenai pengambilan barang 
 
 ---
 
-## 14. Menunggu Pembayaran
+## 7. Menunggu Pembayaran
 
-Pada state *Open*, akan dilakukan pembayaran invoice tersebut, dan apabila sudah dibayarkan sesuai nilai yang tertera maka state akan berubah menjadi *Paid*.
+Finance akan melakukan validate pada vendor bill tersebut dan state akan berubah menjadi *Open*, akan dilakukan pembayaran invoice tersebut, dan apabila sudah dibayarkan sesuai nilai yang tertera maka state akan berubah menjadi *Paid*.
 
 
 
