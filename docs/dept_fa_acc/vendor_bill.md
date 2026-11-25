@@ -15,7 +15,7 @@ Halaman ini menjelaskan langkah-langkah standar untuk membuat dokumen *Vendor Bi
 7. Pilih nilai tukar pembayaran (mata uang) ke vendor pada kolom **Currency**.
 
 
-![Contoh Pengisian Form Invoice](../dept_fa_acc/images/inv_header.png)
+![Contoh Pengisian Form Invoice](../dept_fa_acc/images/vb_header.png)
 <center><em>Gambar 1 : Tampilan pengisian form pada invoices.</em></center>
 
 ---
@@ -36,7 +36,7 @@ Pada tab **Bill**, masukkan produk yang akan dibayarkan :
 9. Apabila ada pajak maka masukkan pada kolom pajak **Tax Description**, masukkan kode akun pajaknya pada kolom **Tax Account**, Pilih **Analytic Account** dan **Analytic Tags**, dan masukkan nilai pajak nya pada kolom **Tax Amount**.
 10. Masukkan keterangan untuk bill tersebut jika ada pada kolom **Additional notes**.
 
-![Contoh Pengisian Produk](../dept_fa_acc/images/inv_lines.png)
+![Contoh Pengisian Produk](../dept_fa_acc/images/vb_bill.png)
 <center><em>Gambar 2 : Tampilan pengisian produk pada tab Products.</em></center>
 
 ---
@@ -48,7 +48,7 @@ Pada tab **Discount Tax**, masukkan informasi mengenai pajak yang diberikan pada
 1. Pilih pajak diskon pada kolom **Add Disc Taxes**.
 2. Pilih pajak diskon detail pada kolom **Add Disc Taxes Detail**.
 
-![Contoh Pengisian Pajak Diskon](../dept_fa_acc/images/inv_tax.png)
+![Contoh Pengisian Pajak Diskon](../dept_fa_acc/images/vb_discount.png)
 <center><em>Gambar 3 : Tampilan pengisian pajak pada tab discount tax.</em></center>
 
 ---
@@ -77,7 +77,7 @@ Pada tab **E-Invoicing**, masukkan informasi mengenai elektronik invoice.
 1. Ceklis apabila e-invoicing akan di export pada kolom **Is E-Invoicing Exported**.
 2. Isi tanggal export'an e-invoiceing tersebut pada kolom **E-Invoicing Exported Date**.
 
-![Contoh Pengisian Cetak E-Invoicing](../dept_fa_acc/images/inv_e-inv.png)
+![Contoh Pengisian Cetak E-Invoicing](../dept_fa_acc/images/vb_e-inv.png)
 <center><em>Gambar 6 : Tampilan pengisian informasi cetak e-invoicing pada tab e-invoicing.</em></center>
 
 ---
@@ -90,7 +90,7 @@ Pada tab **Picking References**, masukkan informasi mengenai pengambilan barang 
 2. Pilih nomor DO yang akan dimasukkan pada kolom **No DO Manual**.
 3. Klik **Select**, maka akan tampil keterangan barang pada DO yang telah dipilih.
 
-![Contoh Pengisian Tracking Barang](../dept_fa_acc/images/inv_picking.png)
+![Contoh Pengisian Tracking Barang](../dept_fa_acc/images/vb_picking.png)
 <center><em>Gambar 10 : Tampilan pengisian informasi status barang pada tab picking references.</em></center>
 
 ---
